@@ -1,5 +1,5 @@
 # OntoSmart
-Repository of OntoSmart, methodology for networked and hetereogeneous ontologies
+Repository of OntoSmart, a methodology for the development of networked and hetereogeneous ontologies
 
 
 
