@@ -1,0 +1,570 @@
+
+\label{appendix:a}
+
+
+\begin{enumerate}
+	\item \textbf{get\_businessRegisterNumber}\label{query1}
+	\begin{verbatim}
+	FOR doc IN egrul_data_collection
+	  FILTER doc.businessRegisterNumber.literal !="" 
+	  COLLECT WITH COUNT INTO length
+	RETURN length
+	\end{verbatim}
+	
+	\item \textbf{get\_taxID}\label{query2}
+	\begin{verbatim}
+	FOR doc IN egrul_data_collection
+	   FILTER doc.taxId.literal !="" 
+	   COLLECT WITH COUNT INTO length
+	RETURN length
+	\end{verbatim}
+	
+	\item \textbf{get\_informationAboutFounders\_null}\label{query3}
+	\begin{verbatim}
+	FOR owner in egrul_data_collection
+	   FILTER owner.informationAboutFounders == null
+	RETURN   owner._id//owner.businessRegisterNumber//
+	\end{verbatim}
+	
+	\item \textbf{get\_informationAboutFounders}\label{query4}
+	\begin{verbatim}
+	FOR owner in egrul_data_collection
+	   FILTER owner.informationAboutFounders != null
+	RETURN   owner._id//owner.businessRegisterNumber//
+	\end{verbatim}
+	
+	\item \textbf{get\_informationAboutFounders\_blank}\label{query5}
+	\begin{verbatim}
+	FOR owner in egrul_data_collection
+	   FILTER owner.informationAboutFounders == ""
+	RETURN   owner._id//owner.businessRegisterNumber//
+	\end{verbatim}
+	
+	\item \textbf{get\_Owners\_sets}\label{query6}
+	\begin{verbatim}
+	FOR owner in egrul_data_collection
+	    LET InvestmentFund = owner.informationAboutFounders.unitInvestmentFund
+	    LET founderIndividual = owner.informationAboutFounders.founderIndividual//
+	    LET founder = owner.informationAboutFounders.founder//
+	    LET founderForeign = owner.informationAboutFounders.founderForeign
+ 	  LET founderMunicipalty = owner.informationAboutFounders.founderMunicipalty
+ 	    
+	\end{verbatim}
+		\textbf{FILTER  (!( founder != null or founderForeign != null  or founderIndividual != null) 
+		or (!(founderMunicipalty != null or InvestmentFund !=null)))}
+	\begin{verbatim}
+	    LIMIT 100
+	    COLLECT WITH COUNT INTO length
+	    LIMIT 10
+	RETURN length
+	
+	The FILTER can be changed with some of the following combinations: 
+	
+	\end{verbatim}
+	
+	\begin{enumerate}
+		
+	\item 	((InvestmentFund != null) or (founderIndividual != null)  ) or ((founder == null) or (founderForeign == null) or (founderMunicipalty == null))
+	\item 	((founder != null) or (InvestmentFund != null or (founderMunicipalty != null))   ) or ((founderForeign == null) or(founderIndividual == null) )
+	\item 	((founderMunicipalty != null) or (founderForeign != null) or (InvestmentFund != null )) or (  (founder == null) or  (founderIndividual == null) )
+	\item 	((founderForeign != null) or (InvestmentFund != null )) or (  (founderMunicipalty == null) or (founder == null) or  (founderIndividual == null) )
+	\item 	((founderMunicipalty != null) or (InvestmentFund != null )) or ( (founderForeign == null) or (founder == null) or  (founderIndividual == null) )
+	\item 	((founderMunicipalty == null) or (founderIndividual != null) or (founder != null)  ) or ( (InvestmentFund == null ) or (founderForeign == null))
+	\item 	((founderIndividual != null) or (founder != null)  ) or ( (founderMunicipalty == null) or (InvestmentFund == null ) or (founderForeign == null))
+	\item 	((founderIndividual != null) or (founder != null) or (founderForeign != null) ) or ((founderMunicipalty == null) or (InvestmentFund == null ) )
+	\item 	((founderMunicipalty != null) or(founderIndividual != null) or (founder != null)  ) or ((InvestmentFund == null ) or (founderForeign == null))
+	\item 	((founder != null) or  (founderForeign != null)) or ((founderMunicipalty == null) or (founderIndividual == null) or   (InvestmentFund == null ))
+	\item 	((founderMunicipalty != null) or (founder != null)) or ((founderForeign == null) or (founderIndividual == null) or   (InvestmentFund == null ))
+	\item 	((founderMunicipalty != null) or (founderForeign != null)) or ((founder == null) or  (founderIndividual == null) or (InvestmentFund == null ))
+	\item 	((founderMunicipalty != null)) or ((founderForeign == null) or (founder == null) or  (founderIndividual == null) or (InvestmentFund == null))
+	\end{enumerate}
+
+	
+	\item \textbf{get\_Ownership\_Relation}\label{query7}
+	\begin{verbatim}
+	FOR owned in egrul_data_collection
+	    filter owned.informationAboutFounders.founder!=null
+	    LET founders = owned.informationAboutFounders.founder
+	    FILTER LENGTH(founders)  > 0
+	    FOR founder IN founders
+	        LET OwnerbusinessRegisterNumber = founder.nameAndId.businessRegisterNumber.literal
+	        FILTER OwnerbusinessRegisterNumber != null
+	        //now we compare with current ownership
+	        FOR sanctioned IN ofac_ownership_relation
+	            FILTER sanctioned.owned_businessRegisterNumber == OwnerbusinessRegisterNumber
+	            LET OwnedbusinessRegisterNumber = owned.businessRegisterNumber.literal
+	            LET ownedid = owned._id
+	            LET ownerid = CONCAT("egrul_data_collection/",OwnerbusinessRegisterNumber)
+	            //writing into collection  with error catch
+	            INSERT {_from:ownerid, _to:ownedid,
+	            "owned_businessRegisterNumber":OwnedbusinessRegisterNumber} 
+	            INTO ofac_ownership_relation // OPTIONS { ignoreErrors: true }
+	            	\end{verbatim}
+	          \textbf{LIMIT 1100} 
+	        	\begin{verbatim}   
+	            COLLECT WITH COUNT INTO length
+	RETURN  {ownerid, OwnedbusinessRegisterNumber, ownedid}
+		            	\end{verbatim}
+
+	\item \textbf{set\_ofac\_100}\label{query8}
+	
+		\begin{verbatim}
+	//set ofac 100 %
+	//here we revise every santioned entity belong to only one owner,
+	//that this owner owned 100 % of actions, 
+	//and that this owner is sanctioned, either by ofac 100, 50 or agg.
+	//if that is the case, we proceed to flag them as ofac_sanctioned 100%
+	//from the ring 2 we have to confirmed that ofac santioned attribute is not null,
+	// I mean we have to confirme previousl company is sanctioned
+	//getting id of entity in first collection
+	
+	FOR doc1 IN ofac_ownership_relation
+	   LET doc1id = doc1._to
+	   LET ofac_ownerID = doc1._from
+	   LET ofac_ownerID2 = LTRIM(ofac_ownerID, "egrul_data_collection/") 
+	   LET sanction_value = doc1.ofac_santioned
+	   FOR doc2 in egrul_data_collection
+	      LET doc2id = doc2._id
+	      FILTER doc1id == doc2id
+	      //with the company identify, we proceed to coount ownerships if any
+	      LET founder = doc2.informationAboutFounders.founder
+          LET founder_size = length(founder)
+	      LET founderIndividual = doc2.informationAboutFounders.founderIndividual
+	      LET founderIndividual_size = length(founderIndividual)
+	      LET InvestmentFund = doc2.informationAboutFounders.unitInvestmentFund
+	      LET InvestmentFund_size = length(InvestmentFund)
+	      LET founderForeign  = doc2.informationAboutFounders.founderForeign
+ 	      LET founderForeign_size = length(founderForeign)
+	      LET founderMunicipalty = doc2.informationAboutFounders.founderMunicipalty
+	      LET founderMunicipalty_size = length(founderMunicipalty)
+	      //counting total amount of owners
+	      LET owners_count = founderIndividual_size+InvestmentFund_size+
+	      founderForeign_size+founderMunicipalty_size
+	      FILTER (owners_count == 0 and founder_size == 1)
+	      FOR doc3 IN founder
+	         LET share_size  = doc3.founderShare.sizeOfShares.sizeOfSharePercentage
+	         LET ownerID_json = doc3.nameAndId.businessRegisterNumber.literal
+	         //here we confirm two conditions:
+	         //Owner owns 100 % of the actions
+	         //Owner ID is the same in ofac ownership edges 
+	         //collection and in egrul main collection. 
+	         FILTER (share_size == 100 and ownerID_json == ofac_ownerID2)
+	         LET owner_ofac_array = 
+	         (
+	         FOR doc4 IN ofac_ownership_relation
+	            LET doc4id = doc4.owned_businessRegisterNumber
+	            //LET doc4id2 = LTRIM(doc4id, "egrul_data_collection/") 
+	            FILTER doc4id == ofac_ownerID2//sanctioned owner identified
+	            LET ofac_status = doc4.ofac_santioned
+	            //FILTER ofac_commited_share != null
+	            //COLLECT WITH COUNT INTO length
+	            RETURN ofac_status//ofac_commited_share//length
+	          )
+	      LET owner_ofac_value = owner_ofac_array[0]
+	      FILTER owner_ofac_value != null
+	      FILTER sanction_value == null
+	      UPDATE doc1 WITH {ofac_santioned: "100 %"} IN ofac_ownership_relation//
+	      LIMIT 1000
+	      COLLECT WITH COUNT INTO length
+	RETURN    {doc1id,owner_ofac_value}//,length//
+	\end{verbatim}
+	
+	\item \textbf{set\_ofac\_50}\label{query9}
+	\begin{verbatim}
+//set ofac 50 %
+//here we revise every santioned entity, 
+//visit the owners and confirme ownership value is more than or equal to 50 %
+//if that is the case, we proceed to flag them as ofac_sanctioned 100%
+//getting id of entity in first collection
+
+FOR doc1 IN ofac_ownership_relation//variable to change
+   //this is the variable to change across edges
+   //this variable chage across set of edges
+   LET doc1id = doc1._to//identifier of owned
+   LET ofac_ownerID = doc1._from
+   LET ofac_ownerID2 = LTRIM(ofac_ownerID, "egrul_data_collection/") 
+   LET sanction_value = doc1.ofac_santioned
+   FOR doc2 in egrul_data_collection
+      LET doc2id = doc2._id
+      FILTER doc1id == doc2id
+      //with the company identify, we proceed to coount ownership
+      LET founder = doc2.informationAboutFounders.founder
+      //getting list of founder owners if any
+      FILTER founder != null
+      //we proceed to identify companies with more than 50 and less than 100 %
+      //Note: it is possible than only one company owns less than 100 %, 
+      //althought no more owners appear
+      FOR doc3 IN founder
+         LET share_size  = doc3.founderShare.sizeOfShares.sizeOfSharePercentage
+         LET ownerID_json = doc3.nameAndId.businessRegisterNumber.literal
+         //here we confirm two conditions:
+         //Owner owns 100 % of the actions
+         //Owner ID is the same in ofac ownership 
+         //edges collection and in egrul main collection. 
+         FILTER ((share_size >= 50 and share_size < 100) 
+         and ownerID_json == ofac_ownerID2)//
+         //checking owner in previous collection is sanctioned
+         LET owner_ofac_array = 
+         (
+            FOR doc4 IN ring4_ofac_ownership_relation//previous owner
+               LET doc4id = doc4.owned_businessRegisterNumber
+               FILTER doc4id == ofac_ownerID2//sanctioned owner identified
+               LET ofac_status = doc4.ofac_santioned
+               //COLLECT WITH COUNT INTO length
+               RETURN ofac_status//ofac_commited_share//length
+            )
+         LET owner_ofac_value = owner_ofac_array[0]
+         FILTER owner_ofac_value != null
+         //filtering owners with exactly one sanctioned flag
+         FILTER sanction_value == null
+         //after confirming a company is sanctioned, 
+         //and owns at least 50 % of a company, we flag it
+         UPDATE doc1 WITH {ofac_santioned: "50 %"} IN ofac_ownership_relation
+         //variable to change
+         LIMIT 1000
+         COLLECT WITH COUNT INTO length
+RETURN   {share_size, ownerID_json, ofac_ownerID2,   owner_ofac_value} 
+	\end{verbatim}
+	
+    \item \textbf{set\_ofac\_aggregation}\label{query10}
+    
+	\begin{verbatim}
+	
+	//set ofac by aggregation from ring 2 
+	
+	FOR doc1 IN ofac_ownership_relation//this is the variable to change across edges
+	//this variable chage across set of edges
+	   LET doc1id = doc1._to//identifier of owned
+	   LET ofac_ownerID = doc1._from
+	   LET ofac_ownerID2 = LTRIM(ofac_ownerID, "egrul_data_collection/") 
+	   LET sanction_value = doc1.ofac_santioned//	
+	   FOR doc2 in egrul_data_collection
+	      LET doc2id = doc2._id
+	      FILTER doc1id == doc2id
+	      //we confirm we are searching the same owned document
+	      //with the company identify, we proceed to coount ownership
+	      LET founder = doc2.informationAboutFounders.founder
+	      LET founder_size = length(founder)
+	      //counting total amount of owners
+	      //LET owners_count = founder_size+
+	      founderIndividual_size+
+	      InvestmentFund_size+
+	      founderForeign_size+
+	      founderMunicipalty_size
+	      FILTER (founder_size > 1)//getting at least one owner
+	      //getting size of share in percentage
+	      LET ofac_commited_addition = (
+	      FOR doc3 IN founder
+	         LET share_size  = doc3.founderShare.sizeOfShares.sizeOfSharePercentage
+	         FILTER share_size != null
+	         LET ownerID_json = doc3.nameAndId.businessRegisterNumber.literal
+	         //given that we just know the size of the share for every company, 
+	         //we confirm they are sactioned
+	         //with a subquery
+	            LET owner_ofac_array = 
+	            (
+	            FOR doc4 IN  ofac_ownership_relation//previous relation link
+	               LET doc4id = doc4.owned_businessRegisterNumber
+	               FILTER doc4id == ownerID_json//ofac_ownerID2//sanctioned owner identified
+	               LET ofac_status = doc4.ofac_santioned
+	               FILTER ofac_status != null//here we confirm owner is sanctioned
+	            RETURN ofac_status//ofac_commited_share//length
+	            )
+	         LET owner_ofac = owner_ofac_array[0]
+	         FILTER owner_ofac != null
+	         //we check there is a sanction flag in owner
+	         COLLECT committed_share = share_size
+	         RETURN committed_share
+	         )//end second subquery
+	         LET sum_ofac_shares = SUM(ofac_commited_addition)
+	         FILTER sum_ofac_shares >= 50
+	         FILTER sanction_value == null//granting that is not previoulsy sanctioned      
+	         //with this information we can proceed to flag 
+	         UPDATE doc1 WITH {ofac_santioned: "AGG"} IN ofac_ownership_relation//
+	RETURN   sum_ofac_shares//
+	\end{verbatim}
+	
+	
+	\item \textbf{set\_ofac\_100\_wcs}\label{query11}
+	\begin{verbatim}
+	
+	FOR doc1 IN ofac_ownership_relation
+	   LET doc1id = doc1._to//identifier of owned
+	   LET ofac_ownerID = doc1._from//identifier of owner
+	   LET ofac_ownerID2 = LTRIM(ofac_ownerID, "egrul_data_collection/") 
+	   //removing not needed string
+	   LET sanction_value = doc1.ofac_santioned//checking if there is previous sanction flag
+	      FOR doc2 in egrul_data_collection
+	         LET doc2id = doc2._id
+	         FILTER doc1id == doc2id
+	         LET founder = doc2.informationAboutFounders.founder
+ 	         LET founder_size = length(founder)
+	         LET founderIndividual = doc2.informationAboutFounders.founderIndividual
+	         LET founderIndividual_size = length(founderIndividual)
+	         LET InvestmentFund = doc2.informationAboutFounders.unitInvestmentFund
+	         LET InvestmentFund_size = length(InvestmentFund)
+	         LET founderForeign  = doc2.informationAboutFounders.founderForeign
+	         LET founderForeign_size = length(founderForeign)
+	         LET founderMunicipalty = doc2.informationAboutFounders.founderMunicipalty
+	         LET founderMunicipalty_size = length(founderMunicipalty)
+	         //counting total amount of owners
+	         LET owners_count = founderIndividual_size+
+	         InvestmentFund_size+
+	         founderForeign_size+
+	         founderMunicipalty_size
+	         FILTER (owners_count == 0 and founder_size == 1)//getting only one owner, 
+	         and that owner has to be founder
+	         //getting size of share in percentage
+	         FOR doc3 IN founder
+	            LET share_size  = doc3.founderShare.sizeOfShares.sizeOfSharePercentage
+	            LET ownerID_json = doc3.nameAndId.businessRegisterNumber.literal
+	            //here we confirm two conditions:
+	            //Owner owns 100 % of the actions
+	            //Owner ID is the same in ofac ownership edges collection 
+	            //and in egrul main collection. 
+	            FILTER (share_size == 100 and ownerID_json == ofac_ownerID2)
+	            //we confirm owner id of JSON is in the ownership list
+	            //we make a sub query to check if owner has a sanction_value not null, 
+	            then we proceed to sanction the child as well
+	            //NOTE: in first ring cllection this condition is not fulfilled, 
+	            //so we have to ber carefull in his application
+	            LET owner_ofac_array = 
+	            (
+	               FOR doc4 IN ring4_ofac_ownership_relation
+	               LET doc4id = doc4.owned_businessRegisterNumber
+	               //LET doc4id2 = LTRIM(doc4id, "egrul_data_collection/") 
+	               FILTER doc4id == ofac_ownerID2//sanctioned owner identified
+	               LET ofac_status = doc4.ofac_santioned
+	               RETURN ofac_status//
+	               )
+	            LET owner_ofac_value = owner_ofac_array[0]
+	            FILTER owner_ofac_value != null 
+	            FILTER sanction_value == null//here we grant to flag no flagged owned companies
+	            UPDATE doc1 WITH {ofac_santioned: "100 %"} IN ofac_ownership_relation//
+	            LIMIT 1000
+	      COLLECT WITH COUNT INTO length
+	RETURN    {doc1id,owner_ofac_value}
+	\end{verbatim}
+	
+		\item \textbf{set\_wcs\_02}\label{query12}
+	\begin{verbatim}
+	FOR doc1 IN ofac_ownership_relation
+	   LET doc1id = doc1._to//identifier of owned
+	   LET ofac_ownerID1 = doc1.owner_businessRegisterNumber//identifier of owner
+	   LET ofac_ownedID1 = doc1.owned_businessRegisterNumber//identifier of owner
+	   LET sanction_value = doc1.ofac_santioned//checking if there is previous sanction flag
+	      FOR doc2 in egrul_data_collection
+	      LET doc2id = doc2._id
+	      FILTER doc1id == doc2id
+	      LET businessRegisterNumber = doc2.businessRegisterNumber.literal
+	      //with the company identified, we proceed to coount ownerships if any
+	      LET founders = doc2.informationAboutFounders.founder
+	      LET founder_size = length(founders)
+	      LET founderIndividuals = doc2.informationAboutFounders.founderIndividual
+	      LET founderIndividual_size = length(founderIndividuals)
+	      LET InvestmentFunds = doc2.informationAboutFounders.unitInvestmentFund
+	      LET InvestmentFund_size = length(InvestmentFunds)
+	      LET foundersForeign  = doc2.informationAboutFounders.founderForeign
+	      LET founderForeign_size = length(foundersForeign)
+	      LET founderMunicipalties = doc2.informationAboutFounders.founderMunicipalty
+	      LET founderMunicipalty_size = length(founderMunicipalties)
+	      //counting share per kind of owner
+	      //we chek there is at least one founder owner 
+	      filter founder_size > 0
+	      LET founder_share = (
+	         for founder in founders
+	         LET share_size  = founder.founderShare.sizeOfShares.sizeOfSharePercentage
+	         filter share_size != null
+	         COLLECT commited_founder = share_size
+	         RETURN commited_founder
+	      )
+	      LET sum_founder_share = SUM(founder_share)
+	      FILTER (sum_founder_share < 50 and sum_founder_share >=0)
+	      //giving that company owner have a value less than 50, 
+	      //and bigger that 0, then we try ti find an undetermined value of shares
+	      //that means a company with declared shares less than 100 %. 
+	      //counting shares of individuals
+	      LET individual_share = (
+	      FILTER founderIndividuals != null
+	          for individual in founderIndividuals
+	          LET share_individual  = individual.founderShare.sizeOfShares.
+	          sizeOfSharePercentage
+	          filter share_individual != null
+	          COLLECT commited_individual = share_individual
+	          RETURN commited_individual
+	       )
+	      LET sum_individual_share = SUM(individual_share)
+	      //counting shares of investment found
+	      LET InvestmentFund_share = (
+	      FILTER InvestmentFunds != null
+	      for InvestmentFund in InvestmentFunds
+	         LET share_InvestmentFund  = InvestmentFund.founderShare.sizeOfShares.
+	         sizeOfSharePercentage
+	         filter share_InvestmentFund != null
+	         COLLECT commited_InvestmentFund = share_InvestmentFund
+	         RETURN commited_InvestmentFund
+	      )
+	      LET sum_InvestmentFund_share = SUM(InvestmentFund_share)
+	      //counting shares of foundersForeign
+	      LET foundersForeign_share = (
+	      FILTER foundersForeign != null
+	      for founderForeign in foundersForeign
+	         LET share_founderForeign  = founderForeign.founderShare.sizeOfShares.
+	         sizeOfSharePercentage
+	         filter share_founderForeign != null
+	         COLLECT commited_foundersForeign = share_founderForeign
+	         RETURN commited_foundersForeign
+	      )
+	      LET sum_foundersForeign_share = SUM(foundersForeign_share)
+	     //counting shares of municipality
+	      LET founderMunicipalties_share = (
+	      FILTER founderMunicipalties != null
+	      for founderMunicipalty in founderMunicipalties
+	         LET share_founderMunicipalty  = founderMunicipalty.founderShare.sizeOfShares.
+	         sizeOfSharePercentage
+	         filter share_founderMunicipalty != null
+	         COLLECT commited_founderMunicipalty = share_founderMunicipalty
+	         RETURN commited_founderMunicipalty
+	      )
+	      LET sum_founderMunicipalties_share = SUM(founderMunicipalties_share)
+	      LET total = sum_founder_share+
+	      sum_individual_share+
+	      sum_InvestmentFund_share+
+	      sum_foundersForeign_share+
+	      sum_founderMunicipalties_share
+	      FILTER total == 0
+	      LET terminated = doc2.informationAboutTermination
+	      //check it is not previously sanctioned
+	      LET ofac_status_array = 
+	      (
+	      FOR doc4 IN ofac_ownership_relation//previous relation link
+	         LET doc4id = doc4.owned_businessRegisterNumber
+	         FILTER businessRegisterNumber == doc4id
+	         LET ofac_status = doc4.ofac_santioned
+	         RETURN ofac_status//ofac_commited_share//length
+	      )
+	      LET status_ofac = ofac_status_array[0]
+	      filter status_ofac != null//current owner must be sanctioned
+	      filter sanction_value == null//current company must not be sanctioned
+	      UPDATE doc1 WITH {ofac_santioned: "wcs2"} IN ofac_ownership_relation//
+	      LIMIT 10
+	RETURN    {status_ofac, total }//
+	\end{verbatim}
+	
+	\item \textbf{set\_wcs\_03}\label{query13}
+	\begin{verbatim}
+	//set ofac wcs_03
+	FOR doc1 IN ofac_ownership_relation
+	   LET doc1id = doc1._to//identifier of owned
+	   LET ofac_ownerID1 = doc1.owner_businessRegisterNumber//identifier of owner
+	   LET ofac_ownedID1 = doc1.owned_businessRegisterNumber//identifier of owner
+	   LET sanction_value = doc1.ofac_santioned//checking if there is previous sanction flag
+	      FOR doc2 in egrul_data_collection
+	      LET doc2id = doc2._id
+	      FILTER doc1id == doc2id
+	      LET businessRegisterNumber = doc2.businessRegisterNumber.literal
+	      //with the company identify, we proceed to coount ownerships if any
+	      LET founders = doc2.informationAboutFounders.founder
+	      LET founder_size = length(founders)
+	      LET founderIndividuals = doc2.informationAboutFounders.founderIndividual
+	      //owned id as businessRegisterNumber
+	      LET founderIndividual_size = length(founderIndividuals)
+	      LET InvestmentFunds = doc2.informationAboutFounders.unitInvestmentFund
+	      //owned id as businessRegisterNumber
+	      LET InvestmentFund_size = length(InvestmentFunds)
+	      LET foundersForeign  = doc2.informationAboutFounders.founderForeign
+	      LET founderForeign_size = length(foundersForeign)
+	      LET founderMunicipalties = doc2.informationAboutFounders.founderMunicipalty
+	      LET founderMunicipalty_size = length(founderMunicipalties)
+	      //counting share per kind of owner
+	      //we chek there is at least one founder owner 
+	      filter founder_size > 0
+	      LET founder_share = (
+	         for founder in founders
+	         LET share_size  = founder.founderShare.sizeOfShares.sizeOfSharePercentage
+	         filter share_size != null
+	         COLLECT commited_founder = share_size
+	         RETURN commited_founder
+	      )
+	      LET sum_founder_share = SUM(founder_share)
+	      FILTER (sum_founder_share < 50 and sum_founder_share >=0)
+	      //giving that company owner have a value less than 50, 
+	      // and bigger that 0, then we try ti find an undetermined value of shares
+	      //that means a company with declared shares less than 100 %. 
+	      //counting shares of individuals
+	      LET individual_share = (
+	      FILTER founderIndividuals != null
+	      for individual in founderIndividuals
+	         LET share_individual  = individual.founderShare.sizeOfShares.
+	         sizeOfSharePercentage
+	         filter share_individual != null
+	         COLLECT commited_individual = share_individual
+	         RETURN commited_individual
+	      )
+	      LET sum_individual_share = SUM(individual_share)
+	      //counting shares of investment found
+	      LET InvestmentFund_share = (
+	      FILTER InvestmentFunds != null
+	      for InvestmentFund in InvestmentFunds
+	         LET share_InvestmentFund  = InvestmentFund.founderShare.sizeOfShares.
+	         sizeOfSharePercentage
+	         filter share_InvestmentFund != null
+	         COLLECT commited_InvestmentFund = share_InvestmentFund
+	      RETURN commited_InvestmentFund
+	      )
+	      LET sum_InvestmentFund_share = SUM(InvestmentFund_share)
+	      //counting shares of foundersForeign
+	      LET foundersForeign_share = (
+	      FILTER foundersForeign != null
+	      for founderForeign in foundersForeign
+	         LET share_founderForeign  = founderForeign.founderShare.sizeOfShares.
+	         sizeOfSharePercentage
+	         filter share_founderForeign != null
+	         COLLECT commited_foundersForeign = share_founderForeign
+	         RETURN commited_foundersForeign
+	      )
+	      LET sum_foundersForeign_share = SUM(foundersForeign_share)
+	      //counting shares of municipality
+	      LET founderMunicipalties_share = (
+	      FILTER founderMunicipalties != null
+	      for founderMunicipalty in founderMunicipalties
+	         LET share_founderMunicipalty  = founderMunicipalty.founderShare.sizeOfShares.
+	         sizeOfSharePercentage
+	         filter share_founderMunicipalty != null
+	         COLLECT commited_founderMunicipalty = share_founderMunicipalty
+	         RETURN commited_founderMunicipalty
+	      )
+	      LET sum_founderMunicipalties_share = SUM(founderMunicipalties_share)
+	      LET total = sum_founder_share+
+	      sum_individual_share+
+	      sum_InvestmentFund_share+
+	      sum_foundersForeign_share+
+	      sum_founderMunicipalties_share
+	      LET diff = 100 - total
+	      LET wcs3 = sum_founder_share + diff
+	      FILTER (total < 100 and wcs3 > 50)
+	      LET terminated = doc2.informationAboutTermination
+	      FILTER terminated == null//if terminated, nothing else to do
+	      //check it is not previously sanctioned
+	      LET ofac_status_array = 
+	      (
+	      FOR doc4 IN ring2_ofac_ownership_relation//previous relation link
+	         LET doc4id = doc4.owned_businessRegisterNumber
+	         FILTER businessRegisterNumber == doc4id
+	         LET ofac_status = doc4.ofac_santioned
+	         RETURN ofac_status 
+	      )
+	      LET status_ofac = ofac_status_array[0]
+	      FILTER status_ofac != null
+	      FILTER sanction_value == null
+	UPDATE doc1 WITH {ofac_santioned: "wcs3"} IN ofac_ownership_relation//
+	LIMIT 10
+	COLLECT WITH COUNT INTO length
+	RETURN    length//
+	\end{verbatim}
+	
+	
+	
+\end{enumerate}
+
+

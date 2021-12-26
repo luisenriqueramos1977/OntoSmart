@@ -37,11 +37,11 @@
 \makeatletter
 \renewcommand{\maketitle}{
 	\noindent
-		{\huge  \bf \href{https://www.pst.ag/}{PST, AG} }  \newline 
-		{\footnotesize Frauentorstraße 3} \newline
-		{\footnotesize Weimar, Germany} \newline
-		D - 99423 Weimar \hfill \newline
-	 .{\Large \hfill \@date}
+		%%{\huge  \bf \href{https://www.pst.ag/}{PST, AG} }  \newline 
+		%%{\footnotesize Frauentorstraße 3} \newline
+		{\footnotesize Maracay, Venezuela} \newline
+		%%D - 99423 Weimar \hfill \newline
+	 .{\Large \hfill January, 2016}
 \begin{center}
 \pagestyle{empty}
 \phantom{.}  %necessary to add space on top before the title
@@ -53,7 +53,7 @@
 \vspace{4.5cm}
 
 %if you want something in the bottom of the page just use /vfill before that.
-{ Document Version: 01-01}   \\[1cm] 
+{ Document Version: 0.1}   \\[1cm] 
 
 \end{center}
 
@@ -99,101 +99,42 @@
 
 
 
-\title{OFAC Rules Implementation with ArangoDB}  % you can actually insert these directly above if you prefer.
+\title{Onto\textit{Smart} Applied in the Manufacturing Domain}  % you can actually insert these directly above if you prefer.
 \date{\today}
 
 
 %insert header figure
 \setlength\headheight{26pt} 
 
-\rhead{\includegraphics[width=3cm]{pst_header.png}}
+%%\rhead{\includegraphics[width=3cm]{pst_header.png}}
 
 %\lhead{Page \thepage}
 %\rfoot{Page \thepage}
 %\lfoot{Page \thepage}
-
-\fancyfoot[C]{%
-	\tiny
-	\begin{tabular}{m{2.0cm}m{4.0cm}m{1.5cm}m{1.5cm}m{1.3cm}m{2.0cm}m{1.8cm} }
-		\underline{Address}  
-		&  
-		\underline{Board} 
-		&
-		\underline{Bank Details}
-		&
-		\underline{Tax Number}
-		&
-		\underline{District Court}
-		&
-		\underline{Telephone}
-		&
-		\underline{Website}
-		\\
-		PST AG
-		&   
-		Peter Piehler
-		&
-		Sparkasse Jena
-		&
-		161/100/04145
-		& 
-		Weimar
-		&
-		+49(0)3641/8761070
-		&
-		\href{https://www.pst.ag}{\nolinkurl{www.pst.ag}}
-		\\
-		Frauentorstraße 3
-		Weimar, Germany 99423           
-	&
-	\underline{Chairman of the Supervisory Board}
-	Dr. Eberhard Piehler
-	&
-	Account 31062
-	BLZ 830 530 30
-	&
-	Ust-IdNr
-	DE 255 835 30
-	&
-	HRB
-	501825
-	&
-	\underline{Fax}
-	+49(0) 3641/8761071
-	&
-	\underline{E-Mail}
-	info@pst.ag
-		\\ %%removed \ from \Absender
-		. 
-	&
-	&
-	&
-	&
-	&
-	&
-	\includegraphics[width=1cm]{red_triangle.png}\\
-	\end{tabular}
-}
-
 % Generate the glossary
 
 \makeglossaries
-\loadglsentries{accronims}
+\loadglsentries{myglossary}
+
 
 
 \begin{document}
     \maketitle
     \tableofcontents
+    \include{changes}
     \include{section1}
-    \appendix
-    \chapter{List of Queries}
-    \input{queries}
-    \chapter{Ownership Output}
-    \input{ownership_rings}
-    \chapter{OFAC Santioned Ownerships}
-    \input{ofac_table}
-    \chapter{Worst Case Scenario Results}
-    \input{wcs_table}
+    \include{methodology}
+    \include{results}
+    
+%%    \appendix
+%%    \chapter{List of Queries}
+  %%  \input{queries}
+    %%\chapter{Ownership Output}
+    %%\input{ownership_rings}
+    %%\chapter{OFAC Santioned Ownerships}
+    %%\input{ofac_table}
+    %%\chapter{Worst Case Scenario Results}
+    %%\input{wcs_table}
     
    \printglossaries
 \end{document}

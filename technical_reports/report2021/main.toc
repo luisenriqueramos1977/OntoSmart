@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {1}Changes}{3}{section.0.1}%
+\contentsline {section}{\numberline {2}Report Scope}{4}{section.0.2}%
+\contentsline {section}{\numberline {3}Dataset Characterization}{4}{section.0.3}%
+\contentsline {section}{\numberline {4}Ownership Algorithm}{7}{section.0.4}%
+\contentsline {section}{\numberline {5}OFAC Rules Implementation}{12}{section.0.5}%
+\contentsline {subsection}{\numberline {5.1}OFAC 100 \%}{12}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {5.2}OFAC 50 \%}{12}{subsection.0.5.2}%
+\contentsline {subsection}{\numberline {5.3}OFAC by Aggregation}{13}{subsection.0.5.3}%
+\contentsline {subsection}{\numberline {5.4}Ofac Ownership Relation Data Model}{13}{subsection.0.5.4}%
+\contentsline {section}{\numberline {6}Worst Case Scenarios}{15}{section.0.6}%
+\contentsline {section}{\numberline {7}Conclusions}{17}{section.0.7}%
+\contentsline {chapter}{\numberline {A}List of Queries}{19}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Ownership Output}{31}{appendix.B}%
+\contentsline {chapter}{\numberline {C}OFAC Santioned Ownerships}{32}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Worst Case Scenario Results}{33}{appendix.D}%
