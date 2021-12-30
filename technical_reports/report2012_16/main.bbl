@@ -1,0 +1,83 @@
+\begin{thebibliography}{10}
+
+\bibitem{abdul-ghafour_common_2007}
+Samer Abdul-Ghafour, Parisa Ghodous, Behzad Shariat, and Eliane Perna.
+\newblock A {Common} {Design}-{Features} {Ontology} for {Product} {Data}
+  {Semantics} {Interoperability}.
+\newblock In {\em Proceedings of the {IEEE}/{WIC}/{ACM} {International}
+  {Conference} on {Web} {Intelligence}}, pages 443--446. IEEE Computer Society,
+  2007.
+\newblock Available at
+  \url{http://portal.acm.org/citation.cfm?id=1331888&dl=GUIDE&coll=GUIDE&CFID=86829175&CFTOKEN=89177860}.
+
+\bibitem{andersen_building_2007}
+Odd Andersen and George Vasilakis.
+\newblock Building an ontology of cad model information.
+\newblock In Geir Hasle, Knut-Andreas Lie, and Ewald Quak, editors, {\em
+  Geometric Modelling, Numerical Simulation, and Optimization}, pages 11--40.
+  Springer Berlin Heidelberg, 2007.
+\newblock Available at
+  \url{http://www.springerlink.com/content/qx4r21362gu59632/abstract/}.
+
+\bibitem{borgo_role_2004}
+Stefano Borgo and Paulo Leitão.
+\newblock The role of foundational ontologies in manufacturing domain
+  applications.
+\newblock {\em LNCS}, 3290/2004:670--688, 2004.
+\newblock Available at
+  \url{http://www.springerlink.com/content/rg5le0daa3vpd5w0/}.
+
+\bibitem{dorr_cad-cam_1987}
+Hans~J. Dorr.
+\newblock {\em CAD-CAM zwischen Traum und Wirklichkeit}.
+\newblock RKW, 1987.
+
+\bibitem{lastra_ontologies_2009}
+Jose L.~Martinez Lastra and Ivan~M. Delamer.
+\newblock Ontologies for {Production} {Automation}.
+\newblock In {\em Advances in {Web} {Semantics} {I}: {Ontologies}, {Web}
+  {Services} and {Applied} {Semantic} {Web}}, pages 276--289. Springer-Verlag,
+  2009.
+\newblock Available at \url{http://portal.acm.org/citation.cfm?id=1505694}.
+
+\bibitem{lemaignan_mason:_2006}
+S.~Lemaignan, A.~Siadat, J.-Y. Dantan, and A.~Semenenko.
+\newblock {MASON}: {A} {Proposal} {For} {An} {Ontology} {Of} {Manufacturing}
+  {Domain}.
+\newblock In {\em Distributed {Intelligent} {Systems}: {Collective}
+  {Intelligence} and {Its} {Applications}, 2006. {DIS} 2006. {IEEE} {Workshop}
+  on}, pages 195--200, 2006.
+\newblock Available at \url{10.1109/DIS.2006.48}.
+
+\bibitem{martin_design_2003}
+Patrick Martin and Alain D'Acunto.
+\newblock Design of a production system: an application of integration
+  product-process.
+\newblock {\em International Journal of Computer Integrated Manufacturing},
+  16(7):509, 2003.
+\newblock Available at
+  \url{http://www.informaworld.com/10.1080/0951192031000115831}.
+
+\bibitem{radhakrishnan_design_1996}
+Raj Radhakrishnan, Araya Amsalu, Mehran Kamran, and B.~O. Nnaji.
+\newblock Design rule checker for sheet metal components using medial axis
+  transformation and geometric reasoning.
+\newblock {\em Journal of Manufacturing Systems}, 15(3), 1996.
+\newblock Available at
+  \url{http://www.sciencedirect.com/science/article/B6VJD-3WCSYR5-4/2/d9445ad0e020aaf6eddebabf222d77dd}.
+
+\bibitem{ramos_hetereogeneous_2012}
+Luis Ramos.
+\newblock Hetereogeneous {Logics} for {Semantic} {Manufacturing}.
+\newblock volume 886, page~73, Graz, Austria, July 2012. CEUR.
+\newblock Available at \url{http://ceur-ws.org/Vol-886/}.
+
+\bibitem{ramos_ontology-based_2011}
+Luis Ramos, Alexander García, and John Bateman.
+\newblock Ontology-{Based} {Features} {Recognition} and {Design} {Rules}
+  {Checker} {System}.
+\newblock Bonn, Germany, 2011.
+\newblock Available at
+  \url{http://iswc2011.semanticweb.org/fileadmin/iswc/Papers/Workshops/OCAS/99990048.pdf}.
+
+\end{thebibliography}

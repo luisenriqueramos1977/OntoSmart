@@ -51,33 +51,15 @@ At this point we should have one of the following options available:
 	
 \end{itemize}
 
-After having a modular structure, we have to evaluate the necessity of \textbf{axiomatization}. That is because from the intended use of ontology, it is possible to draft the axiomatization requirements for our ontology or ontologies. In this case we need to define whether or not we need lightweight or a heavyweight ontology\footnote{https://github.com/luisenriqueramos1977/OntoSmart/wiki/Axiomatization}. As we indicated above, the existence of heavyweight ontologies indicates that the axiomatization process should be carefully considered in order to determine if the target language constructors are expressive enough to reach the expressiveness level required to fulfill our requirements. We have to be aware of the presence of n-ary relations (higher than binary), mereotopological relations, procedural reasoning and different unit systems. The  aforementioned  requirements  could possibly  enhance the expressiveness level of any language using them in a higher level. If any of them are present in the ontology or ontologies, limiting the full implementation of our model, then we should proceed with the \textbf{hetereogenity}\footnote{https://github.com/luisenriqueramos1977/OntoSmart/wiki/Heterogeneity} Building Block to determine if a heterogeneous layer is required. Otherwise, we can proceed with system implementation. In the \textbf{Implementation} Building Block, as most of Ontology methodologies, we should implement the developed ontology. However in this case, given that this methodology is centered in reutilization, it is highly likely that we should just have our ontology or ontologies developed in an ontology language. 
-
-
-
-
-
-
-
-
-
-\subsection{Ontology Model and Evaluation Neccesity}\label{3.2.4}
-
-Ontology corresponds to a simplified model of reality, which is additionally proposed to be used as an interoperability artifact; this last requirement means that ontology should be reused within  a given domain or a set of related or overlapping domains. We can then assign a quality attribute to our ontology as we currently do with any other artifact,  offering the final user a reference of the quality of the ontology as a reusable product. 
-
-In science, quality measurement is mostly related to variables of \textit{accuracy} and \textit{precision}.  In regard to ontology quality measurement, there is no general agreement on what has to be measured, whether ontology is a product or a given application based on ontology. According to our criteria, the   lack of agreement of quality measurement occurs because of the categorization of ontology presented in Fig. \ref{figure2-1}. Meaning that some ontologies are not developed to be used directly in applications, limiting their evaluation in an application-centered approach, while others are developed for a given application. Therefore, we divide our evaluation process as follows:
+After having a modular structure, we have to evaluate the necessity of \textbf{axiomatization}. That is because from the intended use of ontology, it is possible to draft the axiomatization requirements for our ontology or ontologies. In this case we need to define whether or not we need lightweight or a heavyweight ontology\footnote{https://github.com/luisenriqueramos1977/OntoSmart/wiki/Axiomatization}. As we indicated above, the existence of heavyweight ontologies indicates that the axiomatization process should be carefully considered in order to determine if the target language constructors are expressive enough to reach the expressiveness level required to fulfill our requirements. We have to be aware of the presence of n-ary relations (higher than binary), mereotopological relations, procedural reasoning and different unit systems. The  aforementioned  requirements  could possibly  enhance the expressiveness level of any language using them in a higher level. If any of them are present in the ontology or ontologies, limiting the full implementation of our model, then we should proceed with the \textbf{hetereogenity}\footnote{https://github.com/luisenriqueramos1977/OntoSmart/wiki/Heterogeneity} Building Block to determine if a heterogeneous layer is required. Otherwise, we can proceed with system implementation. In the \textbf{Implementation} Building Block, as most of Ontology methodologies, we should implement the developed ontology. However in this case, given that this methodology is centered in reutilization, it is highly likely that we should just have our ontology or ontologies developed in an ontology language. Finally, in the \textbf{System Evaluation} Building Block, we aim at assigning a quality attribute to our ontology as we currently do with any other artifact,  offering the final user a reference of the quality of the ontology as a reusable product. Here, we propose to divide our evaluation process as follows:
 
 
 \begin{enumerate}
-	
 	\item[1].	 Evaluation based on the inputs, product and development process
 	This evaluation is self-subdivided into the following stages:
-	
-
 	\begin{enumerate}
 		
 		\item[a.] Input quality assurance, through the input ontology evaluation procedure.
-		
 		\item[b.] Structure measurement, implementing the metrics recommended   by \cite{manouselis_exploring_2010}. These authors are of the criteria that empirical studies are needed to validate how different metrics are capable of judging deciding about quality properties and their interpretation. They developed a tool called Ontometrics, which considered metrics indicators such as Number of classes (noc), Number of Instances (noi), Number of Properties (nop), Number of Root Classes (norc), Number of leaf Classes (nolc), Averagea Population (ap), among others. 
 		
 		\item[c.] Modularity  , as a criterion to classify patterns, is mostly to provide judgment about quality.  Considered that implanting wrong patterns will affect the quality of the system as a whole. \cite{randelli_introducing_2010}.
@@ -95,27 +77,13 @@ In science, quality measurement is mostly related to variables of \textit{accura
 		
 		\item[a.] If the answer to a query, or to carry out some task can  be done  through ontology, or consultation is required  for other ontologies in order to provide the required answer, or carry out the task.   
 		
-		\item[b.] If a decidable language is required to  execute  the corresponding tasks, but the chosen languages are not expressive enough to represent the required knowledge in the knowledgebase, such scenario will obligue us to consider a  heterogeneous framework. .  
+		\item[b.] If a decidable language is required to  execute  the corresponding tasks, but the chosen languages are not expressive enough to represent the required knowledge in the knowledgebase, such scenario will oblige us to consider a  heterogeneous framework. .  
 		
 	\end{enumerate}
 	
 \end{enumerate}
 
 
-\section{A Semantic Framework}\label{section3.3}
+In this Section we presented a new methodology that integrates two fundamental approaches into the Ontological Engineering, those are modularity and heterogeneity. This methodology initiates with a quality assurance procedure, followed by specific method to decide when modularity and heterogeneity are required. We provides tools to support the workflow along the methodology. Furthermore,  we introduced some required technologies for implementing the proposed methodology. 
 
-Ontologies were initially introduced as part of the overall system architecture depicted in Fig. \ref{figure2-7}, which means they are not isolated artifacts. In fact, for implementing an ontology based system, it is necessary to deal with related technologies presented in building blocks included in the aforementioned Figure.  Moreover, if there are several interacting ontologies, written with different ontology languages, and logics then it is possible that any ontology shall require a respective architectural structure for being hosted and for interfacing with other ontologies within a Semantic Framework . This Semantic Framework was named by \cite{berners-lee_semantic_2001} as Semantic Web . 
-
-In this subsection we introduce architectures that allows us to deal with ontologies within the Semantic Web, and a general criterion  for using them in applications. 
-
-
-
-
-
-
-
-
-
-In this Chapter we proposed a new methodology that integrates two fundamental approaches into the Ontological Engineering, those are modularity and heterogeneity. This methodology initiates with a quality assurance procedure, followed by specific method to decide when modularity and heterogeneity are required. We provides tools to support the workflow along the methodology. Furthermore,  we introduced some required technologies for implementing the proposed methodology. 
-
-In next Chapter, we will present the results of implementing the just described methodology in the domain of manufacturing.
+In next Section, we will present the results of implementing the just described methodology in an use case of manufacturing.

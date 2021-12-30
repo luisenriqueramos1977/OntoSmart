@@ -1,14 +1,14 @@
-\chapter{RESULTS}\label{chapter4}
+\section{RESULTS}\label{chapter4}
 
-In this Chapter we will go throughout the steps proposed in the methodology depicted in Fig. \ref{figure3-1} of Section \ref{section3.1}. The motivation for this methodology comes from the integration of the ontology methodologies described in Section \ref{subsection2.2.6}, and the heterogeneity approach introduced in Section \ref{figure2-3}. The general steps are domain specification or definition, deciding about modularity, deciding about heterogeneity, implementation and evaluation. We will address each in turn. 
+In this Section we will go throughout the steps proposed in the methodology depicted in Fig. \ref{figure3-1} of Section \ref{methodology}. The general steps are domain specification or definition, deciding about modularity, deciding about heterogeneity, implementation and evaluation. We will address each in turn. 
 
 
 
-\section{Initial Activities }\label{section4.1}
+\subsection{Initial Activities }\label{section4.1}
 
-Manufacturing has been our discussion topic from the Introduction to now. However, given that several types of products can be included under this topic, we consider it necessary to define the scope as accurately as possible. This work  focuses on products that can be represented through a specific geometry. The products to be considered will therefore be goods (mechanical parts), not services, which consist of one, two or three-dimensional parts, and can be modeled with CAD tools, and manufactured with a set of automatic machine tools. This might require the interaction of various machines to obtain the finished product. Moreover, it should be possible to modify the final product in order to fulfill all the customers’ possible demands.
+Manufacturing has been our discussion topic from the Introduction to now. However, given that several types of products can be included under this topic, we consider it necessary to define the scope as accurately as possible. This work  focuses on products that can be represented through a specific geometry. The products to be considered will be therefore goods (mechanical parts), not services, which consist of one, two or three-dimensional parts, and can be modeled with CAD tools, and manufactured with a set of automatic machine tools. This might require the interaction of various machines to obtain the finished product. Moreover, it should be possible to modify the final product in order to fulfill all the customers’ possible demands.
 
-The automation to be discussed will cover the automatic validation of designs based on machine and product features, as well as production restrictions  in order to improve productivity and reduce time to markets \citep{dorr_cad-cam_1987}.No code will be generated to program any specific commercial machine. Instead: the existing upper ontologies which have been developed and that can be useful for the stated objectives will be used following the basic ontology reuse principle. The complete life cycle of the product will also not be covered as well, where  interaction with customers, distribution or logistics of the product and marketing behavior will not be addressed. These issues can be considered for future work where the complete life cycle of the product will be covered.
+The automation to be discussed will cover the automatic validation of designs based on machine and product features, as well as production restrictions  in order to improve productivity and reduce time to markets \cite{dorr_cad-cam_1987}.No code will be generated to program any specific commercial machine. Instead: the existing upper ontologies which have been developed and that can be useful for the stated objectives will be used following the basic ontology reuse principle. The complete life cycle of the product will also not be covered as well, where  interaction with customers, distribution or logistics of the product and marketing behavior will not be addressed. These issues can be considered for future work where the complete life cycle of the product will be covered.
 
 \subsection{Domain Specifications }\label{4.1.1}
 
@@ -19,16 +19,14 @@ We now present some examples of possible scenarios that can arise when dealing w
 \begin{itemize}
 	
 	\item \textbf{Scenario 1}: When a designer creates a new product, it is a common fact that the designer is only focused on the functionality from the user’s point of view. As soon as the product design  is completed, it is sent to the manufacturing engineer who may determine that the product cannot be manufactured due to factory restrictions. Consequently, the designer has to modify the design in order to accommodate the given recommendation. 
-	\item \textbf{Scenario 2}: A manufacturing engineer needs to generate a process plan for a new or modified product, based on a digital design of the product itself. Most of the time  engineers use   their own experience and knowledge about the facility, machines and raw materials. For instance, the designer may decide to use a new raw material due to its higher corrosion resistance, but without having the possibility of indicating in the digital design that such raw material has a higher mechanical   resistance. As the manufacturing engineer does not see any change in shape, producing   waste of raw material, because of the lack of information exchange between designer and manufacturer. Furthermore, as we indicated in Section \ref{section2.1}, the workflow described in this scenario is mostly carried out in an automatic or semiautomatic manner, thus human intervention is reduced. Of course, reducing human intervention we increase productivity, although certain type of issues are harder to find by current information systems. Consequently, design mistakes can affect the manufacturing process production can waste raw materials. 
+	\item \textbf{Scenario 2}: A manufacturing engineer needs to generate a process plan for a new or modified product, based on a digital design of the product itself. Most of the time  engineers use   their own experience and knowledge about the facility, machines and raw materials. For instance, the designer may decide to use a new raw material due to its higher corrosion resistance, but without having the possibility of indicating in the digital design that such raw material has a higher mechanical   resistance. As the manufacturing engineer does not see any change in shape, producing   waste of raw material, because of the lack of information exchange between designer and manufacturer. Furthermore, the workflow described in this scenario is mostly carried out in an automatic or semiautomatic manner, thus human intervention is reduced. Of course, reducing human intervention we increase productivity, although certain type of issues are harder to find by current information systems. Consequently, design mistakes can affect the manufacturing process production can waste raw materials. 
 	
 	\item \textbf{Scenario 3}: A group of investors is interested in offering a new product because market research has demonstrated that the product is highly innovative, and is likely to be well accepted. These investors also know that the technical resources (raw material and machinery) are going to have a high cost, requiring a detailed cost evaluation to determine its profitability. Furthermore, investors also know that market competition has the same information, and they require to make their decisions on producing it, and if favorable, place the product on the market as soon as possible. Therefore, an economical evaluation of the project is urgently required, and gathering information from several distributed sources becomes indispensable. 
-	
-	
 	
 \end{itemize}
 
 
-In Section \ref{section2.4} we described how some authors integrate ontology and the semantic web into the manufacturing domain. Despite the benefits of the research listed, in Section \ref{subsection2.4.3} we included a group of issues relating to ontology and manufacturing that remain open to date. Then, considering the three scenarios described above, we can declare our ontology specific objectives as follows:
+Considering the three scenarios described above, we can declare our ontology specific objectives as follows:
 
 
 \begin{itemize}
@@ -43,7 +41,7 @@ In Section \ref{section2.4} we described how some authors integrate ontology and
 
 \subsection{Competency Questions}\label{4.1.2}
 
-As discussed and explained in Section \ref{subsection2.2.6} the task of posing competency questions is common to all ontological methodologies.  Competency questions are considered as a guide that help define the domain more accurately and a way to obtain application objectives. So, we assume that ontology or ontologies should support the ability to find answers to the corresponding questions. Accordingly, for specific ontologies relevant for our identified goal of providing semantic manufacturing support for physical products, our proposed questions can be listed below. We consider it necessary to remark that as this step is common to most ontology development methodologies, we have found many of the listed questions in previous researchs, for instance in the research of \cite{hepp_references_2013} and  \cite{radhakrishnan_design_1996}. Some further questions are integrated below based on the scenarios and objectives set out in Subsection \ref{4.1.1}:
+We found in previous researches many of the questions listed below, for instance in the research of \cite{hepp_references_2013} and  \cite{radhakrishnan_design_1996}. Some further questions are integrated below based on the scenarios and objectives set out in Subsection \ref{4.1.1}:
 
 \begin{itemize}
 	\item [CQ1]: is my digital design topologically correct?
@@ -65,7 +63,7 @@ As discussed and explained in Section \ref{subsection2.2.6} the task of posing c
 	
 \end{itemize}
 
-\cbstart In section \ref{subsection4.2.3} we will implement these CQ's into the respective ontology language of every selected ontology. Thus, according to the number of CQ's answered by ontlogy a quality metrics will be proposed. \cbend
+In Subsection \ref{subsection4.2.3} we will implement these \gls{cq}'s into the respective ontology language of every selected ontology. Thus, according to the number of \gls{cq}'s answered by ontology a quality metrics will be proposed.
 
 
 \subsection{Knowledge Acquisition}\label{4.1.3}
@@ -76,16 +74,16 @@ This stage is also a common task in ontology development. It seeks to obtain the
 \begin{enumerate}
 	\item Sources of manual knowledge extraction
 	
-	Knowledge was manually extracted from documental sources, such as brochures and datasheets. This type of documents is characterized because of their specificity  and length, mostly short documents of no more than one or two pages with specific information of products. It is necessary to mention that, in the manufacturing domain, expert domain knowledge is required for interpreting and analyzing  documents containing standard specifications.   
+	Knowledge was manually extracted from documentary sources, such as brochures and data-sheets. This type of documents is characterized because of their specificity  and length, mostly short documents of no more than one or two pages with specific information of products. It is necessary to mention that, in the manufacturing domain, expert domain knowledge is required for interpreting and analyzing  documents containing standard specifications.   
 	
-	Consequently, in this case the implicit knowledge is made explicit through listings, tabling and defining ontological elements (types, individuals, properties, etc.). This knowledge is used to develop an ontology of CAD and sheet metal parts features. 
+	Consequently, in this case the implicit knowledge is made explicit through listings, tabling and defining ontological elements (types, individuals, properties, etc.). This knowledge is used to develop an ontology of \gls{cad} and sheet metal parts features. 
 	
 	\item Sources of  automatic knowledge extraction.
 	
 	Knowledge automatically extracted from digital documents, which we divided into three categories:
 	
 	\begin{itemize}
-		\item Design standard files: Digital designs represented in DXF, IGES and STEP standards were used to automatically extract data and to populate the ontology. A previous manual review of the respective standards was necessary. 
+		\item Design standard files: Digital designs represented in \gls{dxf}, \gls{iges} and \gls{step} standards were used to automatically extract data and to populate the ontology. A previous manual review of the respective standards was necessary. 
 		
 		\item Ontology standard files: The ontology   languages mentioned in Section \ref{section2.2}, were RDF, RDFS, OWL, KIF and CASL, considered in the form of a specific ontology directly or indirectly related to the target domain. Thus, this analysis not only considered the encoded knowledge, but also the features of the respective language.
 		
@@ -160,12 +158,9 @@ This list of ontologies requires a certain level of quality assurance in order t
 	\end{center}
 \end{figure}
 
-\cbstart The ontologies listed in Table \ref{table4.1} were submitted to a particular quality assurance procedure as indicated in Subsection \ref{subsection3.2.1}. In that section we proposed to base this quality evaluation on the dimensiones: \textbf{verifiable}, \textbf{integrity},  \textbf{timeliness} and \textbf{reproducibility}. In order to quantify those parameters we built and proposed the questionnaire   shown in Appendix \ref{appendixd}. There, every dimension is presented with a list of weighted scenarios. The value of the scenario is ranging from 1 on an ideal situation to a lower value given to worse or less advantageous scenarios. For instance, in the case of the \textbf{Timeliness} dimension, we considered three possible timespaces for the publication of the ontology: less than two years ago, more than two years ago, but less than five years ago and more than fives years ago. Ontologies published less than two years ago received the highest degree, that is 1; while ontologies published more than five years ago received the worst degree, that is 0.5. The results permitted us determine the current quality level of each ontology. Fig. \ref{figure4-1} outlines the output of performing this preliminary evaluation. \cbend 
+The ontologies listed in Table \ref{table4.1} were submitted to a particular quality assurance procedure as indicated in Subsection \ref{subsection3.2.1}. In that section we proposed to base this quality evaluation on the dimensions: \textbf{verifiable}, \textbf{integrity},  \textbf{timeliness} and \textbf{reproducibility}. In order to quantify those parameters we built and proposed the questionnaire   shown in Appendix \ref{appendixd}. There, every dimension is presented with a list of weighted scenarios. The value of the scenario is ranging from 1 on an ideal situation to a lower value given to worse or less advantageous scenarios. For instance, in the case of the \textbf{Timeliness} dimension, we considered three possible timespaces for the publication of the ontology: less than two years ago, more than two years ago, but less than five years ago and more than fives years ago. Ontologies published less than two years ago received the highest degree, that is 1; while ontologies published more than five years ago received the worst degree, that is 0.5. The results permitted us determine the current quality level of each ontology. Fig. \ref{figure4-1} outlines the output of performing this preliminary evaluation. 
 
 According to the results shown here, Ontologies evaluated can be divided into three categories: those with a quality range [4, 3] were considered of high quality and passed to the next evaluation procedure. Ontologies with a quality range (3, 2] were considered of good quality and passed to the next stage. The ontologies within the range (2,0) were discarded.   
-
-
-
 
 
 

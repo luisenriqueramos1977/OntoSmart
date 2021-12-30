@@ -1,24 +1,22 @@
 \contentsline {section}{\numberline {1}Changes}{3}{section.0.1}%
 \contentsline {section}{\numberline {2}Report Scope}{4}{section.0.2}%
 \contentsline {section}{\numberline {3}Brief Methodology Description}{5}{section.0.3}%
-\contentsline {subsection}{\numberline {3.1}Ontology Model and Evaluation Neccesity}{7}{subsection.0.3.1}%
-\contentsline {section}{\numberline {4}A Semantic Framework}{8}{section.0.4}%
-\contentsline {chapter}{\numberline {1}RESULTS}{9}{chapter.1}%
-\contentsline {section}{\numberline {1}Initial Activities }{9}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1}Domain Specifications }{9}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.2}Competency Questions}{10}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.3}Knowledge Acquisition}{11}{subsection.1.1.3}%
-\contentsline {section}{\numberline {2}Finding and Measuring Ontology Quality}{12}{section.1.2}%
-\contentsline {subsection}{\numberline {2.1}Finding Ontologies}{12}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {2.2}First Quality Control}{12}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {2.3}Performing Competency Questions}{14}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {2.4}Mapping, merging and importing}{24}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {2.5}Hyper Modules Extraction}{35}{subsection.1.2.5}%
+\contentsline {section}{\numberline {4}RESULTS}{9}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}Initial Activities }{9}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {4.2}Domain Specifications }{9}{subsection.0.4.2}%
+\contentsline {subsection}{\numberline {4.3}Competency Questions}{10}{subsection.0.4.3}%
+\contentsline {subsection}{\numberline {4.4}Knowledge Acquisition}{11}{subsection.0.4.4}%
+\contentsline {section}{\numberline {5}Finding and Measuring Ontology Quality}{11}{section.0.5}%
+\contentsline {subsection}{\numberline {5.1}Finding Ontologies}{11}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {5.2}First Quality Control}{12}{subsection.0.5.2}%
+\contentsline {subsection}{\numberline {5.3}Performing Competency Questions}{16}{subsection.0.5.3}%
+\contentsline {subsection}{\numberline {5.4}Mapping, merging and importing}{24}{subsection.0.5.4}%
+\contentsline {subsection}{\numberline {5.5}Hyper Modules Extraction}{36}{subsection.0.5.5}%
 \contentsline {subsubsection}{Hyper module of Unit}{40}{section*.2}%
-\contentsline {subsubsection}{Hyper module of Product}{42}{section*.3}%
-\contentsline {subsubsection}{Hyper-module of the Process}{44}{section*.4}%
-\contentsline {subsubsection}{Hyper module of Features}{44}{section*.5}%
-\contentsline {subsubsection}{Hyper module of Curve}{49}{section*.6}%
-\contentsline {section}{\numberline {3}Between Light Weight and Heavy Weight Ontologies}{53}{section.1.3}%
-\contentsline {section}{\numberline {4}Implementing Heavyweight Ontologies}{56}{section.1.4}%
-\contentsline {section}{\numberline {5}Extending Ontologies through Heterogeneity}{62}{section.1.5}%
+\contentsline {subsubsection}{Hyper module of Product}{40}{section*.3}%
+\contentsline {subsubsection}{Hyper-module of the Process}{45}{section*.4}%
+\contentsline {subsubsection}{Hyper module of Features}{45}{section*.5}%
+\contentsline {subsubsection}{Hyper module of Curve}{50}{section*.6}%
+\contentsline {section}{\numberline {6}Between Light Weight and Heavy Weight Ontologies}{54}{section.0.6}%
+\contentsline {section}{\numberline {7}Implementing Heavyweight Ontologies}{57}{section.0.7}%
+\contentsline {section}{\numberline {8}Extending Ontologies through Heterogeneity}{63}{section.0.8}%

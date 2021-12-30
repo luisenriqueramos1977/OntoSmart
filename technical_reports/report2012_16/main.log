@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.26)  26 DEC 2021 15:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.26)  27 DEC 2021 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -615,24 +615,24 @@ File: l3backend-pdftex.def 2021-12-14 L3 backend support: PDF output (pdfTeX)
 (changes.aux) (section1.aux) (methodology.aux) (results.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
 \c@lstlisting=\count330
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
@@ -656,7 +656,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 121.
+Package hyperref Info: Link coloring ON on input line 119.
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -669,9 +669,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count337
 )
-LaTeX Info: Redefining \ref on input line 121.
-LaTeX Info: Redefining \pageref on input line 121.
-LaTeX Info: Redefining \nameref on input line 121.
+LaTeX Info: Redefining \ref on input line 119.
+LaTeX Info: Redefining \pageref on input line 119.
+LaTeX Info: Redefining \nameref on input line 119.
 
 (main.out) (main.out)
 \@outlinefile=\write5
@@ -679,7 +679,7 @@ LaTeX Info: Redefining \nameref on input line 121.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 121.
+(lastpage)             ! on input line 119.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -745,7 +745,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 
 pdfTeX warning: pdflatex.exe (file ./figure-chapterIII/figure3-22.pdf): PDF inc
 lusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figure-chapterIII/figure3-22.pdf, id=131, 795.33133pt x 614.65634pt>
+<figure-chapterIII/figure3-22.pdf, id=121, 795.33133pt x 614.65634pt>
 File: figure-chapterIII/figure3-22.pdf Graphic file (type pdf)
 <use figure-chapterIII/figure3-22.pdf>
 Package pdftex.def Info: figure-chapterIII/figure3-22.pdf  used on input line 1
@@ -757,174 +757,120 @@ Package pdftex.def Info: figure-chapterIII/figure3-22.pdf  used on input line 1
 
 ] [6 <./figure-chapterIII/figure3-22.pdf>]
 
-LaTeX Warning: Reference `figure2-1' on page 7 undefined on input line 68.
-
-
 LaTeX Warning: Citation `manouselis_exploring_2010' on page 7 undefined on inpu
-t line 81.
+t line 63.
 
 
 LaTeX Warning: Citation `randelli_introducing_2010' on page 7 undefined on inpu
-t line 83.
+t line 65.
 
 
 LaTeX Warning: Citation `spiliopoulos_discovery_2010' on page 7 undefined on in
-put line 85.
+put line 67.
 
-[7]
-
-LaTeX Warning: Reference `figure2-7' on page 8 undefined on input line 107.
-
-
-LaTeX Warning: Citation `berners-lee_semantic_2001' on page 8 undefined on inpu
-t line 107.
-
-) [8]
+[7]) [8]
 \openout2 = `results.aux'.
 
- (results.tex
-Chapter 1.
-
-LaTeX Warning: Reference `section3.1' on page 9 undefined on input line 3.
-
-
-LaTeX Warning: Reference `subsection2.2.6' on page 9 undefined on input line 3.
-
-
-
-LaTeX Warning: Reference `figure2-3' on page 9 undefined on input line 3.
-
-! Undefined control sequence.
-l.11 ...uctivity and reduce time to markets \citep
-                                                  {dorr_cad-cam_1987}.No cod...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.11 ...ty and reduce time to markets \citep{dorr_
-                                                  cad-cam_1987}.No code will...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.11 ... time to markets \citep{dorr_cad-cam_1987}
-                                                  .No code will be generated...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.12 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (1741.06682pt too wide) in paragraph at lines 11--12
-\OML/cmm/m/it/10 cam[]\OT1/cmr/m/n/10 987\OML/cmm/m/it/10 :Nocodewillbegenerate
-dtoprogramanyspecificcommercialmachine:Instead \OT1/cmr/m/n/10 : \OML/cmm/m/it/
-10 theexistingupperontologieswhichhavebeendevelopedandthatcanbeusefulforthestat
-edobjectiveswillbeusedfollowingthebasicontologyreuseprinciple:Thecompletelifecy
-cleoftheproductwillalsonotbecoveredaswell; whereinteractionwithcustomers; distr
-ibutionorlogisticsoftheproductandmarketingbehaviorwillnotbeaddressed:Theseissue
-scanbeconsideredforfutureworkwherethecompletelifecycleoftheproductwillbecovered
-:$ 
- []
-
-
-LaTeX Warning: Reference `section2.1' on page 9 undefined on input line 22.
-
-[9
-
+ (results.tex [9
 
 
 
 ]
 
-LaTeX Warning: Reference `section2.4' on page 10 undefined on input line 31.
+LaTeX Warning: Citation `hepp_references_2013' on page 10 undefined on input li
+ne 44.
 
 
-LaTeX Warning: Reference `subsection2.4.3' on page 10 undefined on input line 3
+! Package glossaries Error: Glossary entry `cq' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 ...on4.2.3} we will implement these \gls{cq}'
+                                                  s into the respective onto...
+
+You need to define a glossary entry before you can use it.
+
+
+! Package glossaries Error: Glossary entry `cq' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 ...Thus, according to the number of \gls{cq}'
+                                                  s answered by ontology a q...
+
+You need to define a glossary entry before you can use it.
+
+
+LaTeX Warning: Reference `subsection2.2.6' on page 10 undefined on input line 7
 1.
 
 
-LaTeX Warning: Reference `subsection2.2.6' on page 10 undefined on input line 4
-6.
+LaTeX Warning: Reference `figure2-11' on page 10 undefined on input line 71.
 
 
-LaTeX Warning: Citation `hepp_references_2013' on page 10 undefined on input li
-ne 46.
-
-
-LaTeX Warning: Citation `radhakrishnan_design_1996' on page 10 undefined on inp
-ut line 46.
+LaTeX Warning: Reference `figure2-12' on page 10 undefined on input line 71.
 
 [10]
-! Undefined control sequence.
-l.68 \cbstart
-              In section \ref{subsection4.2.3} we will implement these CQ's ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
-l.68 ...a quality metrics will be proposed. \cbend
+! Package glossaries Error: Glossary entry `dxf' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
                                                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+l.86 ... Digital designs represented in \gls{dxf},
+                                                   \gls{iges} and \gls{step}...
+
+You need to define a glossary entry before you can use it.
 
 
-LaTeX Warning: Reference `subsection2.2.6' on page 11 undefined on input line 7
-3.
+! Package glossaries Error: Glossary entry `iges' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 ...igns represented in \gls{dxf}, \gls{iges} 
+                                                  and \gls{step} standards w...
+
+You need to define a glossary entry before you can use it.
 
 
-LaTeX Warning: Reference `figure2-11' on page 11 undefined on input line 73.
+! Package glossaries Error: Glossary entry `step' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 ...d in \gls{dxf}, \gls{iges} and \gls{step} 
+                                                  standards were used to aut...
+
+You need to define a glossary entry before you can use it.
 
 
-LaTeX Warning: Reference `figure2-12' on page 11 undefined on input line 73.
+LaTeX Warning: Reference `section2.2' on page 11 undefined on input line 88.
 
 
-LaTeX Warning: Reference `section2.2' on page 11 undefined on input line 90.
+LaTeX Warning: Reference `subsection3.2.1' on page 11 undefined on input line 9
+9.
+
+
+LaTeX Warning: Reference `section2.4' on page 11 undefined on input line 99.
+
+
+LaTeX Warning: Reference `chapter3' on page 11 undefined on input line 106.
+
+
+LaTeX Warning: Reference `subsection3.2.1' on page 11 undefined on input line 1
+06.
 
 [11]
-
-LaTeX Warning: Reference `subsection3.2.1' on page 12 undefined on input line 1
-01.
-
-
-LaTeX Warning: Reference `section2.4' on page 12 undefined on input line 101.
-
-
-LaTeX Warning: Reference `chapter3' on page 12 undefined on input line 108.
-
-
-LaTeX Warning: Reference `subsection3.2.1' on page 12 undefined on input line 1
-08.
-
-
-LaTeX Warning: Citation `martin_design_2003' on page 12 undefined on input line
- 108.
-
-
-LaTeX Warning: Citation `lastra_ontologies_2009' on page 12 undefined on input 
-line 108.
-
 ! Undefined control sequence.
-l.123 		\toprule
+l.121 		\toprule
                  %
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -935,7 +881,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.124 ...n  Subdomain	& Language	& Year \\\toprule
+l.122 ...n  Subdomain	& Language	& Year \\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -943,57 +889,39 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<figure-chapterIV/fig4-1.pdf, id=196, 794.97pt x 614.295pt>
+<figure-chapterIV/fig4-1.pdf, id=193, 794.97pt x 614.295pt>
 File: figure-chapterIV/fig4-1.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-1.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-1.pdf  used on input line 157.
+Package pdftex.def Info: figure-chapterIV/fig4-1.pdf  used on input line 155.
 (pdftex.def)             Requested size: 397.48402pt x 307.14674pt.
-! Undefined control sequence.
-l.163 \cbstart
-               The ontologies listed in Table \ref{table4.1} were submitted ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 LaTeX Warning: Reference `subsection3.2.1' on page 12 undefined on input line 1
-63.
+61.
 
 
-LaTeX Warning: Reference `appendixd' on page 12 undefined on input line 163.
-
-! Undefined control sequence.
-l.163 ...rming this preliminary evaluation. \cbend
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Warning: Reference `appendixd' on page 12 undefined on input line 161.
 
 [12] [13 <./figure-chapterIV/fig4-1.pdf, page is rotated 90 degrees>]
-<figure-chapterIV/fig4-2.pdf, id=214, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-2.pdf, id=211, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-2.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-2.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-2.pdf  used on input line 177.
+Package pdftex.def Info: figure-chapterIV/fig4-2.pdf  used on input line 172.
 (pdftex.def)             Requested size: 245.71364pt x 317.98236pt.
-<figure-chapterIV/fig4-3.pdf, id=218, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-3.pdf, id=215, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-3.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-3.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-3.pdf  used on input line 190.
+Package pdftex.def Info: figure-chapterIV/fig4-3.pdf  used on input line 185.
 (pdftex.def)             Requested size: 245.71364pt x 317.98236pt.
-<figure-chapterIV/fig4-4.pdf, id=220, 794.97pt x 614.295pt>
+<figure-chapterIV/fig4-4.pdf, id=217, 794.97pt x 614.295pt>
 File: figure-chapterIV/fig4-4.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-4.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-4.pdf  used on input line 206.
+Package pdftex.def Info: figure-chapterIV/fig4-4.pdf  used on input line 201.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
 
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    !
-l.207 		\vspace{-20}
+l.202 		\vspace{-20}
                     
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1003,7 +931,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.223 		\toprule
+l.218 		\toprule
                  %
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1014,7 +942,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.224 ...rder &	Ontology Name (Acronym) \\\toprule
+l.219 ...rder &	Ontology Name (Acronym) \\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1025,7 +953,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.226 		\textbf{1}&	\textbf{MASON} \\\toprule
+l.221 		\textbf{1}&	\textbf{MASON} \\\toprule
                                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1036,7 +964,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.227 ...&	\textbf{Beyond STEP Ontology}\\\toprule
+l.222 ...&	\textbf{Beyond STEP Ontology}\\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1047,7 +975,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.228 		\textbf{1}&	\textbf{OntoSTEP}\\\toprule
+l.223 		\textbf{1}&	\textbf{OntoSTEP}\\\toprule
                                                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1058,7 +986,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.229 ...xtbf{2}&	\textbf{GoodRelations}\\\toprule
+l.224 ...xtbf{2}&	\textbf{GoodRelations}\\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1069,7 +997,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.230 		\textbf{2}&	\textbf{EngMath}\\\toprule
+l.225 		\textbf{2}&	\textbf{EngMath}\\\toprule
                                               
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1080,7 +1008,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.231 ...extbf{3}&	\textbf{PSL Ontology}\\\toprule
+l.226 ...extbf{3}&	\textbf{PSL Ontology}\\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1091,7 +1019,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.232 		4&	SWOP Product Ontology \\\toprule
+l.227 		4&	SWOP Product Ontology \\\toprule
                                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1102,7 +1030,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.233 		5&	SWEET Units\\\toprule
+l.228 		5&	SWEET Units\\\toprule
                                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1113,7 +1041,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.234 		5&	PRONTO\\\toprule
+l.229 		5&	PRONTO\\\toprule
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1124,7 +1052,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.235 		5&	ONTOMoPS\\\toprule
+l.230 		5&	ONTOMoPS\\\toprule
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1135,7 +1063,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.236 		6&	Resource Ontology (TOVE)\\\toprule
+l.231 		6&	Resource Ontology (TOVE)\\\toprule
                                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1146,7 +1074,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.237 		7&	Cutting Process Ontology\\\toprule
+l.232 		7&	Cutting Process Ontology\\\toprule
                                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1157,7 +1085,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.238 		8&	ADACOR\\\toprule
+l.233 		8&	ADACOR\\\toprule
                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1168,7 +1096,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.239 		9&	MSE\\\toprule
+l.234 		9&	MSE\\\toprule
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1179,7 +1107,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.240 		10&	MTM Ontology\\\toprule
+l.235 		10&	MTM Ontology\\\toprule
                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1188,26 +1116,26 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `chapter2' on page 14 undefined on input line 254.
+LaTeX Warning: Reference `chapter2' on page 14 undefined on input line 249.
 
 
-LaTeX Warning: Reference `chapter3' on page 14 undefined on input line 254.
+LaTeX Warning: Reference `chapter3' on page 14 undefined on input line 249.
 
 
-LaTeX Warning: Reference `section3.1' on page 14 undefined on input line 254.
+LaTeX Warning: Reference `section3.1' on page 14 undefined on input line 249.
 
-[14] [15 <./figure-chapterIV/fig4-2.pdf> <./figure-chapterIV/fig4-3.pdf>]
-[16 <./figure-chapterIV/fig4-4.pdf, page is rotated 90 degrees>]
+[14 <./figure-chapterIV/fig4-2.pdf>] [15 <./figure-chapterIV/fig4-3.pdf> <./fig
+ure-chapterIV/fig4-4.pdf, page is rotated 90 degrees>]
 
-LaTeX Warning: Reference `table2.1' on page 17 undefined on input line 256.
+LaTeX Warning: Reference `table2.1' on page 16 undefined on input line 251.
 
 
-LaTeX Warning: Reference `chapter2' on page 17 undefined on input line 256.
+LaTeX Warning: Reference `chapter2' on page 16 undefined on input line 251.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.259 	
+l.254 	
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1215,7 +1143,7 @@ you left one out. Proceed, with fingers crossed.
 ! Display math should end with $$.
 <to be read again> 
                    \tex_par:D 
-l.259 	
+l.254 	
        
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -1227,7 +1155,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.262 \end{equation}
+l.257 \end{equation}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1236,7 +1164,7 @@ or  <return>  to continue without it.
 ! You can't use `\eqno' in vertical mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
-l.262 \end{equation}
+l.257 \end{equation}
                     
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1246,7 +1174,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.262 \end{equation}
+l.257 \end{equation}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1257,13 +1185,13 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.262 \end{equation}
+l.257 \end{equation}
                     
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 ! Undefined control sequence.
-l.265 \cbstart
+l.260 \cbstart
                Fig. \ref{figure4-5} illustrates interaction with the ontolog...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1272,7 +1200,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.265 ...ry ontology of Table \ref{table4.2}\cbend
+l.260 ...ry ontology of Table \ref{table4.2}\cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1280,18 +1208,20 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<figure-chapterIV/fig4-5.pdf, id=261, 614.295pt x 794.97pt>
+[16]
+<figure-chapterIV/fig4-5.pdf, id=262, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-5.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-5.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-5.pdf  used on input line 270.
+Package pdftex.def Info: figure-chapterIV/fig4-5.pdf  used on input line 265.
 (pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
 
-LaTeX Warning: Float too large for page by 84.15971pt on input line 274.
+
+LaTeX Warning: Float too large for page by 84.15971pt on input line 269.
 
 ! Display math should end with $$.
 <to be read again> 
                     
-l.278 	$
+l.273 	$
         
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -1299,7 +1229,7 @@ So I shall assume that you typed `$$' both times.
 ! You can't use `\eqno' in math mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
-l.283 \end{equation}
+l.278 \end{equation}
                     \\
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1309,7 +1239,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.283 \end{equation}
+l.278 \end{equation}
                     \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1318,12 +1248,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--284
+Underfull \hbox (badness 10000) in paragraph at lines 273--279
 
  []
 
 ! Undefined control sequence.
-l.285 ...uirement expressed in the query. \cbstart
+l.280 ...uirement expressed in the query. \cbstart
                                                    For instance,   within CQ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1332,7 +1262,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.285 ...f a given activity is taking place.\cbend
+l.280 ...f a given activity is taking place.\cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1340,20 +1270,18 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<figure-chapterIV/fig4-6.pdf, id=264, 794.97pt x 614.295pt>
+<figure-chapterIV/fig4-6.pdf, id=265, 794.97pt x 614.295pt>
 File: figure-chapterIV/fig4-6.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-6.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-6.pdf  used on input line 296.
+Package pdftex.def Info: figure-chapterIV/fig4-6.pdf  used on input line 291.
 (pdftex.def)             Requested size: 397.48402pt x 307.14674pt.
-[17] [18 <./figure-chapterIV/fig4-5.pdf>]
-<figure-chapterIV/fig4-7.pdf, id=281, 794.97pt x 614.295pt>
+<figure-chapterIV/fig4-7.pdf, id=267, 794.97pt x 614.295pt>
 File: figure-chapterIV/fig4-7.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-7.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-7.pdf  used on input line 309.
+Package pdftex.def Info: figure-chapterIV/fig4-7.pdf  used on input line 304.
 (pdftex.def)             Requested size: 397.48402pt x 307.14674pt.
-
 ! Undefined control sequence.
-l.317 \cbstart
+l.312 \cbstart
                From our point of view, answers to these CQ certainly support...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1362,7 +1290,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.317 ...de answers to only 50\% of the CQ. \cbend
+l.312 ...de answers to only 50\% of the CQ. \cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1370,19 +1298,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[19 <./figure-chapterIV/fig4-6.pdf, page is rotated 90 degrees>] [20 <./figure-
-chapterIV/fig4-7.pdf, page is rotated 90 degrees>]
-<figure-chapterIV/fig4-8.pdf, id=302, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-8.pdf, id=268, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-8.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-8.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-8.pdf  used on input line 324.
+Package pdftex.def Info: figure-chapterIV/fig4-8.pdf  used on input line 319.
 (pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
 
-
-LaTeX Warning: Float too large for page by 84.15971pt on input line 328.
+LaTeX Warning: Float too large for page by 84.15971pt on input line 323.
 
 ! Undefined control sequence.
-l.332 ...h is wthin the scope of EngMath. \cbstart
+l.327 ...h is wthin the scope of EngMath. \cbstart
                                                    For instance, in the case...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1391,7 +1316,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.332 ... an appropiate answer to this query\cbend
+l.327 ... an appropiate answer to this query\cbend
                                                   . We can also mention that...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1399,6 +1324,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[17] [18 <./figure-chapterIV/fig4-5.pdf>] [19 <./figure-chapterIV/fig4-6.pdf, p
+age is rotated 90 degrees>] [20 <./figure-chapterIV/fig4-7.pdf, page is rotated
+ 90 degrees>] [21 <./figure-chapterIV/fig4-8.pdf>]
 
 ! LaTeX Error: Environment defn undefined.
 
@@ -1406,7 +1334,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.338 \begin{defn}
+l.333 \begin{defn}
                   \label{def4.10}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1415,7 +1343,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.341 	\forall
+l.336 	\forall
                \{(O_{i}, O_{j}) \in O \}_{i \neq j}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1423,7 +1351,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.342 	
+l.337 	
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1431,13 +1359,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.345 	1. (C_
+l.340 	1. (C_
              {i} \cap C_{j}) \neq \varnothing
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.345 	1. (C_{i} \cap C_{j}) \neq \varnothing
+l.340 	1. (C_{i} \cap C_{j}) \neq \varnothing
                                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1448,7 +1376,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.346 	
+l.341 	
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1456,7 +1384,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.349 	2. (C_
+l.344 	2. (C_
              {i} \neq C_{j})
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1464,7 +1392,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.350 	
+l.345 	
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1476,14 +1404,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.351 \end{defn}
+l.346 \end{defn}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Reference `chapter3' on page 21 undefined on input line 357.
+LaTeX Warning: Reference `chapter3' on page 22 undefined on input line 352.
 
 
 ! LaTeX Error: Environment defn undefined.
@@ -1492,20 +1420,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.361 \begin{defn}
+l.356 \begin{defn}
                   \label{def4.2}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Reference `subsection2.2.1' on page 21 undefined on input line 3
-63.
+LaTeX Warning: Reference `subsection2.2.1' on page 22 undefined on input line 3
+58.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.369 	f(q_
+l.364 	f(q_
            {1}) = c_{1}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1513,7 +1441,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.370 	
+l.365 	
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1521,7 +1449,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.373 	f^
+l.368 	f^
          {-1}(c_{n})= \{ q_{n} \in CQ \mid f(q_{n})=c_{n}\}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1529,38 +1457,37 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 	
+l.369 	
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 376.
+LaTeX Warning: Command \~ invalid in math mode on input line 371.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \ifmmode \els...
-l.376 ... set has to be modified as follows $\~{O}
+l.371 ... set has to be modified as follows $\~{O}
                                                    \equiv \{O, \phi \}$ wher...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 376.
+LaTeX Warning: Command \~ invalid in math mode on input line 371.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \ifmmode \els...
-l.376 ...ery is provided. With this new set $\~{O}
+l.371 ...ery is provided. With this new set $\~{O}
                                                   $ we can redefine our answ...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
-[21] [22 <./figure-chapterIV/fig4-8.pdf>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.378 	f(q_
+l.373 	f(q_
            {n}) =  \{$c_{n}$ if $f^{-1}(c_{n})= q_{n}$ \}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1568,18 +1495,18 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.378 	f(q_{n}) =  \{$c_
+l.373 	f(q_{n}) =  \{$c_
                         {n}$ if $f^{-1}(c_{n})= q_{n}$ \}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
-78.
+73.
 (C:\Program Files\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 378.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 373.
 
 
 ! LaTeX Error: \begin{document} ended by \end{defn}.
@@ -1588,7 +1515,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.384 \end{defn}
+l.379 \end{defn}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1601,7 +1528,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.389 \begin{defn}
+l.384 \begin{defn}
                   \label{def4.3}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1615,7 +1542,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.395 ...a concept $c_j$ so that $f(q_{n} )=c_j∩
+l.390 ...a concept $c_j$ so that $f(q_{n} )=c_j∩
                                                   $ ($c_j∩$ is the answer ...
 
 You may provide a definition with
@@ -1629,7 +1556,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.395 ...$c_j$ so that $f(q_{n} )=c_j∩$ ($c_j∩
+l.390 ...$c_j$ so that $f(q_{n} )=c_j∩$ ($c_j∩
                                                   $ is the answer to this qu...
 
 You may provide a definition with
@@ -1642,12 +1569,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.396 \end{defn}
+l.391 \end{defn}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+[22]
 
 ! LaTeX Error: Environment defn undefined.
 
@@ -1655,7 +1583,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.403 \begin{defn}
+l.398 \begin{defn}
                   \label{def4.4}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1664,7 +1592,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.407 	D=\{c_
+l.402 	D=\{c_
              j\mid c_j \in o_x  \cap c_j \in o_y \cap f(q_{n} )=c_j\}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1672,7 +1600,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.408 	
+l.403 	
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1684,14 +1612,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.410 \end{defn}
+l.405 \end{defn}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.414 \cbstart
+l.409 \cbstart
                Assume that we have a set of overlapping ontologies $O \equiv...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1702,7 +1630,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.414 ...s of concepts $\{c_{1},c_{2},c_{3}\}$ \in
+l.409 ...s of concepts $\{c_{1},c_{2},c_{3}\}$ \in
                                                    $o_{1}$ and $\{c_{4},c_{5...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1710,13 +1638,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.414 ... concepts $\{c_{1},c_{2},c_{3}\}$ \in $o_
+l.409 ... concepts $\{c_{1},c_{2},c_{3}\}$ \in $o_
                                                   {1}$ and $\{c_{4},c_{5},c_...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.414 ...(q_2 )=c_5$ and $f(q_3 )=c_1=c_4$. \cbend
+l.409 ...(q_2 )=c_5$ and $f(q_3 )=c_1=c_4$. \cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1727,7 +1655,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \cbstart 
                          
-l.422 	\item 	\cbstart
+l.417 	\item 	\cbstart
                        First, according to the results outlined in Fig. \ref...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1736,7 +1664,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.422 ...t possible for the given use case. \cbend
+l.417 ...t possible for the given use case. \cbend
                                                     \label{it1}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1745,20 +1673,19 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `figure2-1' on page 23 undefined on input line 428.
+LaTeX Warning: Reference `figure2-1' on page 23 undefined on input line 423.
 
 
-LaTeX Warning: Reference `chapter2' on page 23 undefined on input line 428.
+LaTeX Warning: Reference `chapter2' on page 23 undefined on input line 423.
 
 
-LaTeX Warning: Reference `section2.2' on page 23 undefined on input line 434.
+LaTeX Warning: Reference `section2.2' on page 23 undefined on input line 429.
 
 
-LaTeX Warning: Reference `chapter2' on page 23 undefined on input line 434.
+LaTeX Warning: Reference `chapter2' on page 23 undefined on input line 429.
 
-[23]
 ! Undefined control sequence.
-l.439 ...ssed in Ontological Engineering. \cbstart
+l.434 ...ssed in Ontological Engineering. \cbstart
                                                    Mapping is particularly r...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1767,7 +1694,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.439 ...s hard to carry out automatically. \cbend
+l.434 ...s hard to carry out automatically. \cbend
                                                    The corresponding ontolog...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1776,16 +1703,17 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `table2.1' on page 24 undefined on input line 439.
+LaTeX Warning: Reference `table2.1' on page 23 undefined on input line 434.
 
 
-LaTeX Warning: Reference `chapter2' on page 24 undefined on input line 439.
+LaTeX Warning: Reference `chapter2' on page 23 undefined on input line 434.
 
+[23]
 
-LaTeX Warning: Reference `table2.1' on page 24 undefined on input line 443.
+LaTeX Warning: Reference `table2.1' on page 24 undefined on input line 438.
 
 ! Undefined control sequence.
-l.445 ...air of ontologies in most cases. \cbstart
+l.440 ...air of ontologies in most cases. \cbstart
                                                    There was a fundamental d...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1794,7 +1722,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.445 ...e considered for further analysis. \cbend
+l.440 ...e considered for further analysis. \cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1803,7 +1731,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.447 ...vailable in each software tool.  \cbstart
+l.442 ...vailable in each software tool.  \cbstart
                                                    NeOn alignment plug-in pr...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1812,7 +1740,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.447 ...en for working out the modularity. \cbend
+l.442 ...en for working out the modularity. \cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1821,7 +1749,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.455 ...5cm} p{2.5cm} p{2.5cm} p{2.5cm} }\toprule
+l.450 ...5cm} p{2.5cm} p{2.5cm} p{2.5cm} }\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1830,49 +1758,49 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 457--458
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
 []|\OT1/cmr/m/n/10 Protege 3.4.4
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 457--458
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
 \OT1/cmr/m/n/10 Prompt-Tab*
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 457--458
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
 \OT1/cmr/m/n/10 (Num-ber of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--460
+Underfull \hbox (badness 10000) in paragraph at lines 453--455
 \OT1/cmr/m/n/10 (Num-ber of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--462
+Underfull \hbox (badness 10000) in paragraph at lines 455--457
 []|\OT1/cmr/m/n/10 NeonToolKit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--462
+Underfull \hbox (badness 10000) in paragraph at lines 455--457
 \OT1/cmr/m/n/10 2.3.1 Align-
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 460--462
+Underfull \hbox (badness 3861) in paragraph at lines 455--457
 \OT1/cmr/m/n/10 ment Plug in!
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--462
+Underfull \hbox (badness 10000) in paragraph at lines 455--457
 \OT1/cmr/m/n/10 (Num-ber of
  []
 
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.462 		(Number of Alignments) \\\toprule
+l.457 		(Number of Alignments) \\\toprule
                                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1883,7 +1811,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.464 ...SON &	BeyondSTEP&	18&	NaN	&34  \\\toprule
+l.459 ...SON &	BeyondSTEP&	18&	NaN	&34  \\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1894,7 +1822,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.465 ...ON &	GoodRelations&	0&	NaN&	14 \\\toprule
+l.460 ...ON &	GoodRelations&	0&	NaN&	14 \\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1905,7 +1833,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.466 		MASON	&OntoSTEP&	SC&	0,85&	101 \\\toprule
+l.461 		MASON	&OntoSTEP&	SC&	0,85&	101 \\\toprule
                                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1916,7 +1844,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.467 ...ndSTEP&	OntoSTEP&	SC&	NaN&	209 \\\toprule
+l.462 ...ndSTEP&	OntoSTEP&	SC&	NaN&	209 \\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1927,7 +1855,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.468 ...TEP&	GoodRelations&	0&	NaN	&21 \\\toprule
+l.463 ...TEP&	GoodRelations&	0&	NaN	&21 \\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1938,7 +1866,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.469 ...EP&	GoodRelations&	0&	NaN&	417 \\\toprule
+l.464 ...EP&	GoodRelations&	0&	NaN&	417 \\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1947,7 +1875,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.483 ...sitive (TP) mappings were included \citep
+l.478 ...sitive (TP) mappings were included \citep
                                                   {oliver_kutz_chinese_2010}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1958,13 +1886,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.483 ...TP) mappings were included \citep{oliver_
+l.478 ...TP) mappings were included \citep{oliver_
                                                   kutz_chinese_2010}. The cl...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.483 ...included \citep{oliver_kutz_chinese_2010}
+l.478 ...included \citep{oliver_kutz_chinese_2010}
                                                   . The cleaning process con...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1975,13 +1903,13 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.484 
+l.479 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (231.97441pt too wide) in paragraph at lines 483--484
+Overfull \hbox (231.97441pt too wide) in paragraph at lines 478--479
 \OT1/cmr/m/n/10 and only true pos-i-tive (TP) map-pings were in-cluded oliver$[
 ]\OML/cmm/m/it/10 utz[]hinese[]\OT1/cmr/m/n/10 010\OML/cmm/m/it/10 :Thecleaning
 processconsistedindiscardingeverymappingfallingineachofthefollowingcases \OT1/c
@@ -1991,7 +1919,7 @@ mr/m/n/10 :$
 ! Undefined control sequence.
 <recently read> \cbstart 
                          
-l.489 	\item \cbstart
+l.484 	\item \cbstart
                       Redundant mapping through subsumption relations, in ot...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2000,7 +1928,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.489 ...ed, and the second was considered. \cbend
+l.484 ...ed, and the second was considered. \cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2010,7 +1938,7 @@ and I'll forget about whatever was undefined.
 
 [24]
 ! Undefined control sequence.
-l.503 ...{2.5cm} p{1.5cm} p{1cm} p{1.5cm}}\toprule
+l.498 ...{2.5cm} p{1.5cm} p{1cm} p{1.5cm}}\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2019,19 +1947,19 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--505
+Underfull \hbox (badness 10000) in paragraph at lines 500--500
 []|\OT1/cmr/m/n/10 Concepts
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--505
+Underfull \hbox (badness 10000) in paragraph at lines 500--500
 \OT1/cmr/m/n/10 in source
  []
 
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.509 		&	&	& FP & TP & Total  \\\toprule
+l.504 		&	&	& FP & TP & Total  \\\toprule
                                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2042,7 +1970,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.510 ...222 &	BeyondSTEP  &	27 &	7&	34 \\\toprule
+l.505 ...222 &	BeyondSTEP  &	27 &	7&	34 \\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2053,7 +1981,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.511 ...elations&	37&	MASON&	14&	0&	14 \\\toprule
+l.506 ...elations&	37&	MASON&	14&	0&	14 \\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2064,7 +1992,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.512 ...TEP &	1625&	MASON&	90&	11&	101 \\\toprule
+l.507 ...TEP &	1625&	MASON&	90&	11&	101 \\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2075,7 +2003,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.513 ...	&114&	OntoSTEP&	104	&105&	209 \\\toprule
+l.508 ...	&114&	OntoSTEP&	104	&105&	209 \\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2086,7 +2014,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.514 ...			-&	GoodRelations&	21	&0&	21 \\\toprule
+l.509 ...			-&	GoodRelations&	21	&0&	21 \\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2097,7 +2025,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.515 ...&	-&	GoodRelations&	414&	3&	417\\\toprule
+l.510 ...&	-&	GoodRelations&	414&	3&	417\\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2106,24 +2034,23 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `figure3-2' on page 25 undefined on input line 524.
+LaTeX Warning: Reference `figure3-2' on page 25 undefined on input line 519.
 
-[25]
-<figure-chapterIV/fig4-9.pdf, id=361, 794.97pt x 614.295pt>
+<figure-chapterIV/fig4-9.pdf, id=353, 794.97pt x 614.295pt>
 File: figure-chapterIV/fig4-9.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-9.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-9.pdf  used on input line 529.
+Package pdftex.def Info: figure-chapterIV/fig4-9.pdf  used on input line 524.
 (pdftex.def)             Requested size: 397.48402pt x 307.14674pt.
+[25] [26 <./figure-chapterIV/fig4-9.pdf, page is rotated 90 degrees>]
+
+LaTeX Warning: Reference `table2.1' on page 27 undefined on input line 534.
 
 
-LaTeX Warning: Reference `table2.1' on page 26 undefined on input line 539.
-
-
-LaTeX Warning: Citation `ghilardi_did_2006' on page 26 undefined on input line 
-541.
+LaTeX Warning: Citation `ghilardi_did_2006' on page 27 undefined on input line 
+536.
 
 ! Undefined control sequence.
-l.541 ...nt scenarios have been proposed by \citet
+l.536 ...nt scenarios have been proposed by \citet
                                                   {grau_owl_2008}  and \cite...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2134,13 +2061,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.541 ...narios have been proposed by \citet{grau_
+l.536 ...narios have been proposed by \citet{grau_
                                                   owl_2008}  and \citet{xian...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.541 ...ve been proposed by \citet{grau_owl_2008}
+l.536 ...ve been proposed by \citet{grau_owl_2008}
                                                     and \citet{xiang_ontofox...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2149,7 +2076,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.541 ...osed by \citet{grau_owl_2008}  and \citet
+l.536 ...osed by \citet{grau_owl_2008}  and \citet
                                                   {xiang_ontofox:_2010}; bot...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2160,13 +2087,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.541 ... order to extract those modules from  $O_
+l.536 ... order to extract those modules from  $O_
                                                   {1}$ which can be reused i...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.541 ... links among these ontologies (e.g \citet
+l.536 ... links among these ontologies (e.g \citet
                                                   {bateman_oasis_2009} and \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2177,13 +2104,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.541 ...ong these ontologies (e.g \citet{bateman_
+l.536 ...ong these ontologies (e.g \citet{bateman_
                                                   oasis_2009} and \citet{kut...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.541 ...ntologies (e.g \citet{bateman_oasis_2009}
+l.536 ...ntologies (e.g \citet{bateman_oasis_2009}
                                                    and \citet{kutz_carnap_20...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2192,7 +2119,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.541 ...e.g \citet{bateman_oasis_2009} and \citet
+l.536 ...e.g \citet{bateman_oasis_2009} and \citet
                                                   {kutz_carnap_2010}).
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2203,22 +2130,21 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.542 
+l.537 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (365.52745pt too wide) in paragraph at lines 541--542
+Overfull \hbox (365.52745pt too wide) in paragraph at lines 536--537
 \OT1/cmr/m/n/10 to deal with in-con-sis-tent sce-nar-ios have been pro-posed by
  grau$[]\OML/cmm/m/it/10 wl[]\OT1/cmr/m/n/10 008\OML/cmm/m/it/10 and[]\OT1/cmr/
 m/n/10 ; \OML/cmm/m/it/10 bothauthorsconsideredtheneedforuserinterventionandjud
 gmentinordertoextractthosemodulesfrom$\OT1/cmr/m/n/10 O$[]$
  []
 
-[26 <./figure-chapterIV/fig4-9.pdf, page is rotated 90 degrees>]
 ! Undefined control sequence.
-l.549 ...ome of those common terms found. \cbstart
+l.544 ...ome of those common terms found. \cbstart
                                                     SWOP and OntoMoPs were d...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2227,7 +2153,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.549 ...thers and retake these ontologies. \cbend
+l.544 ...thers and retake these ontologies. \cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2235,25 +2161,17 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<figure-chapterIV/fig4-10.pdf, id=384, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-10.pdf, id=383, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-10.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-10.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-10.pdf  used on input line 556.
+Package pdftex.def Info: figure-chapterIV/fig4-10.pdf  used on input line 551.
 (pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
 
-LaTeX Warning: Float too large for page by 84.15971pt on input line 560.
-
-
-LaTeX Warning: Citation `martin_design_2003' on page 27 undefined on input line
- 566.
-
-
-LaTeX Warning: Citation `lastra_ontologies_2009' on page 27 undefined on input 
-line 566.
+LaTeX Warning: Float too large for page by 84.15971pt on input line 555.
 
 [27] [28 <./figure-chapterIV/fig4-10.pdf>]
 ! Undefined control sequence.
-l.576 ...abular}{p{2.5cm} p{2cm} p{2.5cm}}\toprule
+l.571 ...abular}{p{2.5cm} p{2cm} p{2.5cm}}\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2262,14 +2180,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 573--573
 []|\OT1/cmr/m/n/10 Mapping
  []
 
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.578 ...&	Mapping Frequency	& Grouping \\\toprule
+l.573 ...&	Mapping Frequency	& Grouping \\\toprule
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2280,7 +2198,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.579 		Product	&7&	Product\\\toprule
+l.574 		Product	&7&	Product\\\toprule
                                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2291,7 +2209,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.580 		Assembly&	3&	Product\\\toprule
+l.575 		Assembly&	3&	Product\\\toprule
                                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2302,7 +2220,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.581 		Part&	1&	Product\\\toprule
+l.576 		Part&	1&	Product\\\toprule
                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2313,7 +2231,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.582 		Set&	1&	Product\\\toprule
+l.577 		Set&	1&	Product\\\toprule
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2324,7 +2242,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.583 		Circular Slot&	2&	Features\\\toprule
+l.578 		Circular Slot&	2&	Features\\\toprule
                                             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2335,7 +2253,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.584 		chamfer&	1&	Features\\\toprule
+l.579 		chamfer&	1&	Features\\\toprule
                                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2346,7 +2264,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.585 		slot&	1&	Features\\\toprule
+l.580 		slot&	1&	Features\\\toprule
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2357,7 +2275,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.586 		pocket&	1	&Features\\\toprule
+l.581 		pocket&	1	&Features\\\toprule
                                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2368,7 +2286,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.587 		Line&	2&	Features\\\toprule
+l.582 		Line&	2&	Features\\\toprule
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2379,7 +2297,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.588 		Operation&	1&	Process\\\toprule
+l.583 		Operation&	1&	Process\\\toprule
                                        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2390,7 +2308,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.589 		change&	1&	Process\\\toprule
+l.584 		change&	1&	Process\\\toprule
                                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2401,7 +2319,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.590 		Transformation&	1&	Process\\\toprule
+l.585 		Transformation&	1&	Process\\\toprule
                                             
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2412,7 +2330,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.591 		Process	&1&	Process\\\toprule
+l.586 		Process	&1&	Process\\\toprule
                                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2423,7 +2341,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.592 		Milling&	1&	Process\\\toprule
+l.587 		Milling&	1&	Process\\\toprule
                                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2434,7 +2352,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.593 		Drilling&	1&	Process\\\toprule
+l.588 		Drilling&	1&	Process\\\toprule
                                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2445,7 +2363,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.594 		Event&	1&	Process\\\toprule
+l.589 		Event&	1&	Process\\\toprule
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2456,7 +2374,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.595 		Resource&	1&	Resource\\\toprule
+l.590 		Resource&	1&	Resource\\\toprule
                                        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2467,7 +2385,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.596 		Tool&	1&	Resource\\\toprule
+l.591 		Tool&	1&	Resource\\\toprule
                                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2478,7 +2396,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.597 		Machine	&1&	Resource\\\toprule
+l.592 		Machine	&1&	Resource\\\toprule
                                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2489,7 +2407,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.598 		Lathe&	1&	Resource\\\toprule
+l.593 		Lathe&	1&	Resource\\\toprule
                                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2500,7 +2418,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.599 		Organization&	1&	Resource\\\toprule
+l.594 		Organization&	1&	Resource\\\toprule
                                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2511,7 +2429,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.600 		Person&	1&	Resource\\\toprule
+l.595 		Person&	1&	Resource\\\toprule
                                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2522,7 +2440,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.601 		Material&	2&	Resource\\\toprule
+l.596 		Material&	2&	Resource\\\toprule
                                        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2533,7 +2451,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.602 		Unit&	6&	Unit\\\toprule
+l.597 		Unit&	6&	Unit\\\toprule
                                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2541,32 +2459,31 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-LaTeX Warning: Reference `subsection2.4.3' on page 29 undefined on input line 6
-21.
-
-
-LaTeX Warning: Reference `subsection2.2.1' on page 29 undefined on input line 6
-21.
-
-
-LaTeX Warning: Reference `chapter2' on page 29 undefined on input line 621.
-
 [29]
+
+LaTeX Warning: Reference `subsection2.4.3' on page 30 undefined on input line 6
+16.
+
+
+LaTeX Warning: Reference `subsection2.2.1' on page 30 undefined on input line 6
+16.
+
+
+LaTeX Warning: Reference `chapter2' on page 30 undefined on input line 616.
+
 <figure-chapterIV/fig4-11.pdf, id=412, 794.97pt x 614.295pt>
 File: figure-chapterIV/fig4-11.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-11.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-11.pdf  used on input line 627.
+Package pdftex.def Info: figure-chapterIV/fig4-11.pdf  used on input line 622.
 (pdftex.def)             Requested size: 476.98569pt x 368.57983pt.
 
-
 LaTeX Warning: Citation `gangemi_modelling_2006' on page 30 undefined on input 
-line 635.
+line 630.
 
 ! Display math should end with $$.
 <to be read again> 
                     
-l.638 	$
+l.633 	$
         
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -2574,7 +2491,7 @@ So I shall assume that you typed `$$' both times.
 ! You can't use `\eqno' in math mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
-l.641 \end{equation}
+l.636 \end{equation}
                     
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2584,7 +2501,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.641 \end{equation}
+l.636 \end{equation}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2593,7 +2510,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 ! Undefined control sequence.
-l.661 ...o the approach of Gangemi et al, \cbstart
+l.656 ...o the approach of Gangemi et al, \cbstart
                                                    which was proposed for th...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2602,7 +2519,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.661 ...s can be obtained. Those sets were:\cbend
+l.656 ...s can be obtained. Those sets were:\cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2618,7 +2535,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.665 	\item 	The set of upper nodes $C〗
+l.660 	\item 	The set of upper nodes $C〗
                                           _{u} $ \in  $O_{u} $, where upper ...
 
 You may provide a definition with
@@ -2627,7 +2544,7 @@ You may provide a definition with
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.665 ...m 	The set of upper nodes $C〗_{u} $ \in
+l.660 ...m 	The set of upper nodes $C〗_{u} $ \in
                                                     $O_{u} $, where upper no...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2635,7 +2552,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.665 ...e set of upper nodes $C〗_{u} $ \in  $O_
+l.660 ...e set of upper nodes $C〗_{u} $ \in  $O_
                                                   {u} $, where upper nodes a...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2648,7 +2565,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.665 ... upper ontology that are  mapped to $C〗
+l.660 ... upper ontology that are  mapped to $C〗
                                                   _{s} $ \in  $O_{s} $ in th...
 
 You may provide a definition with
@@ -2657,7 +2574,7 @@ You may provide a definition with
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.665 ...ology that are  mapped to $C〗_{s} $ \in
+l.660 ...ology that are  mapped to $C〗_{s} $ \in
                                                     $O_{s} $ in the source o...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2665,7 +2582,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.665 ... that are  mapped to $C〗_{s} $ \in  $O_
+l.660 ... that are  mapped to $C〗_{s} $ \in  $O_
                                                   {s} $ in the source ontolo...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2678,7 +2595,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.665 ...O_{s} $ in the source ontology and  $C〗
+l.660 ...O_{s} $ in the source ontology and  $C〗
                                                   _{t} $ \in  $O_{t} $, in t...
 
 You may provide a definition with
@@ -2687,7 +2604,7 @@ You may provide a definition with
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.665 ... the source ontology and  $C〗_{t} $ \in
+l.660 ... the source ontology and  $C〗_{t} $ \in
                                                     $O_{t} $, in the target ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2695,7 +2612,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.665 ...source ontology and  $C〗_{t} $ \in  $O_
+l.660 ...source ontology and  $C〗_{t} $ \in  $O_
                                                   {t} $, in the target ontol...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2708,7 +2625,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.667 	\item 	The set of source nodes $C〗
+l.662 	\item 	The set of source nodes $C〗
                                            _{s} $ \in  $O_{s} $, where sourc...
 
 You may provide a definition with
@@ -2717,7 +2634,7 @@ You may provide a definition with
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.667 ... 	The set of source nodes $C〗_{s} $ \in
+l.662 ... 	The set of source nodes $C〗_{s} $ \in
                                                     $O_{s} $, where source n...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2725,7 +2642,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.667 ... set of source nodes $C〗_{s} $ \in  $O_
+l.662 ... set of source nodes $C〗_{s} $ \in  $O_
                                                   {s} $, where source nodes ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2738,7 +2655,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.669 	\item 	The set of target nodes $C〗
+l.664 	\item 	The set of target nodes $C〗
                                            _{t} $ \in  $O_{t} $, where targe...
 
 You may provide a definition with
@@ -2747,7 +2664,7 @@ You may provide a definition with
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.669 ... 	The set of target nodes $C〗_{t} $ \in
+l.664 ... 	The set of target nodes $C〗_{t} $ \in
                                                     $O_{t} $, where target n...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2755,7 +2672,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.669 ... set of target nodes $C〗_{t} $ \in  $O_
+l.664 ... set of target nodes $C〗_{t} $ \in  $O_
                                                   {t} $, where target nodes ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2768,7 +2685,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.673 ...ies starting in the source concept  $C〗
+l.668 ...ies starting in the source concept  $C〗
                                                   _{u} $ \in  $O_{u} $ and e...
 
 You may provide a definition with
@@ -2777,7 +2694,7 @@ You may provide a definition with
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.673 ...ng in the source concept  $C〗_{u} $ \in
+l.668 ...ng in the source concept  $C〗_{u} $ \in
                                                     $O_{u} $ and ending in a...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2785,7 +2702,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.673 ... the source concept  $C〗_{u} $ \in  $O_
+l.668 ... the source concept  $C〗_{u} $ \in  $O_
                                                   {u} $ and ending in a targ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2798,7 +2715,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.673 ...O_{u} $ and ending in a target concept〖
+l.668 ...O_{u} $ and ending in a target concept〖
                                                    $C〗_{t} $ \in  $O_{t} $.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2811,7 +2728,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.673 ...$ and ending in a target concept〖 $C〗
+l.668 ...$ and ending in a target concept〖 $C〗
                                                   _{t} $ \in  $O_{t} $.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2819,7 +2736,7 @@ You may provide a definition with
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.673 ...ng in a target concept〖 $C〗_{t} $ \in
+l.668 ...ng in a target concept〖 $C〗_{t} $ \in
                                                     $O_{t} $.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2827,11 +2744,12 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.673 ... a target concept〖 $C〗_{t} $ \in  $O_
+l.668 ... a target concept〖 $C〗_{t} $ \in  $O_
                                                   {t} $.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+[30] [31 <./figure-chapterIV/fig4-11.pdf, page is rotated 90 degrees>]
 
 ! LaTeX Error: Unicode character 〖 (U+3016)
                not set up for use with LaTeX.
@@ -2840,58 +2758,48 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.675 ...we found only one deployment level in 〖
+l.670 ...we found only one deployment level in 〖
                                                   $C_{t} $ and  $C_{s}$, whi...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[30] [31 <./figure-chapterIV/fig4-11.pdf, page is rotated 90 degrees>]
-<figure-chapterIV/fig4-12.pdf, id=434, 794.97pt x 614.295pt>
+<figure-chapterIV/fig4-12.pdf, id=435, 794.97pt x 614.295pt>
 File: figure-chapterIV/fig4-12.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-12.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-12.pdf  used on input line 700.
+Package pdftex.def Info: figure-chapterIV/fig4-12.pdf  used on input line 695.
 (pdftex.def)             Requested size: 476.98569pt x 368.57983pt.
-<figure-chapterIV/fig4-13.pdf, id=436, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-13.pdf, id=437, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-13.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-13.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-13.pdf  used on input line 728.
+Package pdftex.def Info: figure-chapterIV/fig4-13.pdf  used on input line 723.
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
-
-
-LaTeX Warning: Citation `borgo_role_2004' on page 32 undefined on input line 73
-6.
-
-
-LaTeX Warning: Citation `lemaignan_mason:_2006' on page 32 undefined on input l
-ine 736.
-
 [32] [33 <./figure-chapterIV/fig4-12.pdf, page is rotated 90 degrees>] [34 <./f
 igure-chapterIV/fig4-13.pdf>]
 
-LaTeX Warning: Reference `figure2-1' on page 35 undefined on input line 750.
+LaTeX Warning: Reference `figure2-1' on page 35 undefined on input line 745.
 
 
-LaTeX Warning: Reference `figure2-1' on page 35 undefined on input line 750.
+LaTeX Warning: Reference `figure2-1' on page 35 undefined on input line 745.
 
 
-LaTeX Warning: Reference `chapter3' on page 35 undefined on input line 754.
+LaTeX Warning: Reference `chapter3' on page 35 undefined on input line 749.
 
 
 LaTeX Warning: Reference `subsection2.2.6' on page 35 undefined on input line 7
-58.
+53.
 
 
-LaTeX Warning: Reference `chapter2' on page 35 undefined on input line 758.
+LaTeX Warning: Reference `chapter2' on page 35 undefined on input line 753.
 
 
-LaTeX Warning: Reference `section3.1' on page 35 undefined on input line 758.
+LaTeX Warning: Reference `section3.1' on page 35 undefined on input line 753.
 
 
-LaTeX Warning: Reference `chapter3' on page 35 undefined on input line 758.
+LaTeX Warning: Reference `chapter3' on page 35 undefined on input line 753.
 
 ! Undefined control sequence.
-l.758 ...ation and processing of ontologies \citep
+l.753 ...ation and processing of ontologies \citep
                                                   {daquin_modular_2009}. Two...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2902,13 +2810,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.758 ...d processing of ontologies \citep{daquin_
+l.753 ...d processing of ontologies \citep{daquin_
                                                   modular_2009}. Two main mo...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.758 ...of ontologies \citep{daquin_modular_2009}
+l.753 ...of ontologies \citep{daquin_modular_2009}
                                                   . Two main modularity appr...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2917,28 +2825,28 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \textquoteleft invalid in math mode on input line 758.
+LaTeX Warning: Command \textquoteleft invalid in math mode on input line 753.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 758.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 753.
 
 
 LaTeX Warning: Reference `subsection2.2.1' on page 35 undefined on input line 7
-58.
+53.
 
 
-LaTeX Warning: Reference `chapter2' on page 35 undefined on input line 758.
+LaTeX Warning: Reference `chapter2' on page 35 undefined on input line 753.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.759 
+l.754 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (1077.75775pt too wide) in paragraph at lines 758--759
+Overfull \hbox (1077.75775pt too wide) in paragraph at lines 753--754
 \OT1/cmr/m/n/10 daquin$[]\OML/cmm/m/it/10 odular[]\OT1/cmr/m/n/10 009\OML/cmm/m
 /it/10 :Twomainmodularityapproacheshavebeendistinguishedfromeachotherintheliter
 ature; theformercorrespondstothedivisionofalargeontologyintomodules; thusrender
@@ -2948,7 +2856,7 @@ S/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (530.38448pt too wide) in paragraph at lines 758--759
+Overfull \hbox (530.38448pt too wide) in paragraph at lines 753--754
 \OML/cmm/m/it/10 called\OT1/cmr/m/n/10 `\OML/cmm/m/it/10 hyperlinks[]betweenont
 ologiesisintendedtoenabletheinterconnectionofrelatedontologies; butwithoutmergi
 ngthelogicalcontentofthoseontologies:Thislastapproachwasintroducedaboveas[]inSu
@@ -2956,8 +2864,9 @@ bsection[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Chapter[]\OT1/cmr/m/n/10 )\OML/cmm/
 m/it/10 :$ 
  []
 
+[35]
 ! Extra }, or forgotten $.
-l.762 ... a network of ontologies $O_{1}$, $O_{2}}
+l.757 ... a network of ontologies $O_{1}$, $O_{2}}
                                                   $, $O_{n}$, a hypermodule ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2965,20 +2874,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[35]
-<figure-chapterIV/fig4-14.pdf, id=480, 794.97pt x 614.295pt>
+<figure-chapterIV/fig4-14.pdf, id=484, 794.97pt x 614.295pt>
 File: figure-chapterIV/fig4-14.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-14.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-14.pdf  used on input line 768.
+Package pdftex.def Info: figure-chapterIV/fig4-14.pdf  used on input line 763.
 (pdftex.def)             Requested size: 556.4752pt x 430.00356pt.
 
-
-LaTeX Warning: Float too large for page by 4.65805pt on input line 772.
+LaTeX Warning: Float too large for page by 4.65805pt on input line 767.
 
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    !
-l.779 \vspace{-40}
+l.774 \vspace{-40}
                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2987,15 +2894,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<figure-chapterIV/fig4-15.pdf, id=482, 614.295pt x 1011.78pt>
+<figure-chapterIV/fig4-15.pdf, id=486, 614.295pt x 1011.78pt>
 File: figure-chapterIV/fig4-15.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-15.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-15.pdf  used on input line 781.
+Package pdftex.def Info: figure-chapterIV/fig4-15.pdf  used on input line 776.
 (pdftex.def)             Requested size: 430.00356pt x 708.24118pt.
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    !
-l.782 	\vspace{-80}
+l.777 	\vspace{-80}
                    
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3005,16 +2912,16 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
-LaTeX Warning: Float too large for page by 36.42403pt on input line 787.
+LaTeX Warning: Float too large for page by 36.42403pt on input line 782.
 
 
 LaTeX Warning: Citation `oliver_kutz_chinese_2010' on page 36 undefined on inpu
-t line 792.
+t line 787.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.803 ...}{\sum_{k=1}^{P_{i,j}}N_{C_{ \in C_{u}}}}
+l.798 ...}{\sum_{k=1}^{P_{i,j}}N_{C_{ \in C_{u}}}}
                                                   $
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3022,7 +2929,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \@genfrac ...egingroup #4\endgroup #2#3\relax #5}}
                                                   
-l.803 ...}{\sum_{k=1}^{P_{i,j}}N_{C_{ \in C_{u}}}}
+l.798 ...}{\sum_{k=1}^{P_{i,j}}N_{C_{ \in C_{u}}}}
                                                   $
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3033,7 +2940,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.805 \end{equation}
+l.800 \end{equation}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3041,10 +2948,12 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+[36] [37 <./figure-chapterIV/fig4-14.pdf, page is rotated 90 degrees>] [38 <./f
+igure-chapterIV/fig4-15.pdf>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.815 ...gy $O_{h}$, the set of nodes $C_{hs}$ \in
+l.810 ...gy $O_{h}$, the set of nodes $C_{hs}$ \in
                                                    $O_{h}$ which are subsume...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3052,15 +2961,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.815 ...O_{h}$, the set of nodes $C_{hs}$ \in $O_
+l.810 ...O_{h}$, the set of nodes $C_{hs}$ \in $O_
                                                   {h}$ which are subsumed by...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[36] [37 <./figure-chapterIV/fig4-14.pdf, page is rotated 90 degrees>] [38 <./f
-igure-chapterIV/fig4-15.pdf>]
 ! Undefined control sequence.
-l.860 \begin{tabular}{ p{4cm}}\toprule
+l.855 \begin{tabular}{ p{4cm}}\toprule
                                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3071,7 +2978,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.862 	\textbf{Monomodules} \\\toprule
+l.857 	\textbf{Monomodules} \\\toprule
                                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3082,7 +2989,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.863 	Event\\\toprule
+l.858 	Event\\\toprule
                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3093,7 +3000,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.864 	Material\\\toprule
+l.859 	Material\\\toprule
                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3104,7 +3011,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.865 	Set\\\toprule
+l.860 	Set\\\toprule
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3115,7 +3022,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.866 	Organization\\\toprule
+l.861 	Organization\\\toprule
                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3126,7 +3033,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \toprule 
                          
-l.867 	Person\\\toprule
+l.862 	Person\\\toprule
                        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3136,47 +3043,38 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `subsection2.2.1' on page 39 undefined on input line 8
-74.
-
-
-LaTeX Warning: Citation `martin_design_2003' on page 39 undefined on input line
- 874.
-
-
-LaTeX Warning: Citation `lastra_ontologies_2009' on page 39 undefined on input 
-line 874.
+69.
 
 [39]
-<figure-chapterIV/fig4-16.pdf, id=529, 794.97pt x 614.295pt>
+<figure-chapterIV/fig4-16.pdf, id=536, 794.97pt x 614.295pt>
 File: figure-chapterIV/fig4-16.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-16.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-16.pdf  used on input line 889.
+Package pdftex.def Info: figure-chapterIV/fig4-16.pdf  used on input line 884.
 (pdftex.def)             Requested size: 397.48402pt x 307.14674pt.
-<figure-chapterIV/fig4-17.pdf, id=530, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-17.pdf, id=537, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-17.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-17.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-17.pdf  used on input line 897.
+Package pdftex.def Info: figure-chapterIV/fig4-17.pdf  used on input line 892.
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
- [40 <./figure-chapterIV/fig4-16.pdf, page is rotated 90 degrees>] [41 <./figur
-e-chapterIV/fig4-17.pdf>]
 
-LaTeX Warning: Reference `subsection2.2.3' on page 42 undefined on input line 9
-08.
 
-<figure-chapterIV/fig4-18.pdf, id=553, 614.295pt x 794.97pt>
+LaTeX Warning: Reference `subsection2.2.3' on page 40 undefined on input line 9
+03.
+
+<figure-chapterIV/fig4-18.pdf, id=540, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-18.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-18.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-18.pdf  used on input line 913.
+Package pdftex.def Info: figure-chapterIV/fig4-18.pdf  used on input line 908.
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
-<figure-chapterIV/fig4-19.pdf, id=554, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-19.pdf, id=541, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-19.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-19.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-19.pdf  used on input line 921.
+Package pdftex.def Info: figure-chapterIV/fig4-19.pdf  used on input line 916.
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    !
-l.922 	\vspace{-20}
+l.917 	\vspace{-20}
                    
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3185,31 +3083,33 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-[42 <./figure-chapterIV/fig4-18.pdf>] [43 <./figure-chapterIV/fig4-19.pdf>]
+[40] [41 <./figure-chapterIV/fig4-16.pdf, page is rotated 90 degrees>] [42 <./f
+igure-chapterIV/fig4-17.pdf>] [43 <./figure-chapterIV/fig4-18.pdf>] [44 <./figu
+re-chapterIV/fig4-19.pdf>]
 
-LaTeX Warning: Reference `figure2-1' on page 44 undefined on input line 936.
+LaTeX Warning: Reference `figure2-1' on page 45 undefined on input line 931.
 
 
-LaTeX Warning: Reference `chapter2' on page 44 undefined on input line 936.
+LaTeX Warning: Reference `chapter2' on page 45 undefined on input line 931.
 
 
-LaTeX Warning: Reference `subsection2.4.1' on page 44 undefined on input line 9
-36.
+LaTeX Warning: Reference `subsection2.4.1' on page 45 undefined on input line 9
+31.
 
-<figure-chapterIV/fig4-20.pdf, id=576, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-20.pdf, id=587, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-20.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-20.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-20.pdf  used on input line 941.
+Package pdftex.def Info: figure-chapterIV/fig4-20.pdf  used on input line 936.
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
-<figure-chapterIV/fig4-21.pdf, id=577, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-21.pdf, id=588, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-21.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-21.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-21.pdf  used on input line 949.
+Package pdftex.def Info: figure-chapterIV/fig4-21.pdf  used on input line 944.
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    !
-l.950 	\vspace{-40}
+l.945 	\vspace{-40}
                    
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3218,20 +3118,20 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<figure-chapterIV/fig4-22.pdf, id=580, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-22.pdf, id=591, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-22.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-22.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-22.pdf  used on input line 967.
+Package pdftex.def Info: figure-chapterIV/fig4-22.pdf  used on input line 962.
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
-<figure-chapterIV/fig4-23.pdf, id=582, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-23.pdf, id=593, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-23.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-23.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-23.pdf  used on input line 978.
+Package pdftex.def Info: figure-chapterIV/fig4-23.pdf  used on input line 973.
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    !
-l.979 	\vspace{-40}
+l.974 	\vspace{-40}
                    
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3241,7 +3141,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.987 ...he features and the resources to \cbstart
+l.982 ...he features and the resources to \cbstart
                                                    get the features manufact...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3250,7 +3150,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.987 ...s manufactured on the raw material \cbend
+l.982 ...s manufactured on the raw material \cbend
                                                    are present in the MASON ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3258,62 +3158,23 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[44] [45 <./figure-chapterIV/fig4-20.pdf>] [46 <./figure-chapterIV/fig4-21.pdf>
-] [47 <./figure-chapterIV/fig4-22.pdf>] [48 <./figure-chapterIV/fig4-23.pdf>]
-<figure-chapterIV/fig4-24.pdf, id=623, 614.295pt x 794.97pt>
+[45] [46 <./figure-chapterIV/fig4-20.pdf>] [47 <./figure-chapterIV/fig4-21.pdf>
+] [48 <./figure-chapterIV/fig4-22.pdf>] [49 <./figure-chapterIV/fig4-23.pdf>]
+<figure-chapterIV/fig4-24.pdf, id=635, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-24.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-24.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-24.pdf  used on input line 994.
+Package pdftex.def Info: figure-chapterIV/fig4-24.pdf  used on input line 989.
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
-<figure-chapterIV/fig4-25.pdf, id=624, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-25.pdf, id=636, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-25.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-25.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-25.pdf  used on input line 1002.
-
+Package pdftex.def Info: figure-chapterIV/fig4-25.pdf  used on input line 997.
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
 
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    !
-l.1003 	\vspace{-40}
-                    
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-<figure-chapterIV/fig4-26.pdf, id=627, 614.295pt x 794.97pt>
-File: figure-chapterIV/fig4-26.pdf Graphic file (type pdf)
-<use figure-chapterIV/fig4-26.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-26.pdf  used on input line 1020.
-
-(pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
-<figure-chapterIV/fig4-27.pdf, id=628, 614.295pt x 794.97pt>
-File: figure-chapterIV/fig4-27.pdf Graphic file (type pdf)
-<use figure-chapterIV/fig4-27.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-27.pdf  used on input line 1032.
-
-(pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   !
-l.1033 	\vspace{-20}
-                    
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-[49 <./figure-chapterIV/fig4-24.pdf>] [50 <./figure-chapterIV/fig4-25.pdf>]
-[51 <./figure-chapterIV/fig4-26.pdf>] [52 <./figure-chapterIV/fig4-27.pdf>]
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   !
-l.1056 \vspace{-10}
+l.998 	\vspace{-40}
                    
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3322,54 +3183,92 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<figure-chapterIV/fig4-28.pdf, id=669, 1011.78pt x 614.295pt>
+<figure-chapterIV/fig4-26.pdf, id=639, 614.295pt x 794.97pt>
+File: figure-chapterIV/fig4-26.pdf Graphic file (type pdf)
+<use figure-chapterIV/fig4-26.pdf>
+Package pdftex.def Info: figure-chapterIV/fig4-26.pdf  used on input line 1015.
+
+(pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
+<figure-chapterIV/fig4-27.pdf, id=640, 614.295pt x 794.97pt>
+File: figure-chapterIV/fig4-27.pdf Graphic file (type pdf)
+<use figure-chapterIV/fig4-27.pdf>
+Package pdftex.def Info: figure-chapterIV/fig4-27.pdf  used on input line 1027.
+
+(pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   !
+l.1028 	\vspace{-20}
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+[50 <./figure-chapterIV/fig4-24.pdf>] [51 <./figure-chapterIV/fig4-25.pdf>]
+[52 <./figure-chapterIV/fig4-26.pdf>] [53 <./figure-chapterIV/fig4-27.pdf>]
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   !
+l.1051 \vspace{-10}
+                   
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<figure-chapterIV/fig4-28.pdf, id=680, 1011.78pt x 614.295pt>
 File: figure-chapterIV/fig4-28.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-28.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-28.pdf  used on input line 1058.
+Package pdftex.def Info: figure-chapterIV/fig4-28.pdf  used on input line 1053.
 
 (pdftex.def)             Requested size: 607.07268pt x 368.57983pt.
 
-LaTeX Warning: Float too large for page by 45.25552pt on input line 1062.
+LaTeX Warning: Float too large for page by 45.25552pt on input line 1057.
 
 
-LaTeX Warning: Reference `subsection3.2.2' on page 53 undefined on input line 1
-069.
+LaTeX Warning: Reference `subsection3.2.2' on page 54 undefined on input line 1
+064.
 
 
-LaTeX Warning: Reference `subsection3.2.2' on page 53 undefined on input line 1
-071.
+LaTeX Warning: Reference `subsection3.2.2' on page 54 undefined on input line 1
+066.
 
 
-LaTeX Warning: Reference `subsection2.2.3' on page 53 undefined on input line 1
-071.
+LaTeX Warning: Reference `subsection2.2.3' on page 54 undefined on input line 1
+066.
 
 
-LaTeX Warning: Reference `chapter2' on page 53 undefined on input line 1071.
+LaTeX Warning: Reference `chapter2' on page 54 undefined on input line 1066.
 
 
-LaTeX Warning: Reference `subsection2.1.1' on page 53 undefined on input line 1
-073.
+LaTeX Warning: Reference `subsection2.1.1' on page 54 undefined on input line 1
+068.
 
 
-LaTeX Warning: Reference `subsection2.1.3' on page 53 undefined on input line 1
-075.
+LaTeX Warning: Reference `subsection2.1.3' on page 54 undefined on input line 1
+070.
 
 
-LaTeX Warning: Reference `chapter2' on page 53 undefined on input line 1075.
+LaTeX Warning: Reference `chapter2' on page 54 undefined on input line 1070.
 
-[53] [54 <./figure-chapterIV/fig4-28.pdf, page is rotated 90 degrees>]
+[54] [55 <./figure-chapterIV/fig4-28.pdf, page is rotated 90 degrees>]
 
-LaTeX Warning: Reference `subsection3.2.2' on page 55 undefined on input line 1
-081.
+LaTeX Warning: Reference `subsection3.2.2' on page 56 undefined on input line 1
+076.
 
-<figure-chapterIV/fig4-29.pdf, id=692, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-29.pdf, id=704, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-29.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-29.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-29.pdf  used on input line 1087.
+Package pdftex.def Info: figure-chapterIV/fig4-29.pdf  used on input line 1082.
 
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
 ! Undefined control sequence.
-l.1097 ...cepted in the ecommerce community \citep
+l.1092 ...cepted in the ecommerce community \citep
                                                   {hepp_references_2013}. Mo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3380,13 +3279,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1097 ... in the ecommerce community \citep{hepp_
+l.1092 ... in the ecommerce community \citep{hepp_
                                                   references_2013}. Moreover...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.1097 ...e community \citep{hepp_references_2013}
+l.1092 ...e community \citep{hepp_references_2013}
                                                   . Moreover it has an appro...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3397,13 +3296,13 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1098 
+l.1093 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (562.34523pt too wide) in paragraph at lines 1097--1098
+Overfull \hbox (562.34523pt too wide) in paragraph at lines 1092--1093
 \OT1/cmr/m/n/10 hepp$[]\OML/cmm/m/it/10 eferences[]\OT1/cmr/m/n/10 013\OML/cmm/
 m/it/10 :Moreoverithasanappropriateplatformformakingitavailabletoacommunityofus
 ers:Approximately\OT1/cmr/m/n/10 16%\OML/cmm/m/it/10 ofthisontologyismadeupofde
@@ -3412,15 +3311,15 @@ ion:$
  []
 
 
-LaTeX Warning: Reference `subsection2.2.1' on page 55 undefined on input line 1
-099.
+LaTeX Warning: Reference `subsection2.2.1' on page 56 undefined on input line 1
+094.
 
-[55 <./figure-chapterIV/fig4-29.pdf>]
+[56 <./figure-chapterIV/fig4-29.pdf>]
 
-LaTeX Warning: Reference `chapter2' on page 56 undefined on input line 1110.
+LaTeX Warning: Reference `chapter2' on page 57 undefined on input line 1105.
 
 ! Undefined control sequence.
-l.1110 ...found in the DXF Reference Manual \citep
+l.1105 ...found in the DXF Reference Manual \citep
                                                   {autodesk_dxf_2009}.  This...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3431,13 +3330,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1110 ...he DXF Reference Manual \citep{autodesk_
+l.1105 ...he DXF Reference Manual \citep{autodesk_
                                                   dxf_2009}.  This standard ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.1110 ...ference Manual \citep{autodesk_dxf_2009}
+l.1105 ...ference Manual \citep{autodesk_dxf_2009}
                                                   .  This standard defines g...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3446,7 +3345,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.1110 ...nformation on solids is encrypted \citep
+l.1105 ...nformation on solids is encrypted \citep
                                                   {choi_exchange_2003} and l...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3457,13 +3356,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1111 
+l.1106 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (3571.96402pt too wide) in paragraph at lines 1110--1111
+Overfull \hbox (3571.96402pt too wide) in paragraph at lines 1105--1106
 \OT1/cmr/m/n/10 this stan-dard can be found in the DXF Ref-er-ence Man-ual auto
 desk$[]\OML/cmm/m/it/10 xf[]\OT1/cmr/m/n/10 009\OML/cmm/m/it/10 :Thisstandardde
 finesgeometricprimitivessuchasLINE; CIRCLE; ARCandELLIPSEentities:Agroupofcodes
@@ -3479,31 +3378,11 @@ orstendstobelimitedinsomeway:$
  []
 
 
-LaTeX Warning: Reference `subsection2.4.1' on page 56 undefined on input line 1
-113.
-
-
-LaTeX Warning: Citation `abdul-ghafour_common_2007' on page 56 undefined on inp
-ut line 1113.
-
-
-LaTeX Warning: Citation `abdul-ghafour_common_2007' on page 56 undefined on inp
-ut line 1113.
-
-
-LaTeX Warning: Citation `andersen_building_2007' on page 56 undefined on input 
-line 1113.
-
-
-LaTeX Warning: Citation `abdul-ghafour_common_2007' on page 56 undefined on inp
-ut line 1113.
-
-
-LaTeX Warning: Citation `abdul-ghafour_common_2007' on page 56 undefined on inp
-ut line 1115.
+LaTeX Warning: Reference `subsection2.4.1' on page 57 undefined on input line 1
+108.
 
 ! Undefined control sequence.
-l.1115 ... different data exchange approach \citep
+l.1110 ... different data exchange approach \citep
                                                   {ramos_ontological_2010}. ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3514,13 +3393,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1115 ...ent data exchange approach \citep{ramos_
+l.1110 ...ent data exchange approach \citep{ramos_
                                                   ontological_2010}. There, ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.1115 ... approach \citep{ramos_ontological_2010}
+l.1110 ... approach \citep{ramos_ontological_2010}
                                                   . There, intermediate onto...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3529,7 +3408,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.1115 ...figure  there are four parsers: \cpstart
+l.1110 ...figure  there are four parsers: \cpstart
                                                    Two preprocessors parsers...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3538,7 +3417,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.1115 ...ging OWL in DFX, similarly in IGES\cpend
+l.1110 ...ging OWL in DFX, similarly in IGES\cpend
                                                   . As soon as a standard is...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3547,32 +3426,31 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `figure2-7' on page 56 undefined on input line 1115.
+LaTeX Warning: Reference `figure2-7' on page 57 undefined on input line 1110.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1116 
+l.1111 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (2226.84047pt too wide) in paragraph at lines 1115--1116
+Overfull \hbox (2218.63216pt too wide) in paragraph at lines 1110--1111
 []\OT1/cmr/m/n/10 In con-trast, build-ing on the pro-posal of [[]] we have pro-
 posed a dif-fer-ent data ex-change ap-proach ramos$[]\OML/cmm/m/it/10 ntologica
 l[]\OT1/cmr/m/n/10 010\OML/cmm/m/it/10 :There; intermediateontologieswereavoide
 dandageneralCADterminologywasusedwithoutadoptingspecificstandardCADterminology:
 Weconsideredthiscouldbeadisadvantageforanapproachthat; ontheonehand; claimstobe
 ontologicalwhile; ontheotherhand; itisonlybeingrelatedtooneCADstandard:Fig:[][]
-\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 30[][]\OML/cmm/m/it/10 prese
-ntsourfirstattempttodealwiththisinteroperabilityissueinCAD:Inthisfigure; weexem
-plifythearchitecturewithDFXandIGESstandards:Consequently; inthefiguretherearefo
-urparsers \OT1/cmr/m/n/10 :
+\OT1/cmr/m/n/10 31[][]\OML/cmm/m/it/10 presentsourfirstattempttodealwiththisint
+eroperabilityissueinCAD:Inthisfigure; weexemplifythearchitecturewithDFXandIGESs
+tandards:Consequently; inthefiguretherearefourparsers \OT1/cmr/m/n/10 :
  []
 
 
-Overfull \hbox (1179.06789pt too wide) in paragraph at lines 1115--1116
+Overfull \hbox (1179.06789pt too wide) in paragraph at lines 1110--1111
 \OML/cmm/m/it/10 TwopreprocessorsparsersforexchangingDFXintoOWL; andtwopostproc
 essorsparsersforexchangingOWLinDFX; similarlyinIGES:Assoonasastandardisconverte
 dintoOWL; thereasoningframeworkoftheSemanticWeb\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
@@ -3581,14 +3459,14 @@ nOWL; itispossibletoprovidereasoningontheCADontology; inordertoexchangefromonef
 ormattoanother:$ 
  []
 
-<figure-chapterIV/fig4-30.pdf, id=708, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-30.pdf, id=724, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-30.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-30.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-30.pdf  used on input line 1120.
+Package pdftex.def Info: figure-chapterIV/fig4-30.pdf  used on input line 1115.
 
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
 ! Undefined control sequence.
-l.1126 ...F and IGES shall be considered. \cpstart
+l.1121 ...F and IGES shall be considered. \cpstart
                                                    The issue of representing...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3597,7 +3475,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.1126 ...e in a CAD designs is one of those\cpend
+l.1121 ...e in a CAD designs is one of those\cpend
                                                   . This issue is illustrate...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3605,30 +3483,30 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<figure-chapterIV/fig4-31.pdf, id=712, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-31.pdf, id=728, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-31.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-31.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-31.pdf  used on input line 1134.
+Package pdftex.def Info: figure-chapterIV/fig4-31.pdf  used on input line 1129.
 
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
-<figure-chapterIV/fig432.pdf, id=713, 614.295pt x 794.97pt>
+<figure-chapterIV/fig432.pdf, id=729, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig432.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig432.pdf>
-Package pdftex.def Info: figure-chapterIV/fig432.pdf  used on input line 1146.
+Package pdftex.def Info: figure-chapterIV/fig432.pdf  used on input line 1141.
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
-[56] [57 <./figure-chapterIV/fig4-30.pdf>] [58 <./figure-chapterIV/fig4-31.pdf>
-] [59 <./figure-chapterIV/fig432.pdf>]
-<figure-chapterIV/fig4-33.pdf, id=749, 614.295pt x 794.97pt>
+[57] [58 <./figure-chapterIV/fig4-30.pdf>] [59 <./figure-chapterIV/fig4-31.pdf>
+] [60 <./figure-chapterIV/fig432.pdf>]
+<figure-chapterIV/fig4-33.pdf, id=767, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-33.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-33.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-33.pdf  used on input line 1162.
+Package pdftex.def Info: figure-chapterIV/fig4-33.pdf  used on input line 1157.
 
 (pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
 
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    !
-l.1163 	\vspace{-40}
+l.1158 	\vspace{-40}
                     
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3638,16 +3516,16 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
-LaTeX Warning: Float too large for page by 44.15971pt on input line 1167.
+LaTeX Warning: Float too large for page by 44.15971pt on input line 1162.
 
 
-LaTeX Warning: Reference `section2.1' on page 60 undefined on input line 1172.
+LaTeX Warning: Reference `section2.1' on page 61 undefined on input line 1167.
 
 
-LaTeX Warning: Reference `chapter2' on page 60 undefined on input line 1172.
+LaTeX Warning: Reference `chapter2' on page 61 undefined on input line 1167.
 
 ! Undefined control sequence.
-l.1172 ...red to manufacture a given design \citep
+l.1167 ...red to manufacture a given design \citep
                                                   {cayiroglu_new_2009}. Feat...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3658,13 +3536,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1172 ...facture a given design \citep{cayiroglu_
+l.1167 ...facture a given design \citep{cayiroglu_
                                                   new_2009}. Feature informa...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.1172 ... given design \citep{cayiroglu_new_2009}
+l.1167 ... given design \citep{cayiroglu_new_2009}
                                                   . Feature information can ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3673,7 +3551,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.1172 ...oduction costs and time to market \citep
+l.1167 ...oduction costs and time to market \citep
                                                   {radhakrishnan_design_1996...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3682,7 +3560,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.1172 ...the reach of small scale industry \citep
+l.1167 ...the reach of small scale industry \citep
                                                   {kumar_trends_2005}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3693,13 +3571,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1173 
+l.1168 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (799.67482pt too wide) in paragraph at lines 1172--1173
+Overfull \hbox (799.67482pt too wide) in paragraph at lines 1167--1168
 \OML/cmm/m/it/10 checkdesignsinordertodetectproductionruleviolations:Ifthesevio
 lationsarenotdetectedinanearlystageofdesign; thelifecycleofdevelopmentincreases
 ; raisingproductioncostsandtimetomarket[]:Manualrecognitionofthetargetedfeature
@@ -3707,7 +3585,7 @@ sisnotaviablealternative; however \OT1/cmr/m/n/10 :
  []
 
 
-Overfull \hbox (1258.27934pt too wide) in paragraph at lines 1172--1173
+Overfull \hbox (1258.27934pt too wide) in paragraph at lines 1167--1168
 \OML/cmm/m/it/10 AutomatedFeaturesRecognition\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
 AFR\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 isrequired:However; evennowadaysAFRisnotfu
 llyintegratedwithCADsoftwaretools:Itisapplicableonlytopartswithrelativelysimple
@@ -3716,12 +3594,8 @@ geometryandstillrequireshumaninterventiontoobtainthefeaturesidentified:Moreover
 ndthereachofsmallscaleindustry[]:$ 
  []
 
-
-LaTeX Warning: Citation `ramos_ontology-based_2011' on page 60 undefined on inp
-ut line 1175.
-
 ! Undefined control sequence.
-l.1178 ...olved in the manufacturing domain \citep
+l.1173 ...olved in the manufacturing domain \citep
                                                   {shah_functional_1988}. On...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3732,13 +3606,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1178 ...in the manufacturing domain \citep{shah_
+l.1173 ...in the manufacturing domain \citep{shah_
                                                   functional_1988}. On the o...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.1178 ...ring domain \citep{shah_functional_1988}
+l.1173 ...ring domain \citep{shah_functional_1988}
                                                   . On the one hand, designe...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3749,13 +3623,13 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1179 
+l.1174 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (2760.9227pt too wide) in paragraph at lines 1178--1179
+Overfull \hbox (2760.9227pt too wide) in paragraph at lines 1173--1174
 []\OT1/cmr/m/n/10 One of the main is-sues of AFR is the ab-strac-tion level in-
 volved in the man-u-fac-tur-ing do-main shah$[]\OML/cmm/m/it/10 unctional[]\OT1
 /cmr/m/n/10 988\OML/cmm/m/it/10 :Ontheonehand; designersmakedesignsfromthefunct
@@ -3769,7 +3643,7 @@ ationofdesigningandmanufacturingrestrictions:$
  []
 
 ! Undefined control sequence.
-l.1180 ...eveloped using the Prompt plug-in \citep
+l.1175 ...eveloped using the Prompt plug-in \citep
                                                   {noy_prompt_2003}. This la...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3780,13 +3654,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1180 ...ped using the Prompt plug-in \citep{noy_
+l.1175 ...ped using the Prompt plug-in \citep{noy_
                                                   prompt_2003}. This latter ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.1180 ...e Prompt plug-in \citep{noy_prompt_2003}
+l.1175 ...e Prompt plug-in \citep{noy_prompt_2003}
                                                   . This latter architecture...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3795,15 +3669,15 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 1180.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 1175.
 
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 1180.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 1175.
 
 
 ! Undefined control sequence.
-l.1180 ...ion \ref{subsubsection4.2.5.4}. \cbstart
+l.1175 ...ion \ref{subsubsection4.2.5.4}. \cbstart
                                                    We want to remark that th...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3812,7 +3686,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.1180 ...pe within the manufacturing domain\cbend
+l.1175 ...pe within the manufacturing domain\cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3823,40 +3697,38 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1181 
+l.1176 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (2875.8656pt too wide) in paragraph at lines 1180--1181
+Overfull \hbox (2852.5322pt too wide) in paragraph at lines 1175--1176
 \OT1/cmr/m/n/10 cepts of both do-mains. This map-ping on-tol-ogy was de-vel-ope
 d us-ing the Prompt plug-in noy$[]\OML/cmm/m/it/10 rompt[]\OT1/cmr/m/n/10 003\O
 ML/cmm/m/it/10 :Thislatterarchitecturecanbeconsideredasasimplifiedandspecialize
-dviewofFig:[][]\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 28[][]\OML/cm
-m/m/it/10 ; wheretwoterminologicallysimilarontologies; MASONandOntoStepwerehype
-rmappedwithBeyondStepwithinafeature[]shypermodule:Termspresentinthoseontologies
-arenaturallyrelatedtothe\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 dimensionaldomaingive
-ntherelationsfoundbytheresultsobtainedfromtheextractionofthefeature[]shypermodu
-le; whichwasdescribedinSection[][]\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :\OT1/cmr/m
-/n/10 5[][]\OML/cmm/m/it/10 :Wewanttoremarkthattheapplication; basedonthearchit
-ecturedepictedinFig:[][]\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 34[]
-[]\OML/cmm/m/it/10 ; hasalimitedscopeanditwasdevelopedaspartofourinitialexperie
-nces; whilethehyperontologyproposedinFig:[][]\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 
-:\OT1/cmr/m/n/10 28[][]\OML/cmm/m/it/10 hasalargescopewithinthemanufacturingdom
-ain$ 
+dviewofFig:[][]\OT1/cmr/m/n/10 29[][]\OML/cmm/m/it/10 ; wheretwoterminologicall
+ysimilarontologies; MASONandOntoStepwerehypermappedwithBeyondStepwithinafeature
+[]shypermodule:Termspresentinthoseontologiesarenaturallyrelatedtothe\OT1/cmr/m/
+n/10 3\OML/cmm/m/it/10 dimensionaldomaingiventherelationsfoundbytheresultsobtai
+nedfromtheextractionofthefeature[]shypermodule; whichwasdescribedinSection[][]\
+OT1/cmr/m/n/10 5\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5[][]\OML/cmm/m/it/10 :Wewant
+toremarkthattheapplication; basedonthearchitecturedepictedinFig:[][]\OT1/cmr/m/
+n/10 35[][]\OML/cmm/m/it/10 ; hasalimitedscopeanditwasdevelopedaspartofouriniti
+alexperiences; whilethehyperontologyproposedinFig:[][]\OT1/cmr/m/n/10 29[][]\OM
+L/cmm/m/it/10 hasalargescopewithinthemanufacturingdomain$ 
  []
 
-<figure-chapterIV/fig4-34.pdf, id=760, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-34.pdf, id=779, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-34.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-34.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-34.pdf  used on input line 1189.
+Package pdftex.def Info: figure-chapterIV/fig4-34.pdf  used on input line 1184.
 
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    !
-l.1190 	\vspace{-60}
+l.1185 	\vspace{-60}
                     
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3865,20 +3737,20 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-[60] [61 <./figure-chapterIV/fig4-33.pdf>]
-<figure-chapterIV/fig4-41.pdf, id=782, 614.295pt x 794.97pt>
+[61] [62 <./figure-chapterIV/fig4-33.pdf>]
+<figure-chapterIV/fig4-41.pdf, id=802, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-41.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-41.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-41.pdf  used on input line 1202.
+Package pdftex.def Info: figure-chapterIV/fig4-41.pdf  used on input line 1197.
 
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1202--1203
+Underfull \hbox (badness 10000) in paragraph at lines 1197--1198
 
  []
 
 ! Undefined control sequence.
-l.1209 \cbstart
+l.1204 \cbstart
                 This last constraint, Distance between  Holes, has a peculia...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3887,11 +3759,11 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `subsection2.2.3' on page 62 undefined on input line 1
-209.
+LaTeX Warning: Reference `subsection2.2.3' on page 63 undefined on input line 1
+204.
 
 ! Undefined control sequence.
-l.1209 ...will help to overcome this issue. \cbend
+l.1204 ...will help to overcome this issue. \cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3900,10 +3772,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `section2.3' on page 62 undefined on input line 1214.
+LaTeX Warning: Reference `section2.3' on page 63 undefined on input line 1209.
 
 ! Undefined control sequence.
-l.1217 \cbstart
+l.1212 \cbstart
                 In \cite{ramos_hetereogeneous_2012}   we introduced an archi...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3911,12 +3783,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-LaTeX Warning: Citation `ramos_hetereogeneous_2012' on page 62 undefined on inp
-ut line 1217.
-
 ! Undefined control sequence.
-l.1217 ... too close to each other as well. \cbend
+l.1212 ... too close to each other as well. \cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3924,16 +3792,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[62 <./figure-chapterIV/fig4-34.pdf>] [63 <./figure-chapterIV/fig4-41.pdf>]
-<figure-chapterIV/fig4-35.pdf, id=802, 614.295pt x 794.97pt>
+[63 <./figure-chapterIV/fig4-34.pdf>] [64 <./figure-chapterIV/fig4-41.pdf>]
+<figure-chapterIV/fig4-35.pdf, id=824, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-35.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-35.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-35.pdf  used on input line 1222.
+Package pdftex.def Info: figure-chapterIV/fig4-35.pdf  used on input line 1217.
 
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
 
 ! Undefined control sequence.
-l.1244 \cbstart
+l.1239 \cbstart
                 The restriction described in equation \ref{eq4.10} can be re...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3942,11 +3810,11 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `subsection2.2.3' on page 64 undefined on input line 1
-244.
+LaTeX Warning: Reference `subsection2.2.3' on page 65 undefined on input line 1
+239.
 
 ! Undefined control sequence.
-l.1244 ....12} illustrate ternary relations \cbend
+l.1239 ....12} illustrate ternary relations \cbend
                                                    . It is also worth mentio...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3955,14 +3823,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `section2.4' on page 64 undefined on input line 1247.
+LaTeX Warning: Reference `section2.4' on page 65 undefined on input line 1242.
 
 
-LaTeX Warning: Citation `w3c_product_2005' on page 64 undefined on input line 1
-249.
+LaTeX Warning: Citation `w3c_product_2005' on page 65 undefined on input line 1
+244.
 
 ! Undefined control sequence.
-l.1265 ...homogeneous measurement system. \cbstart
+l.1260 ...homogeneous measurement system. \cbstart
                                                    HETS and CASL are the bas...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3971,11 +3839,11 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `subsection2.3.2' on page 64 undefined on input line 1
-265.
+LaTeX Warning: Reference `subsection2.3.2' on page 65 undefined on input line 1
+260.
 
 ! Undefined control sequence.
-l.1265 ...ed explanation of HETS and CASL). \cbend
+l.1260 ...ed explanation of HETS and CASL). \cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3983,21 +3851,21 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[64] [65 <./figure-chapterIV/fig4-35.pdf>]
+[65] [66 <./figure-chapterIV/fig4-35.pdf>]
 
-LaTeX Warning: Reference `subsection2.3.1' on page 66 undefined on input line 1
-269.
+LaTeX Warning: Reference `subsection2.3.1' on page 67 undefined on input line 1
+264.
 
-<figure-chapterIV/fig4-36.pdf, id=1357, 794.97pt x 614.295pt>
+<figure-chapterIV/fig4-36.pdf, id=1379, 794.97pt x 614.295pt>
 File: figure-chapterIV/fig4-36.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-36.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-36.pdf  used on input line 1274.
+Package pdftex.def Info: figure-chapterIV/fig4-36.pdf  used on input line 1269.
 
 (pdftex.def)             Requested size: 397.48402pt x 307.14674pt.
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    !
-l.1275 	\vspace{-40}
+l.1270 	\vspace{-40}
                     
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4006,19 +3874,19 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<figure-chapterIV/fig4-37.pdf, id=1358, 794.97pt x 614.295pt>
+<figure-chapterIV/fig4-37.pdf, id=1380, 794.97pt x 614.295pt>
 File: figure-chapterIV/fig4-37.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-37.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-37.pdf  used on input line 1286.
+Package pdftex.def Info: figure-chapterIV/fig4-37.pdf  used on input line 1281.
 
 (pdftex.def)             Requested size: 556.4752pt x 430.00356pt.
 
-LaTeX Warning: Float too large for page by 4.93584pt on input line 1291.
+LaTeX Warning: Float too large for page by 4.93584pt on input line 1286.
 
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    !
-l.1295 \vspace{-50}
+l.1290 \vspace{-50}
                    
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4027,16 +3895,16 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<figure-chapterIV/fig4-38.pdf, id=1359, 794.97pt x 614.295pt>
+<figure-chapterIV/fig4-38.pdf, id=1381, 794.97pt x 614.295pt>
 File: figure-chapterIV/fig4-38.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-38.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-38.pdf  used on input line 1297.
+Package pdftex.def Info: figure-chapterIV/fig4-38.pdf  used on input line 1292.
 
 (pdftex.def)             Requested size: 397.48402pt x 307.14674pt.
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    !
-l.1298 	\vspace{-80}
+l.1293 	\vspace{-80}
                     
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4045,14 +3913,14 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<figure-chapterIV/fig4-39.pdf, id=1360, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-39.pdf, id=1382, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-39.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-39.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-39.pdf  used on input line 1309.
+Package pdftex.def Info: figure-chapterIV/fig4-39.pdf  used on input line 1304.
 
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
 ! Undefined control sequence.
-l.1318 ...ur task, the theorem prover SPASS \citep
+l.1313 ...ur task, the theorem prover SPASS \citep
                                                   {weidenbach_chapter_2001} ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4063,13 +3931,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1318 ... theorem prover SPASS \citep{weidenbach_
+l.1313 ... theorem prover SPASS \citep{weidenbach_
                                                   chapter_2001} was run in p...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.1318 ...er SPASS \citep{weidenbach_chapter_2001}
+l.1313 ...er SPASS \citep{weidenbach_chapter_2001}
                                                    was run in proof node to ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4080,32 +3948,28 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1319 
+l.1314 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (684.21385pt too wide) in paragraph at lines 1318--1319
+Overfull \hbox (676.43605pt too wide) in paragraph at lines 1313--1314
 []\OT1/cmr/m/n/10 To com-plete our task, the the-o-rem prover SPASS weidenbach$
 []\OML/cmm/m/it/10 hapter[]\OT1/cmr/m/n/10 001\OML/cmm/m/it/10 wasruninproofnod
-etoassurethecorrectnessofourinstantiation:Fig:[][]\OT1/cmr/m/n/10 1\OML/cmm/m/i
-t/10 :\OT1/cmr/m/n/10 41[][]\OML/cmm/m/it/10 depictstheresult; whichwasprovedin
-thisopportunity; confirmingthatourdesigncomplieswiththetechnicalrequirements:$ 
-
+etoassurethecorrectnessofourinstantiation:Fig:[][]\OT1/cmr/m/n/10 42[][]\OML/cm
+m/m/it/10 depictstheresult; whichwasprovedinthisopportunity; confirmingthatourd
+esigncomplieswiththetechnicalrequirements:$ 
  []
 
-<figure-chapterIV/fig4-40.pdf, id=1363, 614.295pt x 794.97pt>
+<figure-chapterIV/fig4-40.pdf, id=1385, 614.295pt x 794.97pt>
 File: figure-chapterIV/fig4-40.pdf Graphic file (type pdf)
 <use figure-chapterIV/fig4-40.pdf>
-Package pdftex.def Info: figure-chapterIV/fig4-40.pdf  used on input line 1324.
+Package pdftex.def Info: figure-chapterIV/fig4-40.pdf  used on input line 1319.
 
 (pdftex.def)             Requested size: 307.14674pt x 397.48402pt.
-[66 <./figure-chapterIV/fig4-36.pdf, page is rotated 90 degrees>] [67 <./figure
--chapterIV/fig4-37.pdf, page is rotated 90 degrees>] [68 <./figure-chapterIV/fi
-g4-38.pdf, page is rotated 90 degrees> <./figure-chapterIV/fig4-39.pdf>]
 ! Undefined control sequence.
-l.1332 ... ends in \texttt{Return\_Disp}. \cbstart
+l.1327 ... ends in \texttt{Return\_Disp}. \cbstart
                                                    In other words, since the...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4114,7 +3978,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.1332 ... provide answer to such questions.\cbend
+l.1327 ... provide answer to such questions.\cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4122,14 +3986,18 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[67 <./figure-chapterIV/fig4-36.pdf, page is rotated 90 degrees>] [68 <./figure
+-chapterIV/fig4-37.pdf, page is rotated 90 degrees>] [69 <./figure-chapterIV/fi
+g4-38.pdf, page is rotated 90 degrees> <./figure-chapterIV/fig4-39.pdf>]
+[70 <./figure-chapterIV/fig4-40.pdf>]
 
-LaTeX Warning: Reference `chapter3' on page 69 undefined on input line 1335.
+LaTeX Warning: Reference `chapter3' on page 71 undefined on input line 1330.
 
 
-LaTeX Warning: Reference `section2.4' on page 69 undefined on input line 1335.
+LaTeX Warning: Reference `section2.4' on page 71 undefined on input line 1330.
 
 ! Undefined control sequence.
-l.1335 ...se statements can be questions. \cbstart
+l.1330 ...se statements can be questions. \cbstart
                                                    Due to these results it w...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4138,7 +4006,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.1335 ...thodological workflow we proposed.\cbend
+l.1330 ...thodological workflow we proposed.\cbend
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4146,7 +4014,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[69 <./figure-chapterIV/fig4-40.pdf>]
 
 ! LaTeX Error: Unicode character   (U+2003)
                not set up for use with LaTeX.
@@ -4155,12 +4022,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1338 ...present and discuss our conclusions.  
+l.1333 ...present and discuss our conclusions.  
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-) [70] (main.acr
+) [71] (main.acr
 
 Package glossaries Warning: Glossary entry `agg' has not been defined on input 
 line 5.
@@ -4217,43 +4084,44 @@ line 29.
 Package glossaries Warning: Glossary entry `wcs' has not been defined on input 
 line 29.
 
-) 
+) (main.bbl [72
+
+
+
+
+]) 
 AED: lastpage setting LastPage
-[71
-
-
-
+[73
 
 ] (main.aux (changes.aux) (section1.aux) (methodology.aux) (results.aux))
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 18CC7A0787E76F25D5BD680A09AC27D2;3587.
+(rerunfilecheck)             Checksum: 56E2A5EAE2FABE7657709C85681669AD;3139.
  )
-(\end occurred inside a group at level 12)
+(\end occurred inside a group at level 11)
 
-### simple group (level 12) entered at line 1318 ({)
-### simple group (level 11) entered at line 1180 ({)
-### simple group (level 10) entered at line 1178 ({)
-### simple group (level 9) entered at line 1172 ({)
-### simple group (level 8) entered at line 1115 ({)
+### simple group (level 11) entered at line 1313 ({)
+### simple group (level 10) entered at line 1175 ({)
+### simple group (level 9) entered at line 1173 ({)
+### simple group (level 8) entered at line 1167 ({)
 ### simple group (level 7) entered at line 1110 ({)
-### simple group (level 6) entered at line 1097 ({)
-### simple group (level 5) entered at line 758 ({)
-### simple group (level 4) entered at line 541 ({)
-### simple group (level 3) entered at line 541 ({)
-### simple group (level 2) entered at line 483 ({)
-### simple group (level 1) entered at line 11 ({)
+### simple group (level 6) entered at line 1105 ({)
+### simple group (level 5) entered at line 1092 ({)
+### simple group (level 4) entered at line 753 ({)
+### simple group (level 3) entered at line 536 ({)
+### simple group (level 2) entered at line 536 ({)
+### simple group (level 1) entered at line 478 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18997 strings out of 478659
- 311421 string characters out of 2855779
- 674866 words of memory out of 3000000
- 36545 multiletter control sequences out of 15000+600000
- 412064 words of font info for 56 fonts, out of 8000000 for 9000
+ 19016 strings out of 478659
+ 311946 string characters out of 2855779
+ 675099 words of memory out of 3000000
+ 36550 multiletter control sequences out of 15000+600000
+ 411458 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,12n,91p,2026b,810s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 91i,12n,91p,2030b,745s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/e
 c/dpi600\tcrm1000.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 bx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
@@ -4273,9 +4141,9 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.
 pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (71 pages, 3696888 bytes).
+Output written on main.pdf (73 pages, 3712472 bytes).
 PDF statistics:
- 1552 PDF objects out of 1728 (max. 8388607)
- 183 named destinations out of 1000 (max. 500000)
- 369 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1597 PDF objects out of 1728 (max. 8388607)
+ 194 named destinations out of 1000 (max. 500000)
+ 353 words of extra memory for PDF output out of 10000 (max. 10000000)
 
