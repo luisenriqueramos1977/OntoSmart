@@ -13,55 +13,61 @@ Reallocating 'name_of_file' (item size: 1) to 12 items.
 A level-1 auxiliary file: results.aux
 Reallocating 'name_of_file' (item size: 1) to 12 items.
 Database file #1: references3.bib
-Warning--I didn't find a database entry for "manouselis_exploring_2010"
-Warning--I didn't find a database entry for "randelli_introducing_2010"
-Warning--I didn't find a database entry for "spiliopoulos_discovery_2010"
-Warning--I didn't find a database entry for "hepp_references_2013"
-Warning--I didn't find a database entry for "ghilardi_did_2006"
-Warning--I didn't find a database entry for "gangemi_modelling_2006"
-Warning--I didn't find a database entry for "oliver_kutz_chinese_2010"
-Warning--I didn't find a database entry for "w3c_product_2005"
-Warning--empty booktitle in ramos_hetereogeneous_2012
+Repeated entry---line 1925 of file references3.bib
+ : @article{grau_owl_2008
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2331 of file references3.bib
+ : @misc{bateman_oasis_2009
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2448 of file references3.bib
+ : @book{kutz_carnap_2010
+ :                       ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "dorr_cad-cam_1987"
+Warning--empty publisher in kutz_carnap_2010
+Warning--empty booktitle in ramos_ontological_2010
 Warning--empty booktitle in ramos_ontology-based_2011
-You've used 10 entries,
+You've used 30 entries,
             2118 wiz_defined-function locations,
-            584 strings with 6960 characters,
-and the built_in function-call counts, 3846 in all, are:
-= -- 394
-> -- 164
-< -- 6
-+ -- 65
-- -- 53
-* -- 238
-:= -- 619
-add.period$ -- 43
-call.type$ -- 10
-change.case$ -- 54
+            702 strings with 11970 characters,
+and the built_in function-call counts, 10955 in all, are:
+= -- 1107
+> -- 518
+< -- 10
++ -- 204
+- -- 170
+* -- 728
+:= -- 1796
+add.period$ -- 120
+call.type$ -- 30
+change.case$ -- 169
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 167
-empty$ -- 303
-format.name$ -- 53
-if$ -- 843
+cite$ -- 33
+duplicate$ -- 424
+empty$ -- 850
+format.name$ -- 170
+if$ -- 2345
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 11
-newline$ -- 62
-num.names$ -- 22
-pop$ -- 63
+int.to.str$ -- 30
+missing$ -- 28
+newline$ -- 174
+num.names$ -- 66
+pop$ -- 186
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 141
 quote$ -- 0
-skip$ -- 120
+skip$ -- 305
 stack$ -- 0
-substring$ -- 210
-swap$ -- 50
-text.length$ -- 6
+substring$ -- 600
+swap$ -- 106
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 38
-warning$ -- 2
-while$ -- 37
-width$ -- 12
-write$ -- 133
-(There were 10 warnings)
+type$ -- 116
+warning$ -- 3
+while$ -- 104
+width$ -- 32
+write$ -- 379
+(There were 3 error messages)
