@@ -184,13 +184,23 @@ This list of ontologies requires a certain level of quality assurance in order t
 
 \subsection{First Quality Control}\label{subsection4.2.2}
 
+
 \begin{figure}
-	\begin{center}
-		\includegraphics[scale=0.5]{figure-chapterIV/fig4-1.pdf}\\
+	\centering
+	\scriptsize
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.3]{figure-chapterIV/fig4-1.pdf}\\
 		\caption{Results of Input Evaluation}
 		\label{figure4-1}
-	\end{center}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.3, angle=270]{figure-chapterIV/fig4-2.pdf}\\
+		\caption{Grouping of Ontologies by Quality Level}
+		\label{figure4-2}
+	\end{minipage}%
 \end{figure}
+
+
 
 The ontologies listed in Table \ref{table4.1} were submitted to the first quality assurance of Onto\textit{Smart}\footnote{shorturl.at/oBEIV}. In order to quantify those parameters we built and proposed a questionnaire\footnote{https://github.com/luisenriqueramos1977/OntoSmart/wiki/General-Informational-Quality-Evaluation-Questionnaire}. There, every dimension is presented with a list of weighted scenarios. The value of the scenario is ranging from 1 on an ideal situation to a lower value given to worse or less advantageous scenarios. The results of applying this questionnaire permitted us determine the current quality level of each ontology. Fig. \ref{figure4-1} outlines the output of performing this preliminary evaluation. 
 
@@ -200,27 +210,11 @@ According to the results shown here, Ontologies evaluated can be divided into th
 A simplified view of these quality sets mentioned above is outlined in Fig. \ref{figure4-2}. From this figure, it can be considered that a reduced number of ontologies fulfill the reusability criterion we proposed in the questionnaire.  That is 30\% appears as highly reusable, while a larger set can be reused   after certain intervention of the ontologists. A last set is of low quality and should not be reused. 
 
 
-\begin{figure}
-	\begin{center}
-		\includegraphics[scale=0.4, angle=-90]{figure-chapterIV/fig4-2.pdf}\\
-		\caption{Grouping of Ontologies by Quality Level}
-		\label{figure4-2}
-	\end{center}
-\end{figure}
+
 
 
 
 Reasons leading to a larger set of low and medium quality ontologies are displayed in Fig. \ref{figure4-3} and Fig. \ref{figure4-4}. Firstly, conceptually speaking, ontologies should be publicly available, and with minimum limitations for their use.  However, as Fig. \ref{figure4-3} shows, from our sample ontologies, only 55\% were available for direct download or provided by authors, while the other portion was not. This issue limits the use of an ontology and also reduces the possibility of performing a more accurate evaluation. 
-
-
-\begin{figure}
-	\begin{center}
-		\includegraphics[scale=0.4, angle=-90]{figure-chapterIV/fig4-3.pdf}\\
-		\caption{Ontology Availability Evaluation}
-		\label{figure4-3}
-	\end{center}
-\end{figure}
-
 
 
 Furthermore, as the next figure shows, explicit indication of rights to reuse and modify the ontology had also been omitted in most of the reviewed ontologies. In an ideal situation, this legal statement should be encoded within the ontology itself, and in the worst case, it should be specified on the site where an ontology is available for download. \gls{owl} has a mechanism that makes it possible to add such types of annotations to ontologies, but even in many of the ontologies written in \gls{owl} this possibility was not used.
@@ -228,15 +222,21 @@ Furthermore, as the next figure shows, explicit indication of rights to reuse an
 Finishing this first evaluation procedure, ontologies were reordered according to the quality level previously given. Table \ref{table4.2} lists the order in which ontologies will be considered for subsequent uses and evaluation. 
 
 
-
 \begin{figure}
-	\begin{center}
-		\includegraphics[scale=0.4]{figure-chapterIV/fig4-4}\\
-		\vspace{-20mm}
+	\centering
+	\scriptsize
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.3, angle=-90]{figure-chapterIV/fig4-3.pdf}\\
+		\caption{Ontology Availability Evaluation}
+		\label{figure4-3}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.35]{figure-chapterIV/fig4-4}\\
 		\caption{Ontology Intellectual Property Evaluation}
 		\label{figure4-4}
-	\end{center}
+	\end{minipage}%
 \end{figure}
+
 
 
 
@@ -317,26 +317,25 @@ Fig. \ref{figure4-6} shows how many competency   questions were answered by each
 
 
 \begin{figure}
-	\begin{center}
-		\includegraphics[scale=0.5]{figure-chapterIV/fig4-6.pdf}\\
+	\centering
+	\scriptsize
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.3]{figure-chapterIV/fig4-6.pdf}\\
 		\caption{Queries Answered per Ontology}
 		\label{figure4-6}
-	\end{center}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.3]{figure-chapterIV/fig4-7}\\
+		\caption{Answers Distribution between Ontologies}
+		\label{figure4-7}
+	\end{minipage}%
 \end{figure}
+
+
 
 
 
 If we want to use the number of competency questions answered per ontology as a quality parameter, it could be considered that the quality of selected ontologies is low because most of them represent a quantity of knowledge only sufficient to answer less than 50\% of the questions. Nevertheless, within Fig. \ref{figure4-7} a distributed view can be presented. This graphic breaks down how the selected ontologies \textit{as a whole} provide answers to 15 of 16 queries. Every column represents the number of ontologies that provide adequate answers to the corresponding \gls{cq}. For instance, no ontology provides an answer to \gls{cq}-3, while \gls{cq}-2, \gls{cq}-6 and \gls{cq}-9 found answers from three different ontologies respectively. 
-
-
-\begin{figure}
-	\begin{center}
-		\includegraphics[scale=0.5]{figure-chapterIV/fig4-7}\\
-		\caption{Answers Distribution between Ontologies}
-		\label{figure4-7}
-	\end{center}
-\end{figure}
-
 
 
 From our point of view, answers to these \gls{cq} certainly support using \textit{modularity}. That means working with a network of ontologies we can be more efficient in the sense of getting more answer to our \gls{cq}'s than working with individual ontologies. In other words, while there is no ontology that provides answers for every \gls{cq}, many \gls{cq} can obtain answers from different ontologies. That means working with these ontologies in a modular architecture, we can obtain answers to 94\% of the given queries, while just using such ontologies alone we would be able to provide answers to only 50\% of the \gls{cq}. 
@@ -472,7 +471,9 @@ Fig. \ref{figure4-9} shows a graphical representation of the \gls{tp} mappings. 
 
 \begin{figure}
 	\begin{center}
+		\vspace{-20mm}
 		\includegraphics[scale=0.5]{figure-chapterIV/fig4-9}\\
+		\vspace{-10mm}
 		\caption{Ontological Commonalities in Answers to Competency Questions}
 		\label{figure4-9}
 	\end{center}
@@ -571,6 +572,7 @@ Here we observe the issue that, besides having a network with significant terms,
 
 \begin{figure}
 	\begin{center}
+		\vspace{-20mm}
 		\includegraphics[scale=0.5, angle=-90]{figure-chapterIV/fig4-13.pdf}\\
 		\caption{Relative Upper Relationship among Ontologies}
 		\label{figure4-13}
@@ -635,20 +637,20 @@ In Fig. \ref{figure4-16} we show the results obtained calculating the values of 
 
 
 \begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5]{figure-chapterIV/fig4-16.pdf}\\
-	\caption{Strength of Concepts Bounded by Unit}
-	\label{figure4-16}
-\end{center}
+	\centering
+	\scriptsize
+	\begin{minipage}{.55\textwidth}
+		\includegraphics[ scale=0.3]{figure-chapterIV/fig4-16.pdf}\\
+		\caption{Strength of Concepts Bounded by Unit}
+		\label{figure4-16}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.25, angle =270]{figure-chapterIV/fig4-17.pdf}\\
+		\caption{Partial Hyperontology for the term \texttt{Unit} graphed with Protégé}
+		\label{figure4-17}
+	\end{minipage}%
 \end{figure}
 
-\begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle =270]{figure-chapterIV/fig4-17.pdf}\\
-	\caption{Partial Hyperontology for the term \texttt{Unit} graphed with Protégé}
-	\label{figure4-17}
-\end{center}
-\end{figure}
 
 
 Fig. \ref{figure4-17} shows the concepts and instances that appear mentioned in Fig. \ref{figure4-16}. This set of concepts was obtained as a partial result of executing the \texttt{compute\_hypermodule} routine which is part of our algorithm. This figure shows the result as an ontology. 
@@ -657,23 +659,23 @@ Fig. \ref{figure4-17} shows the concepts and instances that appear mentioned in 
 
 Similarly, and following the procedure described above, the Hyper module \texttt{Product} was obtained. This hyper module is integrated   by the terms \texttt{Product, Part} and \texttt{Assembly}. It is worth noting the relevance of these terms in Semantic Manufacturing because,   on the one hand the Product can be considered the center of this conceptualization, and products many times are integrated by some type of parts, generating an assembly. On the other hand the presence of the concepts \texttt{Part} and \texttt{Assembly} in this hyper module indicates the existence of a relation that comprises the product, and this type of relation is known as part-hood relations. Later, as part of our methodology, when Axiomatization and Heterogeneity activities take place, the part-hood relations issued by \gls{owl}, will be taken up and discussed. Below we present the analysis related to this hyper module. 
 
-
 \begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=-90]{figure-chapterIV/fig4-18.pdf}\\
-	\caption{Product Hyper Module}
-	\label{figure4-18}
-\end{center}
+	\centering
+	\scriptsize
+	\begin{minipage}{.45\textwidth}
+		\includegraphics[scale=0.35, angle=-90]{figure-chapterIV/fig4-18.pdf}\\
+		\caption{Product Hyper Module}
+		\label{figure4-18}
+	\end{minipage}%
+	\begin{minipage}{.55\textwidth}
+		\includegraphics[scale=0.35, angle=270]{figure-chapterIV/fig4-19}\\
+		\caption{Members of the Hypermodule Product}
+		\label{figure4-19}
+	\end{minipage}%
 \end{figure}
 
-\begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=270]{figure-chapterIV/fig4-19}\\
-	\vspace{-20mm}
-	\caption{Members of the Hypermodule Product}
-	\label{figure4-19}
-\end{center}
-\end{figure}
+
+
 
 
 Fig. \ref{figure4-18} shows the results of the statistical analysis we performed, which is the term \texttt{Product} has a \gls{bs} of 0.83, followed by \texttt{Assembly} with a \gls{bs} of 0.5; and the term \texttt{Part} with a \gls{bs} of 0.33 Moreover \texttt{Product} has a \gls{ds} of 0.625 followed by \texttt{Assembly} and \texttt{Part} with a \gls{ds} of 0.375 and 0.25 respectively. In the case of the term \texttt{Part}, and following a criterion similar to the one used for the hyper module \texttt{Unit}, we can state that there is a weakness in it, which means there is a low likelihood of achieving interoperability through it.  After analyzing  this hyper module according to the proposed \gls{bs} and \gls{ds} metrics, we proceed to represent it as an ontology in Fig. \ref{figure4-19}. This figure corresponds to a simplified view given that the corresponding ontologies, and other hyper-modules have to be integrated in a complete view, present in the hyper ontology as integrated by hyper modules in an ontologies network. 
@@ -686,23 +688,23 @@ Following the statistical   analysis of results, Fig. \ref{figure4-20} introduce
 The last four terms mentioned above are closely related (\texttt{Cutting}, \texttt{Drilling}, \texttt{Milling} and \texttt{Addition}), given that   the three terms correspond to a manufacturing application domain named machining, and all of them belong to \gls{mason}. We go into details of these results because the authors of \gls{mason} declared it is an Upper Level Ontology. These concepts have a low \gls{bs} and \gls{ds} (0.2 and 0.125 for each respectively) which makes them highly usable, but less reusable because of their specificity. This result is not necessarily related to quality, because the effectivity of this ontology will depend more on the skills of the ontologist than the ontology itself. But, the resulting values of \gls{bs} and \gls{ds} of those \gls{mason} concepts serves  to categorize \gls{mason} as an Application Domain Ontology. This is not an isolated result. In previous Section we  mentioned the research of other authors who have made similar remarks about their work, but with the implemented metrics,  procedures followed, and results obtained, the classification made by these authors  on  ontologies as \gls{ulo}´s can be questioned. 
 
 
-\begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=-90]{figure-chapterIV/fig4-20}\\
-	\caption{Hyper Module Process}
-	\label{figure4-20}
-\end{center}
-\end{figure}
 
 \begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=270]{figure-chapterIV/fig4-21}\\
-	\vspace{-40mm}
-	\caption{Hyperontology of Process}
-	
-	\label{figure4-21}
-\end{center}
+	\centering
+	\scriptsize
+	\begin{minipage}{.55\textwidth}
+		\includegraphics[scale=0.35, angle=-90]{figure-chapterIV/fig4-20}\\
+		\caption{Hyper Module Process}
+		\label{figure4-20}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.35, angle=270]{figure-chapterIV/fig4-21}\\
+		\caption{Hyperontology of Process}
+		\label{figure4-21}
+	\end{minipage}%
 \end{figure}
+
+
 
 In Fig. \ref{figure4-21} we introduce an ontological view of the Hyperontology of the \texttt{Process} as resulting from Fig. \ref{figure4-21}. The concept \texttt{Operation} was used as root concept for specific operations due to its higher \gls{ds} (0.375), while \texttt{Process} and \texttt{Change} remained  at the same \texttt{Operation} level. \textbf{meaning}
 
@@ -711,25 +713,27 @@ In Fig. \ref{figure4-21} we introduce an ontological view of the Hyperontology o
 
 Continuing with our Hypermodule extraction, we processed a hyper module containing some features commonly found in mechanization processes. We named this hyper module of features. Some of the concepts contained by this module are \texttt{Circular\_Pattern}, \texttt{Threat}, \texttt{Slot}, \texttt{Pocket}, and \texttt{Chamfer}. Most of the terms were found in \gls{mason} and Onto STEP, which will allow information exchange among both ontologies. It is necessary to highlight that the features mentioned below are common in mechanization processes, but they are not the only ones and they were also not found in the other 6 ontologies. For instance, \gls{pronto} was proposed to represent products and their features, however no hyper-mapping was found in the network, because   they referred to different Application Domains: \gls{mason} corresponds to machining processes, and \gls{pronto} to breaking up or separating processes.
 
-
 \begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=-90]{figure-chapterIV/fig4-22.pdf}\\
-	\caption{Hypermodule of Features}
-	\label{figure4-22}
-\end{center}
+	\centering
+	\scriptsize
+	\begin{minipage}{.50\textwidth}
+		\includegraphics[scale=0.35, angle=-90]{figure-chapterIV/fig4-22.pdf}\\
+		\caption{Hypermodule of Features}
+		\label{figure4-22}
+	\end{minipage}%
+	\begin{minipage}{.50\textwidth}
+		\includegraphics[scale=0.35, angle=270]{figure-chapterIV/fig4-23}\\
+		\caption{Hyperontology Features}
+		\label{figure4-23}
+	\end{minipage}%
 \end{figure}
+
+
 
 Fig. \ref{figure4-23} shows the Hyperontology of Features, where concept \texttt{Features} is the  root concept in this ontology. These Features mostly apply to mechanization procedures. 
 
 
-\begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=270]{figure-chapterIV/fig4-23}\\
-	\caption{Hyperontology Features}
-	\label{figure4-23}
-\end{center}
-\end{figure}
+
 
 Continuing with the description of the hyper modules obtained by the execution of the proposed algorithm, we obtained \texttt{Resource, Machine, Tool, Lathe} and \texttt{Drill} concepts. All these concepts were  found in the \gls{mason} and OntoMoPS ontologies, while in OntoSTEP only 2 of them were found. 
 
@@ -739,21 +743,20 @@ In this vein, Fig. \ref{figure4-24} contains the result of applying the \gls{bs}
 
 
 \begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=-90]{figure-chapterIV/fig4-24.pdf}\\
-	\caption{Hypermodule Resources}
-	\label{figure4-24}
-\end{center}
+	\centering
+	\scriptsize
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.35, angle=-90]{figure-chapterIV/fig4-24.pdf}\\
+		\caption{Hypermodule Resources}
+		\label{figure4-24}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.35, angle=270]{figure-chapterIV/fig4-23}\\
+		\caption{Hyperontology of Resource}
+		\label{figure4-25}
+	\end{minipage}%
 \end{figure}
 
-\begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=270]{figure-chapterIV/fig4-25}\\
-	\vspace{-40mm}
-	\caption{Hyperontology of Resource}
-	\label{figure4-25}
-\end{center}
-\end{figure}
 
 \subsubsection{Hyper module of Curve}\label{subsubsection4.2.5.5}
 
@@ -763,28 +766,20 @@ The last hyper module we found following the proposed algorithm, corresponds to 
 In this case, the \gls{bs} of every concept is equal to 1, meaning that every concept is in all ontologies of the boundary, and  \gls{ds} is equal to 0.25 which means that these concepts make up less than 25\% of the ontologies. Fig. \ref{figure4-27} introduces the categorization of these concepts. Considering \texttt{Line} and \texttt{Conic} as \texttt{Curves}, and \texttt{Circle}, \texttt{Hyperbola}, \texttt{Ellipse} and \texttt{Parabola} as \texttt{Conics}. 
 
 
-
 \begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=-90]{figure-chapterIV/fig4-26}\\
-	\caption{Geometry Hypermodule}
-	\label{figure4-26}
-\end{center}
+	\centering
+	\scriptsize
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.35, angle=-90]{figure-chapterIV/fig4-26}\\
+		\caption{Geometry Hypermodule}
+		\label{figure4-26}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.35, angle=270]{figure-chapterIV/fig4-27}\\
+		\caption{Geometry Ontology}
+		\label{figure4-27}
+	\end{minipage}%
 \end{figure}
-
-
-
-
-
-\begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=270]{figure-chapterIV/fig4-27}\\
-	\vspace{-20mm}
-	\caption{Geometry Ontology}
-	\label{figure4-27}
-\end{center}
-\end{figure}
-
 
 
 
@@ -833,6 +828,7 @@ After defining the requirement of heavyweight ontologies for manufacturing, we a
 
 \begin{figure}
 \begin{center}
+	\vspace{-20mm}
 	\includegraphics[scale=0.5, angle=-90]{figure-chapterIV/fig4-29.pdf}\\
 	\caption{Defined    Concepts in Network}
 	\label{figure4-29}
@@ -877,26 +873,23 @@ In order to assess the usability of the Semantic Web in manufacturing, other use
 Even though both figures seem to have the same representation of a mechanical piece, they are actually not the same. Only primitives (circles) are what have been actually exchanged from AutoCAD into \gls{dxf}, and so into \gls{owl}. This means that while the viewer may perceive a flange, for the computer they just remain as circles. Thus design purpose (knowledge) is lost during the exchange due to missing semantics.
 
 
-
 \begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=270]{figure-chapterIV/fig4-31}\\
-	\caption{Shape in AutoCAD}
-	\label{figure4-31}
-\end{center}
+	\centering
+	\scriptsize
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.3, angle=-90]{figure-chapterIV/fig4-31}\\
+		\caption{Shape in AutoCAD}
+		\label{figure4-31}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.3, angle=270]{figure-chapterIV/fig432}\\
+		\caption{Shape in OntoCAD}
+		\label{figure4-32}
+	\end{minipage}%
 \end{figure}
 
 
 
-
-
-\begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5,angle=270]{figure-chapterIV/fig432}\\
-	\caption{Shape in OntoCAD}
-	\label{figure432}
-\end{center}
-\end{figure}
 
 
 In order to recover the designer intent, it is necessary to provide tools or representations to capture the designer’s knowledge. Moreover, it would be appropriate to support the knowledge of the manufacturing engineer, quality control, and other related tasks as well. 
@@ -909,7 +902,7 @@ In the middle of the architecture, we placed Semantic Web technologies for 2D, a
 \begin{figure}
 \begin{center}
 	\includegraphics[scale=0.8]{figure-chapterIV/fig4-33}\\
-	\vspace{-40mm}
+	\vspace{-20mm}
 	\caption{OntoCAD Framework}
 	\label{figure4-33}
 \end{center}
@@ -934,26 +927,30 @@ This \gls{owl} issue is also depicted in Fig. \ref{figure4-33} when we try to mo
 
 
 \begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=270]{figure-chapterIV/fig4-34}\\
-	%%\vspace{-60mm}
-	\caption{Mapping Architecture}
-	\label{figure4-34}
-\end{center}
+	\centering
+	\scriptsize
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.35, angle=-90]{figure-chapterIV/fig4-34}\\
+		\caption{Mapping Architecture}
+		\label{figure4-34}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.35, angle=270]{figure-chapterIV/fig4-41}\\
+		\caption{Manufacturing Features with their Constraints}
+		\label{figure4-41}
+	\end{minipage}%
 \end{figure}
+
+
+
+
+
+
+
+
 
 
 For larger sets of ontologies, and with more complex tasks to perform, we can say that we are in the presence of a hyper-mapped architecture. For instance, manufacturing Operations, mentioned in Fig. \ref{figure4-28}, could be introduced in Fig. \ref{figure4-33} in order to deduce such operations for manufacturing the inferred features. Going into detail, Fig. \ref{figure4-41} lists most of the features mentioned so far, as well as the restrictions required to make them appropriate for manufacturing. Thus, after features are deduced, through the architecture suggested in Fig. \ref{figure4-34} inferred knowledge as features can be available to evaluated  them in order to determine their accuracy with quality restrictions. Every restriction illustrated in Fig. \ref{figure4-35} was successfully represented with \gls{owl}, and in all restrictions,    except Distance between holes, quality could be deduced. 
-
-
-
-\begin{figure}
-\includegraphics[scale=0.5, angle=-90]{figure-chapterIV/fig4-41}\\
-\caption{Manufacturing features with their constraints}
-\label{figure4-41}
-\end{figure}
-
-
 
 This last constraint, Distance between  Holes, has a peculiarity. While the others involve binary relations (e.g $has\_Diameter(h_{1},d)$), this one involves a ternary relation (e.g $distance\_Between\_Holes(h_{1},h_{2},d)$), which is not possible to be expressed in \gls{owl} and is therefore one of the restrictions of this language. In the next section we explain how the heterogeneity approach will help to overcome this issue. 
 
@@ -1027,39 +1024,43 @@ Fig. \ref{figure4-38} introduces this proof obligation for a set of instances fr
 \end{center}
 \end{figure}
 
-
-
 \begin{figure}
-
 \begin{center}
-	\includegraphics[scale=0.7, angle=90]{figure-chapterIV/fig4-37.pdf}\\
+	\vspace{-10mm}
+	\includegraphics[scale=0.6]{figure-chapterIV/fig4-37.pdf}\\
 	\caption{Partial View of \texttt{My\_Checker} Spec}
 	\label{figure4-37}
 \end{center}
-
 \end{figure}
 
-
 \begin{figure}
-\vspace{-50mm}
 \begin{center}
 	\includegraphics[scale=0.5]{figure-chapterIV/fig4-38.pdf}\\
-	\vspace{-80mm}
+	\vspace{-30mm}
 	\caption{Instantiated  Proof}
 	\label{figure4-38}
 \end{center}
-
 \end{figure}
-
 
 
 \begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=270]{figure-chapterIV/fig4-39}\\
-	\caption{\texttt{My\_Checker} \gls{hets} view }
-	\label{figure4-39}
-\end{center}
+	\centering
+	\scriptsize
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.35, angle=-90]{figure-chapterIV/fig4-39}\\
+		\caption{\texttt{My\_Checker} \gls{hets} view}
+		\label{figure4-39}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\includegraphics[scale=0.35, angle=270]{figure-chapterIV/fig4-40.pdf}\\
+		\caption{Proof of Sample provided}
+	\label{figure4-40}
+\end{minipage}%
 \end{figure}
+
+
+
+
 
 
 After loading the specification in \gls{hets} we obtained the windows shown in Fig. \ref{figure4-39}.  On the left side, at the top and bottom, the development graphic is represented. There, nodes named Nat, \gls{sfo} and \texttt{My\_Checker} correspond to given specifications; such nodes are shown in green color in \gls{hets}. More specifically, Nat comes from the library of Numbers (\gls{casl}), \gls{sfo} comes from the \gls{sfo} (\gls{owl}) and \texttt{My\_Checker} imports both (\gls{sfo} and Nat). The node \texttt{My\_Checker\_E2}, shown in red by \gls{hets}, represents proof obligations. On the right side of the same figure, in the top  view we can observe the axiom to be proved representing the proof obligation. Finally, in the  middle of the  window, there is a list of all axioms present in the specification and the available theorem provers. They are identified as “Axioms to Include” and “Theorems to Include if Proven”.  
@@ -1068,13 +1069,7 @@ To complete our task, the theorem prover SPASS \cite{weidenbach_chapter_2001} wa
 
 
 
-\begin{figure}
-\begin{center}
-	\includegraphics[scale=0.5, angle=-90]{figure-chapterIV/fig4-40.pdf}\\
-	\caption{Proof of Sample provided}
-	\label{figure4-40}
-\end{center}
-\end{figure}
+
 
 This then overcomes the reasoning \gls{owl} restriction, as demonstrated by implementing the architecture proposed in Fig.\ref{figure4-36}.
 
@@ -1084,7 +1079,7 @@ We have to follow up with the final implementation of the products obtained from
 Throughout this Section we captured the implementation of the methodology we proposed in Onto\textit{Smart}. Our main motivation for this proposal was the ongoing discussion in ontological engineering which includes topics such as reusability, \gls{ulo}, modularity and heterogeneity. We proposed some specific metrics and methods to serve as criterion in a development workflow. A group of ontologies related with the manufacturing domain was selected because in this domain the manufacturing community has shown interest in Ontological Engineering.  These ontologies passed an evaluation procedure, based in information quality and Competency Questions. Given that no ontology provided answers to all competency questions, we tried to make reusable the knowledge encoded in these ontologies. Our first attempt was using one of the ontologies as an interoperability artifact, however according to this proposed metrics and the obtained results, no upper level ontology was found. This result is worth mentioning because some authors have stated that their ontologies were of upper level, and for us these statements can be questions. Due to these results it was necessary to continue with our methodological workflow, in order to  fulfill our requirement. Whereby some hyper-modules were extracted from the network ontologies under study. The resulting hyper-modules were integrated in an Hyperontology shown in Fig.\ref{figure4-28}. Later, during the implementation phase, the \gls{owl} restrictions as ontology language were evidenced to represent the proposed scenario, therefore it was necessary to proceed with the heterogeneous activities proposed in our methodology. The inclusion of an heterogeneous layer made possible to complete the workflow, and check the restriction in the product shown in Fig.\ref{figure4-36}. With this result we consider to have complete the methodological workflow we proposed.
 
 In next Section we present our conclusion and discussion future work.
-%%In the next chapter we will represent and discuss our conclusions.  
+
 
 
 
