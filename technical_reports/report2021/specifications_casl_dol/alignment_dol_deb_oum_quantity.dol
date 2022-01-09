@@ -1,0 +1,48 @@
+%%mapping among a set of industrial ontology, a general mapping for illustration
+%%alignment done for illustrative purposes among DEB and OUM
+library hyper1
+
+
+
+logic OWL
+
+from oum_onto_dol get oum
+
+%%fourth aligment
+from deb_dol get deb
+
+%%alignment among oum and deb
+
+alignment deb_oum_alignment : deb to oum =
+  Class Density = Class Density,
+  Class Diameter = Class Diameter
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

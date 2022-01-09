@@ -1,0 +1,148 @@
+\documentclass{report}
+
+\usepackage{tabulary}
+
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{adjustbox}
+\usepackage{rotating}
+\usepackage{amsmath} 
+\usepackage{mathtools}
+\usepackage[toc,page]{appendix}
+% Load the package with the acronym option
+\usepackage[acronym,nomain]{glossaries}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage {graphicx}
+\usepackage{array}
+\usepackage{lastpage}
+\usepackage[hmargin=2cm,top=4cm,headheight=65pt,footskip=65pt]{geometry}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
+\setlength{\parindent}{0.95cm}
+\pagestyle{fancy}
+%section change begin in 0 to begin in 1
+\renewcommand{\thesection}{\arabic{section}}
+
+\renewcommand{\headrulewidth}{0pt}
+\makeatletter
+\renewcommand{\maketitle}{
+	\noindent
+		%%{\huge  \bf \href{https://www.pst.ag/}{PST, AG} }  \newline 
+		%%{\footnotesize Frauentorstraße 3} \newline
+		{\footnotesize Maracay, Venezuela} \newline
+		%%D - 99423 Weimar \hfill \newline
+	 .{\Large \hfill Ellaborated in January, 2016}//
+
+\begin{center}
+\pagestyle{empty}
+\phantom{.}  %necessary to add space on top before the title
+\vspace{3cm}
+
+{\Huge \bf \@title\par}
+\vspace{2.5cm}
+{\LARGE Luis Ramos}\\[1cm]
+\vspace{4.5cm}
+
+%if you want something in the bottom of the page just use /vfill before that.
+{ Document Version: 0.1}   \\[1cm] 
+
+\end{center}
+
+}\makeatother
+
+
+
+%define json formatting
+
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+\lstdefinelanguage{json}{
+	basicstyle=\normalfont\ttfamily,
+	numbers=left,
+	numberstyle=\scriptsize,
+	stepnumber=1,
+	numbersep=8pt,
+	showstringspaces=false,
+	breaklines=true,
+	frame=lines,
+	backgroundcolor=\color{background},
+	literate=
+	*{0}{{{\color{numb}0}}}{1}
+	{1}{{{\color{numb}1}}}{1}
+	{2}{{{\color{numb}2}}}{1}
+	{3}{{{\color{numb}3}}}{1}
+	{4}{{{\color{numb}4}}}{1}
+	{5}{{{\color{numb}5}}}{1}
+	{6}{{{\color{numb}6}}}{1}
+	{7}{{{\color{numb}7}}}{1}
+	{8}{{{\color{numb}8}}}{1}
+	{9}{{{\color{numb}9}}}{1}
+	{:}{{{\color{punct}{:}}}}{1}
+	{,}{{{\color{punct}{,}}}}{1}
+	{\{}{{{\color{delim}{\{}}}}{1}
+	{\}}{{{\color{delim}{\}}}}}{1}
+	{[}{{{\color{delim}{[}}}}{1}
+	{]}{{{\color{delim}{]}}}}{1},
+}
+
+
+
+\title{Onto\textit{Smart} Applied in the Manufacturing Domain}  % you can actually insert these directly above if you prefer.
+\date{\today}
+
+
+%insert header figure
+\setlength\headheight{26pt} 
+
+%%\rhead{\includegraphics[width=3cm]{pst_header.png}}
+
+%\lhead{Page \thepage}
+%\rfoot{Page \thepage}
+%\lfoot{Page \thepage}
+% Generate the glossary
+
+\makeglossaries
+\loadglsentries{myglossary}
+\bibliographystyle{plain}
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \include{changes}
+    \include{section1}
+    \include{methodology}
+    \include{results}
+    \include{conclusions}
+    
+%%    \appendix
+%%    \chapter{List of Queries}
+  %%  \input{queries}
+    %%\chapter{Ownership Output}
+    %%\input{ownership_rings}
+    %%\chapter{OFAC Santioned Ownerships}
+    %%\input{ofac_table}
+    %%\chapter{Worst Case Scenario Results}
+    %%\input{wcs_table}
+    
+   \printglossaries
+   
+   \bibliography{references3}
+\end{document}
+
+
+
+
+
+
+

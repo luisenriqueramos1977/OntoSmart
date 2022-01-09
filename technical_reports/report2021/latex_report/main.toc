@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Changes}{3}{section.0.1}%
+\contentsline {section}{\numberline {2}Report Scope}{4}{section.0.2}%
+\contentsline {section}{\numberline {3}Brief Methodology Description}{5}{section.0.3}%
+\contentsline {section}{\numberline {4}Results}{9}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}Initial Activities }{9}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {4.2}Domain Specifications }{9}{subsection.0.4.2}%
+\contentsline {subsection}{\numberline {4.3}Competency Questions}{10}{subsection.0.4.3}%
+\contentsline {subsection}{\numberline {4.4}Knowledge Acquisition}{11}{subsection.0.4.4}%
+\contentsline {subsection}{\numberline {4.5}Finding and Measuring Ontology Quality}{11}{subsection.0.4.5}%
+\contentsline {subsection}{\numberline {4.6}Finding Ontologies}{11}{subsection.0.4.6}%
+\contentsline {subsection}{\numberline {4.7}First Quality Control}{13}{subsection.0.4.7}%
+\contentsline {subsection}{\numberline {4.8}Performing Competency Questions}{14}{subsection.0.4.8}%
+\contentsline {subsection}{\numberline {4.9}Mapping, merging and importing}{20}{subsection.0.4.9}%
+\contentsline {subsection}{\numberline {4.10}Hyper Modules Extraction}{28}{subsection.0.4.10}%
+\contentsline {subsubsection}{Hyper module of Unit}{29}{section*.2}%
+\contentsline {subsubsection}{Hyper module of Product}{29}{section*.3}%
+\contentsline {subsubsection}{Hyper-module of the Process}{30}{section*.4}%
+\contentsline {subsubsection}{Hyper module of Features}{31}{section*.5}%
+\contentsline {subsubsection}{Hyper module of Curve}{33}{section*.6}%
+\contentsline {section}{\numberline {5}Between Light Weight and Heavy Weight Ontologies}{34}{section.0.5}%
+\contentsline {section}{\numberline {6}Implementing Heavyweight Ontologies}{37}{section.0.6}%
+\contentsline {section}{\numberline {7}Extending Ontologies through Heterogeneity}{42}{section.0.7}%
+\contentsline {section}{\numberline {8}Discussion of this Report}{49}{section.0.8}%
+\contentsline {section}{\numberline {9}Opportunities for Future Research}{50}{section.0.9}%

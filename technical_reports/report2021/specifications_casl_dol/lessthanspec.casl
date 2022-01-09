@@ -1,0 +1,57 @@
+%%this prove works
+%%Tested, and must be import for execution. 
+%%from Basic/Numbers get Int
+%% two person with a height in different units must be disproved, 
+%%dummy spec, created because of parsing error
+%%logic CASL
+
+%%spec DummySpec = 
+%%	sort Thing	
+%%end	
+
+%%spec to prove lessthan in three elements
+
+logic CASL
+
+spec lessthan = 
+	sort Thing, Int
+        ops 0,1,2,3,4,5,6,7,8,9 : Int
+	preds   __ <= __, __ >= __,__ <  __, __ > __:   Int * Int;
+
+	forall n,m,o,p,q,r,s,t,u: Int
+	. n < m => not (m < n)   %(cheaper_asym)%
+	. n < m /\ m < o => n < o %(cheaper_trans)%
+	. not (n < n ) 
+	%%. n < m /\ n < o => smallest(n,m,o)
+	. 1=n /\ 2=m => n < m %(1_less_2)%
+	. 2=m /\ 3=o => m < o %(2_less_3)%
+	. 3=o /\ 4=p => o < p %(3_less_4)%
+	. 4=p /\ 5=q => p < q %(4_less_5)%
+	. 5=q /\ 6=r => q < r %(5_less_6)%
+	. 6=r /\ 7=s => r < s %(6_less_7)%
+	. 7=s /\ 8=t => s < t %(7_less_8)%
+	. 8=t /\ 9=u => t < u %(8_less_9)%
+
+	%%testing less than n-ary relation
+	%%then 
+	%%forall n, m, o: Int
+	%%. 4=n /\ 3=m /\ 2=o => (n < m) /\ (n < o)%implied %(one_less_two)%
+	%%. 1=n /\ 4=m /\ 5=o => smallest(n,m,o) %implied %(smallest)%
+        %%forall n,m: Int
+	%%. 1=n /\ 2=m => n < m %implied   %(one_less_two)%
+	%%. 1=n /\ 2=m => m < n %implied   %(one_more_two)%
+end
+	
+
+	
+	
+
+	
+	
+
+
+
+
+
+
+

@@ -1,0 +1,5107 @@
+%%passing from manchester to spec
+logic OWL
+
+ontology deb =
+
+Prefix: : <http://www.semanticweb.org/osnathakimi/ontologies/deb#>
+Prefix: dc: <http://purl.org/dc/terms/>
+Prefix: deb: <http://www.semanticweb.org/osnathakimi/ontologies/deb#>
+Prefix: obda: <https://w3id.org/obda/vocabulary#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: skos: <http://www.w3.org/2004/02/skos/core#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+%%Ontology: <http://www.semanticweb.org/osnathakimi/ontologies/deb>
+
+Annotations: 
+    dc:creator "Osnat Hakimi",
+    dc:description "An ontology developed to facilitate information curation in the area of medical devices, experimental scaffolds and biomaterials. The ontology was designed to complement existing medical vocabularies, with emphasis on material procesing, structures and features associated with biomaterials and experimental scaffolds.",
+    dc:title "Devices, Experimental scaffolds and Biomaterials Ontology (DEB)"
+
+AnnotationProperty: dc:creator
+
+    
+AnnotationProperty: dc:description
+
+    
+AnnotationProperty: dc:title
+
+    
+AnnotationProperty: deb:database_cross_reference
+
+    
+AnnotationProperty: deb:has_alternative_id
+
+    
+AnnotationProperty: deb:has_obo_namespace
+
+    
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: rdfs:label
+
+    
+AnnotationProperty: rdfs:seeAlso
+
+    
+AnnotationProperty: skos:altLabel
+
+    
+Datatype: owl:rational
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+Datatype: xsd:boolean
+
+    
+Datatype: xsd:string
+
+
+%%property
+
+ObjectProperty: deb:hasBiomaterial
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        deb:Biomaterial
+    
+    
+ObjectProperty: deb:hasComponent
+
+    Domain: 
+        deb:ManufacturedObject
+    
+    Range: 
+        deb:ManufacturedObjectComponent
+    
+    
+ObjectProperty: deb:hasDesignatedApplication
+
+    Domain: 
+        deb:ManufacturedObject
+    
+    Range: 
+        deb:MedicalApplication
+    
+    
+ObjectProperty: deb:hasFeatures
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        deb:ManufacturedObjectFeatures
+    
+    
+ObjectProperty: deb:hasType
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        deb:BiomaterialType
+
+
+ObjectProperty: deb:createStructure
+
+    Domain: 
+        deb:MaterialProcessing
+    
+    Range: 
+        deb:ArchitecturalOrganization,
+        deb:StructuralDetails,
+        deb:Structure
+    
+    
+ObjectProperty: deb:functionalizedBy
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        deb:BiologicallyActiveSubstance
+    
+    
+ObjectProperty: deb:hasAssociatedBiologicalProcess
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        deb:AssociatedBiologicalProcess
+    
+    
+ObjectProperty: deb:hasAssociatedStudyType
+
+    Domain: 
+        deb:ManufacturedObject
+    
+    Range: 
+        deb:StudyType
+    
+    
+ObjectProperty: deb:hasBiologicalEffect
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        deb:EffectOnBiologicalSystem
+
+    
+    
+ObjectProperty: deb:isIncorporatedVia
+
+    Domain: 
+        deb:BiologicallyActiveSubstance
+    
+    Range: 
+        deb:MaterialProcessing
+    
+    
+ObjectProperty: deb:isProcessedVia
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        deb:MaterialProcessing
+
+%%dataproperty
+
+DataProperty: <http://www.semanticweb.org/osnathakimi/ontologies/deb#3D_printed>
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:manufactured
+
+DataProperty: deb:manufactured
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+
+
+
+DataProperty: deb:sintered
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+
+
+
+DataProperty: deb:treated
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+
+%%
+
+DataProperty: deb:Encapsulating
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:absorbable
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:degradable
+    
+    EquivalentTo: 
+        deb:degradable
+    
+    
+DataProperty: deb:acellular
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:acid_etched
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:etched
+    
+    
+DataProperty: deb:adsorbed
+
+    Domain: 
+        deb:Surface
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+
+
+DataProperty: deb:degradable
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    EquivalentTo: 
+        deb:absorbable,
+        deb:resorbable
+
+
+DataProperty: deb:etched
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+
+
+
+DataProperty: deb:resorbable
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:degradable
+    
+    EquivalentTo: 
+        deb:degradable
+
+%%
+
+DataProperty: deb:antibacterial
+
+    Domain: 
+        deb:BiologicallyActiveSubstance,
+        deb:Biomaterial,
+        deb:ManufacturedObject
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:antimicrobial
+    
+    
+DataProperty: deb:antimicrobial
+
+    Domain: 
+        deb:BiologicallyActiveSubstance,
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:bioactive
+    
+    
+DataProperty: deb:bioactive
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:biocompatible
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:biodegradable
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:degradable
+    
+    EquivalentTo: 
+        deb:bioresorbable
+
+
+DataProperty: deb:bioresorbable
+
+    Domain: 
+        deb:ExperimentalScaffold,
+        deb:ManufacturedObject,
+        deb:MedicalDevice
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:degradable
+    
+    EquivalentTo: 
+        deb:biodegradable
+
+%%
+
+DataProperty: deb:biofunctional
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:bioactive
+    
+    
+DataProperty: deb:bioprinted
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:manufactured
+    
+    
+
+    
+    
+DataProperty: deb:blended
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:processed
+    
+    
+DataProperty: deb:braided
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:manufactured
+    
+    
+DataProperty: deb:calcified
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        owl:topDataProperty
+
+
+%%
+
+DataProperty: deb:cementogenic
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:bioactive
+    
+    
+DataProperty: deb:coated
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    EquivalentTo: 
+        deb:decorated
+    
+    
+DataProperty: deb:conditioned
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    
+DataProperty: deb:conductive
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:crosslinked
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        owl:topDataProperty
+
+
+DataProperty: deb:processed
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+
+
+
+DataProperty: deb:decorated
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    EquivalentTo: 
+        deb:coated
+
+
+%%
+
+DataProperty: deb:cytocompatible
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:bioactive
+
+
+DataProperty: deb:cytotoxic
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:bioactive
+    
+    
+DataProperty: deb:decellularized
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+
+    
+    
+DataProperty: deb:demineralized
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    
+DataProperty: deb:deproteinized
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:processed
+
+
+%%
+
+DataProperty: deb:doped
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:processed
+    
+    
+DataProperty: deb:ecm_derived
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:processed
+    
+    
+DataProperty: deb:elastomeric
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:electroactive
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:electrospun
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:manufactured
+
+
+%%
+
+
+DataProperty: deb:endodonic
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:bioactive
+    
+    
+
+DataProperty: deb:extruded
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+
+
+DataProperty: deb:fibrous
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:flexible
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:foamed
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:processed
+
+%%
+
+DataProperty: deb:funcionalized
+
+    %%Annotations: 
+      %%  rdfs:label "funcionalized",
+        %%skos:altLabel "functionalised"
+    
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    
+DataProperty: deb:grooved
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:hydrated
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:hydrophilic
+
+    Domain: 
+        deb:Biomaterial,
+        deb:Surface
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:hydrophobic
+
+    Domain: 
+        deb:Biomaterial,
+        deb:Surface
+    
+    Range: 
+        xsd:boolean
+
+
+%%
+
+DataProperty: deb:impermeable
+
+    Domain: 
+        deb:PhysicalProperty
+    
+    
+DataProperty: deb:impregnated
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    
+DataProperty: deb:injectable
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+
+
+DataProperty: deb:interconnected_porous
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:porous
+    
+    
+DataProperty: deb:knitted
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:manufactured
+
+
+
+DataProperty: deb:porous
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+
+%%
+
+DataProperty: deb:macroporous
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:porous
+    
+    
+
+    
+    
+DataProperty: deb:mesoporous
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:porous
+    
+    
+DataProperty: deb:metallic
+
+    Domain: 
+        deb:BiomaterialType
+    
+    
+DataProperty: deb:microfibrous
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:fibrous
+    
+    
+DataProperty: deb:microgrooved
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+%%
+
+DataProperty: deb:microporous
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:porous
+    
+    
+DataProperty: deb:microstructured
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:microtextured
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:milled
+
+    Domain: 
+        deb:MaterialProcessing
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:mineralised
+
+    SubPropertyOf: 
+        owl:topDataProperty
+    
+    EquivalentTo: 
+        deb:mineralized
+
+DataProperty: deb:mineralized
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        owl:topDataProperty
+    
+    EquivalentTo: 
+        deb:mineralised
+
+%%
+
+DataProperty: deb:nanocrystalline
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:nanofibrous
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:fibrous
+    
+    
+DataProperty: deb:nanoporous
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:porous
+    
+    
+DataProperty: deb:nanoscale
+
+%%    Annotations: 
+  %%      rdfs:label "nanoscale",
+    %%    skos:altLabel "nanosized"
+    
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:nanostructured
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+
+%%
+
+DataProperty: deb:nonwoven
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:not_treated
+
+    %%Annotations: 
+      %%  rdfs:label "not treated",
+        %%skos:altLabel "untreated"
+    
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:osteoconductive
+
+    Domain: 
+        deb:AssociatedBiologicalProcess
+    
+    
+DataProperty: deb:osteogenic
+
+    Domain: 
+        deb:AssociatedBiologicalProcess
+    
+    
+DataProperty: deb:osteoinductive
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:bioactive
+    
+%%
+
+DataProperty: deb:nanocrystalline
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:nanofibrous
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:fibrous
+    
+    
+DataProperty: deb:nanoporous
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:porous
+    
+    
+DataProperty: deb:nanoscale
+
+%%    Annotations: 
+  %%      rdfs:label "nanoscale",
+    %%    skos:altLabel "nanosized"
+    
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:nanostructured
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:nonwoven
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:not_treated
+
+   %% Annotations: 
+     %%   rdfs:label "not treated",
+       %% skos:altLabel "untreated"
+    
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:osteoconductive
+
+    Domain: 
+        deb:AssociatedBiologicalProcess
+    
+    
+DataProperty: deb:osteogenic
+
+    Domain: 
+        deb:AssociatedBiologicalProcess
+    
+    
+DataProperty: deb:osteoinductive
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:bioactive
+    
+    
+    
+DataProperty: deb:osteomimetic
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:bioactive
+    
+    
+DataProperty: deb:pegylated
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    
+DataProperty: deb:perforated
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    
+DataProperty: deb:permanent
+
+    Domain: 
+        deb:DegradationFeatures
+    
+    
+DataProperty: deb:photocrosslinkable
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:photocrosslinked
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    
+DataProperty: deb:plasma_treated
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    
+DataProperty: deb:polished
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    
+DataProperty: deb:polymeric
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:polymerized
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:processed
+    
+   
+    
+DataProperty: deb:powdered
+
+    Domain: 
+        deb:MaterialProcessing
+    
+    
+DataProperty: deb:precoated
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    
+DataProperty: deb:preconditioned
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    
+DataProperty: deb:purified
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:processed
+    
+    
+DataProperty: deb:reinforced
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+   
+    
+DataProperty: deb:roughened
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    
+DataProperty: deb:sandblasted
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:treated
+    
+    
+DataProperty: deb:seeded
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:processed
+    
+    
+DataProperty: deb:semipermeable
+
+    Domain: 
+        deb:PhysicalProperty
+    
+    
+
+    
+    
+DataProperty: deb:spongy
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:synthetic
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:textured
+
+    Domain: 
+        deb:PhysicalProperty
+    
+    
+DataProperty: deb:thermoresponsive
+
+    Domain: 
+        deb:Biomaterial
+    
+    Range: 
+        xsd:boolean
+    
+    
+DataProperty: deb:tissue_derived
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:processed
+    
+    
+DataProperty: deb:toxic
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:bioactive
+    
+    
+DataProperty: deb:transparent
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    
+
+    
+    
+DataProperty: deb:uncoated
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:not_treated
+    
+    
+DataProperty: deb:unmodified
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:not_treated
+    
+    
+DataProperty: deb:untreated
+
+    Domain: 
+        deb:Biomaterial,
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    
+DataProperty: deb:woven
+
+    Domain: 
+        deb:ManufacturedObject,
+        deb:ManufacturedObjectComponent
+    
+    Range: 
+        xsd:boolean
+    
+    SubPropertyOf: 
+        deb:manufactured
+    
+    
+DataProperty: owl:topDataProperty
+
+
+%%classes
+
+
+Class: <http://www.semanticweb.org/osnathakimi/ontologies/deb#2-Layer>
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: <http://www.semanticweb.org/osnathakimi/ontologies/deb#3DPrinting>
+
+    %%Annotations: 
+      %%  skos:altLabel "Three dimensional printing"
+    
+    %%SubClassOf: 
+      %%  deb:Printing
+        %% and (<http://www.semanticweb.org/osnathakimi/ontologies/deb#3D_printed> value true)
+    
+    
+Class: <http://www.semanticweb.org/osnathakimi/ontologies/deb#Poly(glycolide-co-epsilon-caprolactone)>
+
+    %%Annotations: 
+      %%  skos:altLabel "PGACL"
+    
+    SubClassOf: 
+        deb:Biomaterial
+
+Class: deb:MaterialProcessing
+
+%%    Annotations: 
+  %%      dc:description "A planned process which results in physical changes in a specified input material",
+    %%    deb:has_alternative_id "CHMO:0001267",
+      %%  deb:has_alternative_id "OBI:0000094"^^xsd:string,
+        %%rdfs:label "Material Processing"
+
+
+Class: deb:ArchitecturalOrganization
+
+    SubClassOf: 
+        deb:ManufacturedObjectFeatures
+
+Class: deb:StructuralDetails
+    SubClassOf: 
+        deb:ManufacturedObjectFeatures
+
+
+Class: deb:Structure
+
+%%    Annotations: 
+  %%      dc:description "The structure, form or texture associated with a manufactured object or its components.",
+    %%    rdfs:label "Structure"
+    
+    SubClassOf: 
+        deb:ManufacturedObjectFeatures
+
+Class: deb:Biomaterial
+
+    %%Annotations: 
+      %%  dc:description "A non-drug raw material or substance suitable for inclusion in systems which augment or replace the function of bodily tissues or organs",
+        %%deb:has_obo_namespace "bcteo",
+        %%rdfs:label "Biomaterial",
+        %%skos:altLabel "Biomaterials"
+
+Class: deb:ManufacturedObject
+
+%%    Annotations: 
+  %%      dc:description "A physical object created by hand or machine",
+    %%    deb:has_alternative_id "STY: T073",
+      %%  rdfs:label "Manufactured Object"
+
+Class: deb:BiologicallyActiveSubstance
+
+    %%Annotations: 
+      %%  dc:description "Substance, often a peptide or protein included in a manufactured object in order to impart a biological activity",
+       %% deb:has_alternative_id "STY: T123",
+       %% rdfs:label "Biologically Active Substance"
+
+
+Class: deb:ManufacturedObjectComponent
+
+%%    Annotations: 
+  %%      dc:description "A part, region or component referred to as a distinct unit, such as surface, layer etc.",
+    %%    rdfs:label "Manufactured Object Component"
+
+
+Class: deb:ManufacturedObjectFeatures
+
+%%    Annotations: 
+  %%      dc:description "Characteristics inherent or given during processing to a manufactured object or its component",
+    %%    rdfs:label "Manufactured Object Features"
+
+
+Class: deb:AssociatedBiologicalProcess
+
+  %%  Annotations: 
+    %%    dc:description "A cellular or biological process that the manufactured object is designed to cause or support, or is measured to affect",
+      %%  deb:has_alternative_id "ncit:C17828",
+        %%skos:altLabel "Biological Process"
+
+Class: deb:StudyType
+
+ %%   Annotations: 
+   %%     dc:description "The set-up of the study (in vitro, in vivo, etc)"
+
+Class: deb:EffectOnBiologicalSystem
+
+%%    Annotations: 
+  %%      dc:description "Biological effect associated with manufactured object in a specific test system (cells, tissue or organism)",
+    %%    rdfs:label "Effect on Biological System"
+
+
+Class: deb:MedicalApplication
+
+ %%   Annotations: 
+   %%     dc:description "Intended use, function or outcome of the manufactured object",
+     %%   rdfs:label "Medical Application"
+
+
+Class: deb:BiomaterialType
+
+   %%Annotations: 
+     %%   dc:description "Classification or nature of biomaterials",
+       %% rdfs:label "Biomaterial Type"
+
+
+Class: <http://www.semanticweb.org/osnathakimi/ontologies/deb#Poly(glycolide:lactide)>
+
+    %%Annotations: 
+        %%skos:altLabel "PLGA"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: <http://www.semanticweb.org/osnathakimi/ontologies/deb#Poly(vinyl_alcohol)>
+
+    %%Annotations: 
+       %% skos:altLabel "PVA",
+       %% skos:altLabel "Poly vinyl alcohol"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: <http://www.semanticweb.org/osnathakimi/ontologies/deb#Young'sModulus>
+
+    SubClassOf: 
+        deb:MechanicalProperty
+
+
+
+Class: deb:AbdominalFasciaClosure
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:Abscesses
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:Absorption
+
+%%    SubClassOf: 
+  %%      deb:DegradationFeatures
+    %%     and (deb:absorbable value true)
+    
+    
+Class: deb:Acellularity
+
+%%    SubClassOf: 
+  %%      deb:OtherFeatures
+    %%     and (deb:acellular value true)
+    
+    
+Class: deb:AcuteInflammation
+
+    SubClassOf: 
+        deb:InflammatoryReaction
+    
+    
+Class: deb:AdhesionFormation
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:Adipogenesis
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+
+
+Class: deb:MechanicalProperty
+
+%%    Annotations: 
+  %%      skos:altLabel "MechanicalProperties"
+    
+    SubClassOf: 
+        deb:ManufacturedObjectFeatures
+
+
+Class: deb:SurgicalProcedure
+
+    SubClassOf: 
+        deb:MedicalApplication
+
+Class: deb:AdverseEffects
+
+   %% Annotations: 
+      %%  dc:description "An unfavorable or unintended disease, sign, or symptom (including an abnormal laboratory finding) that is temporally associated with the use of a medical device or biomaterial",
+     %%   skos:altLabel "Adverse event"
+    
+    SubClassOf: 
+        deb:EffectOnBiologicalSystem
+
+
+Class: deb:InflammatoryReaction
+
+ %%   Annotations: 
+   %%     skos:altLabel "Inflammation",
+     %%   skos:altLabel "inflammatory response"
+    
+    SubClassOf: 
+        deb:AdverseEffects
+
+%%
+
+Class: deb:AdipogenicDifferentiation
+
+    SubClassOf: 
+        deb:CellDifferentiation
+    
+    
+Class: deb:Adsorption
+
+%%    SubClassOf: 
+  %%      deb:Coating
+    %%     and (deb:adsorbed value true)
+    
+    
+Class: deb:AirwayStent
+
+    SubClassOf: 
+        deb:MedicalDevice
+    
+    
+Class: deb:AirwayStenting
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:Alginate
+
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:Alignment
+
+    %%Annotations: 
+     %%   skos:altLabel "Aligned"
+    
+    SubClassOf: 
+        deb:ArchitecturalOrganization
+    
+    
+Class: deb:Alloy
+
+    %%Annotations: 
+     %%   dc:description "mixture of two or more metals or of one or more metals with certain metalloids that are mutually soluble in the molten condition; distinguished as binary, ternary, quaternary, etc., depending on the number of metals in the mixture. [CRISP]",
+      %%  deb:has_alternative_id "http://purl.bioontology.org/ontology/CSP/1852-6667",
+      %%  deb:has_alternative_id "http://purl.obolibrary.org/obo/CHEBI_142648"
+    
+    SubClassOf: 
+        deb:BiomaterialType
+    
+    
+Class: deb:Aneurysm
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:AneurysmFormation
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:Angiogenesis
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:Anisotropy
+
+    %%Annotations: 
+     %%   dc:description "The property of being anisotropic, having a different value when measured in different directions.",
+     %%   deb:has_alternative_id "ncit:C17442",
+      %%  rdfs:seeAlso "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17442"
+    
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:Annealing
+
+    %%Annotations: 
+    %%    dc:description "A heat treatment that alters the microstructure of a material causing changes in its properties such as strength and hardness",
+    %%    deb:has_alternative_id "http://purl.obolibrary.org/obo/CHMO_0001465"
+    
+    SubClassOf: 
+        deb:MaterialProcessing
+
+
+Class: deb:CellDifferentiation
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+
+
+Class: deb:MedicalDevice
+
+%%    Annotations: 
+  %%      dc:description "A device with direct or indirect therapeutic purpose",
+    %%    deb:has_obo_namespace "sty"^^xsd:string,
+      %%  rdfs:label "Medical Device"
+    
+    SubClassOf: 
+        deb:ManufacturedObject
+
+
+Class: deb:Anti-adhesive
+
+    SubClassOf: 
+        deb:OtherFeatures
+    
+    
+Class: deb:AntibacterialEffect
+
+%%    SubClassOf: 
+  %%      deb:AntimicrobialEffect
+    %%     and (deb:antibacterial value true)
+    
+    
+Class: deb:AntibioticEluting
+
+    SubClassOf: 
+        deb:DrugDelivery
+    
+    
+Class: deb:Antibiotics
+
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:AntimicrobialEffect
+
+%%    SubClassOf: 
+  %%      deb:EffectOnBiologicalSystem
+    %%     and (deb:antimicrobial value true)
+    
+    
+Class: deb:Antimycotics
+
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+    
+Class: deb:Arthroplasty
+
+    SubClassOf: 
+        deb:TissueReconstruction
+    
+    
+Class: deb:ArtificialOrgans
+
+    SubClassOf: 
+        deb:MedicalApplication
+    
+    
+Class: deb:AxonalGrowth
+
+    SubClassOf: 
+        deb:CellProliferation
+    
+    
+Class: deb:AxonalRegrowth
+
+    SubClassOf: 
+        deb:CellProliferation
+
+
+
+Class: deb:OtherFeatures
+
+    SubClassOf: 
+        deb:ManufacturedObjectFeatures
+
+    
+Class: deb:DrugDelivery
+
+%%    Annotations: 
+  %%      skos:altLabel "DrugRelease"
+    
+    SubClassOf: 
+        deb:MedicalApplication
+
+
+Class: deb:TissueReconstruction
+
+%%    Annotations: 
+  %%      skos:altLabel "TissueAugmentation"
+    
+    SubClassOf: 
+        deb:MedicalApplication
+
+
+Class: deb:CellProliferation
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+
+Class: deb:BMP
+
+    %%Annotations: 
+      %%  deb:has_alternative_id "PR:000000034",
+        %%deb:has_obo_namespace "protein"
+    
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:BetaGlycerolphosphate
+
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:Bi-layered
+
+    SubClassOf: 
+        deb:ArchitecturalOrganization
+    
+    
+Class: deb:Bilayer
+
+    SubClassOf: 
+        deb:ArchitecturalOrganization
+    
+    
+Class: deb:Bilayered
+
+    SubClassOf: 
+        deb:ArchitecturalOrganization
+    
+    
+Class: deb:Bioactivity
+
+%%    SubClassOf: 
+  %%      deb:EffectOnBiologicalSystem
+    %%     and (deb:bioactive value true)
+    
+    
+Class: deb:Bioceramic
+
+    %%Annotations: 
+      %%  dc:description "Ceramics with biological functionality."
+    
+    SubClassOf: 
+        deb:BiomaterialType
+    
+    
+Class: deb:Biocompatibility
+
+%%    SubClassOf: 
+  %%      deb:EffectOnBiologicalSystem
+    %%     and (deb:biocompatible value true)
+    
+    
+Class: deb:Biocomposite
+
+    SubClassOf: 
+        deb:Composite
+    
+    
+Class: deb:Biodegradability
+
+    %%Annotations: 
+      %%  skos:altLabel "Bioabsorbable",
+        %%skos:altLabel "Biodegradation",
+        %%skos:altLabel "Bioresorption"
+    
+%%    SubClassOf: 
+  %%      deb:DegradationFeatures
+    %%     and (deb:biodegradable value true)
+    
+    
+Class: deb:Biofabrication
+
+    %%Annotations: 
+      %%  dc:description "The production of complex biologic products from raw materials such as living cells, matrices, biomaterials, and molecules."
+    
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:Biofunctionalization
+
+%%    SubClassOf: 
+  %%      deb:Functionalization
+    %%     and (deb:biofunctional value true)
+    
+    
+Class: deb:Biohybrid
+
+    SubClassOf: 
+        deb:OtherFeatures
+    
+    
+Class: deb:Bioinertness
+
+    SubClassOf: 
+        deb:EffectOnBiologicalSystem
+    
+    
+Class: deb:Biomineralization
+
+%%    SubClassOf: 
+  %%      deb:AssociatedBiologicalProcess
+    %%     and (deb:mineralized value true)
+    
+    
+Class: deb:Biopolymer
+
+    SubClassOf: 
+        deb:BiomaterialType
+    
+    
+Class: deb:Biostimulatory
+
+    SubClassOf: 
+        deb:EffectOnBiologicalSystem
+    
+    
+Class: deb:Blend
+
+    %%Annotations: 
+      %%  dc:description "A mixture of different substances."
+    
+    SubClassOf: 
+        deb:BiomaterialType
+    
+    
+Class: deb:Blending
+
+%%    SubClassOf: 
+  %%      deb:MaterialProcessing
+    %%     and (deb:blended value true)
+    
+    
+Class: deb:BlockCopolymer
+
+    SubClassOf: 
+        deb:Copolymer
+
+
+Class: deb:Composite
+
+%%    Annotations: 
+  %%      dc:description "Materials made from two or more constituent materials with significantly different physical or chemical properties, that when combined, produce a material with characteristics different from the individual components. The individual components remain separate and distinct within the finished structure. [BCTEO]",
+    %%    deb:has_alternative_id "http://purl.obolibrary.org/obo/ID_0000154"
+    
+    SubClassOf: 
+        deb:BiomaterialType
+
+
+Class: deb:Copolymer
+
+    SubClassOf: 
+        deb:BiomaterialType
+
+
+Class: deb:Bonding
+
+    %%Annotations: 
+      %%  skos:altLabel "adhesively bonded",
+        %%skos:altLabel "bonded"
+    
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:BoneCement
+
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:BoneHealing
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:BoneInjury
+
+    SubClassOf: 
+        deb:Injury
+    
+    
+Class: deb:BonyIngrowth
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:Braiding
+
+    %%Annotations: 
+      %%  dc:description "In textiles, machine or hand method of interlacing three or more yarns or bias-cut cloth strips in such a way that they cross one another and are laid together in diagonal formation, forming a narrow strip of flat or tubular fabric."
+    
+%%    SubClassOf: 
+  %%      deb:MaterialProcessing
+    %%     and (deb:braided value true)
+    
+    
+Class: deb:BulkModulus
+
+    %%Annotations: 
+      %%  deb:has_alternative_id "bcteo:0000123",
+        %%rdfs:seeAlso "http://purl.obolibrary.org/obo/ID_0000123"
+    
+    SubClassOf: 
+        deb:MechanicalProperty
+
+Class: deb:CalciumPhosphateCement
+
+    %%Annotations: 
+      %%  skos:altLabel "CPC"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:CapCoating
+
+    SubClassOf: 
+        deb:Coating
+    
+    
+Class: deb:CapillaryIngrowth
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:Capsule
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:CartilageAutograftImplantationSystem
+
+    SubClassOf: 
+        deb:MedicalDevice
+    
+    
+Class: deb:CartilageInjury
+
+    SubClassOf: 
+        deb:Injury
+    
+    
+Class: deb:Casting
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:CellAdhesion
+
+    %%Annotations: 
+      %%  skos:altLabel "Cell Attachment"
+    
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:CellAggregation
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:CellColonization
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:CellDelivery
+
+    SubClassOf: 
+        deb:MedicalApplication
+    
+    
+Class: deb:CellEncapsulation
+
+    %%Annotations: 
+      %%  skos:altLabel "Microencapsulated Cells"
+    
+    SubClassOf: 
+        deb:Encapsulation
+
+Class: deb:Injury
+
+    SubClassOf: 
+        deb:MedicalApplication
+
+Class: deb:Coating
+
+  %%  Annotations: 
+    %%    dc:description "The application of a thin cover to a material. [CHMO]",
+      %%  deb:has_alternative_id "http://purl.allotrope.org/ontologies/process#AFP_0001986"
+    
+%%    SubClassOf: 
+  %%      deb:MaterialProcessing
+    %%     and (deb:coated value true)
+
+
+Class: deb:Encapsulation
+
+    SubClassOf: 
+        deb:MedicalApplication
+
+Class: deb:CellInfiltration
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:CellMigration
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:CellMotility
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:CellPolarization
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:CellSheet
+
+    SubClassOf: 
+        deb:ManufacturedObjectComponent
+    
+    
+Class: deb:CellViability
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:CellularAttachment
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:CellularDifferentiation
+
+   %% Annotations: 
+     %%   skos:altLabel "Cell Differentiation",
+       %% skos:altLabel "Differentiation"
+    
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:CellularInfiltration
+
+   %% Annotations: 
+     %%   skos:altLabel "cell infiltration"
+    
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:CellularSpreading
+
+ %%   Annotations: 
+   %%     skos:altLabel "Cell Spreading"
+    
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:Cement
+
+    SubClassOf: 
+        deb:MedicalDevice
+    
+    
+Class: deb:Ceramic
+
+ %%   Annotations: 
+   %%     dc:description "Inorganic, nonmetallic solid prepared by the action of heat and subsequent cooling. [BCTEO]",
+     %%   deb:has_alternative_id "http://purl.bioontology.org/ontology/SNOMEDCT/261253002"
+    
+    SubClassOf: 
+        deb:BiomaterialType
+    
+    
+Class: deb:ChemicalFormula
+
+  %%  Annotations: 
+    %%    dc:title "A representation of a substance using symbols for its constituent elements.",
+      %%  deb:has_alternative_id "ncit:C48808"
+    
+    SubClassOf: 
+        deb:ChemicalProperty
+    
+    
+Class: deb:ChemicalProperty
+
+    SubClassOf: 
+        deb:ManufacturedObjectFeatures
+    
+    
+Class: deb:ChemodrugDelivery
+
+    SubClassOf: 
+        deb:DrugDelivery
+    
+    
+Class: deb:Chemotaxis
+
+ %%   Annotations: 
+   %%     skos:altLabel "Chemotactic activity"
+    
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:Chitosan
+
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:ChondrogenicDifferentiation
+
+ %%   Annotations: 
+   %%     skos:altLabel "Chondrocyte Differentiation"
+    
+    SubClassOf: 
+        deb:CellDifferentiation
+    
+    
+Class: deb:ChronicInflammation
+
+ %%   Annotations: 
+   %%     skos:altLabel "chronic inflammatory changes"
+    
+    SubClassOf: 
+        deb:InflammatoryReaction
+    
+    
+Class: deb:Circular
+
+    SubClassOf: 
+        deb:Shape
+    
+    
+Class: deb:ClinicalStudy
+
+    SubClassOf: 
+        deb:StudyType
+    
+    
+Class: deb:Coat
+
+    SubClassOf: 
+        deb:ManufacturedObjectComponent
+
+
+Class: deb:Shape
+
+    SubClassOf: 
+        deb:ManufacturedObjectFeatures
+
+%%ok
+
+
+  
+Class: deb:CoaxialElectrospinning
+
+    SubClassOf: 
+        deb:Electrospinning
+    
+    
+Class: deb:Collagen
+
+%%    Annotations: 
+  %%      deb:has_alternative_id "CHEBI:3815",
+    %%    deb:has_obo_namespace "chebi_ontology"
+    
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:CollagenDeposition
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:CollagenSecretion
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:Colloid
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:ColonicSurgery
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:Comparative
+
+    SubClassOf: 
+        deb:StudyType
+    
+    
+Class: deb:Complications
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+
+    
+    
+Class: deb:CompositeGraft
+
+    SubClassOf: 
+        deb:SurgicalImplant
+    
+    
+Class: deb:CompressiveModulus
+
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:CompressiveStrength
+
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:Computational
+
+    SubClassOf: 
+        deb:StudyType
+    
+    
+Class: deb:Conditioning
+
+    %%SubClassOf: 
+      %%  deb:MaterialProcessing
+        %% and (deb:conditioned value true)
+    
+    
+Class: deb:Conductivity
+
+   %% SubClassOf: 
+     %%   deb:PhysicalProperty
+       %%  and (deb:conductive value true)
+    
+    
+Class: deb:ContaminatedWound
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:ContinuousSuture
+
+    SubClassOf: 
+        deb:SurgicalImplant
+    
+    
+
+    
+    
+Class: deb:Core
+
+    SubClassOf: 
+        deb:ManufacturedObjectComponent
+    
+    
+Class: deb:CorrosionBehavior
+
+%%    Annotations: 
+  %%      skos:altLabel "Corrosion"
+    
+    SubClassOf: 
+        deb:OtherFeatures
+    
+    
+Class: deb:CorrosionResistance
+
+    SubClassOf: 
+        deb:CorrosionBehavior
+    
+    
+Class: deb:Crosslinking
+
+%%    Annotations: 
+  %%      dc:description "The use of cross-links to promote a change in polymers' physical properties."
+    
+%%    SubClassOf: 
+  %%      deb:MaterialProcessing
+    %%     and (deb:crosslinked value true)
+    
+    
+Class: deb:CruciateLigamentReconstruction
+
+    SubClassOf: 
+        deb:TissueReconstruction
+    
+    
+Class: deb:Cryogel
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Cryomilling
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:CrystalStructure
+
+    SubClassOf: 
+        deb:ChemicalProperty
+    
+    
+Class: deb:Crystallinity
+
+%%    Annotations: 
+  %%      dc:description "The detection and quantification of the amount of amorphous material within a highly crystalline substance.",
+    %%    deb:has_alternative_id "ncit:C133974"
+    
+    SubClassOf: 
+        deb:ChemicalProperty
+    
+    
+Class: deb:Cube
+
+    SubClassOf: 
+        deb:Shape
+    
+    
+Class: deb:CustomMade
+
+    SubClassOf: 
+        deb:OtherFeatures
+    
+    
+Class: deb:Cylinder
+
+    EquivalentTo: 
+        deb:Cylindrical
+    
+    SubClassOf: 
+        deb:Shape
+    
+    
+Class: deb:Cylindrical
+
+    EquivalentTo: 
+        deb:Cylinder
+    
+    SubClassOf: 
+        deb:Shape
+    
+    
+Class: deb:Cytocompatibility
+
+%%    SubClassOf: 
+  %%      deb:EffectOnBiologicalSystem
+    %%     and (deb:cytocompatible value true)
+    
+    
+Class: deb:Cytotoxicity
+
+%%    SubClassOf: 
+  %%      deb:AdverseEffects
+    %%     and (deb:cytotoxic value true)
+
+
+Class: deb:Decellularization
+
+ %%   Annotations: 
+   %%     dc:description "The physical, chemical and/or enzymatic processing of tissue samples to remove cells and leave behind the extracellular matrix or natural scaffold made up of collagen and other fibers and proteins. [NCIT]",
+     %%   deb:has_alternative_id "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C112947",
+       %% skos:altLabel "Tissue Decellularization"
+    
+%%    SubClassOf: 
+  %%      deb:MaterialProcessing
+    %%     and (deb:decellularized value true)
+    
+    
+Class: deb:DecellularizedExtracellularMatrix
+
+ %%   Annotations: 
+   %%     skos:altLabel "dECM"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:DecellularizedMatrix
+
+    SubClassOf: 
+        deb:BiomaterialType
+    
+    
+Class: deb:Deformation
+
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:Degradability
+
+  %%  Annotations: 
+    %%    skos:altLabel "Degradation"
+    
+%%    SubClassOf: 
+  %%      deb:DegradationFeatures
+    %%     and (deb:degradable value true)
+    
+    
+Class: deb:DegradationFeatures
+
+ %%   Annotations: 
+   %%     rdfs:label "Degradation Features"
+    
+    SubClassOf: 
+        deb:ManufacturedObjectFeatures
+    
+    
+Class: deb:DegradationRate
+
+    SubClassOf: 
+        deb:DegradationFeatures
+    
+    
+Class: deb:DegradationResistance
+
+    SubClassOf: 
+        deb:DegradationFeatures
+    
+    
+Class: deb:DelayedResoption
+
+    SubClassOf: 
+        deb:DegradationFeatures
+    
+    
+Class: deb:DemineralizedBoneMatrix
+
+ %%   Annotations: 
+   %%     dc:description "Demineralized allograft bone with osteoinductive activity. Demineralized bone matrices are prepared by acid extraction of allograft bone, resulting in loss of most of the mineralized component but retention of collagen and noncollagenous proteins, including growth factors. The efficacy of a demineralized bone matrix (DBM) as a bone-graft substitute or extender may be related to the total amount of bone morphogenetic protein (BMP) present, and the ratios of the different BMPs present. BMPs belong to the transforming growth factor (TGF) superfamily of proteins.",
+     %%   deb:has_alternative_id "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C61085"
+    
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:Density
+
+%%    Annotations: 
+  %%      deb:has_alternative_id "OPB:00546",
+    %%    rdfs:seeAlso "http://purl.obolibrary.org/obo/ID_0000009"
+    
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:Deposition
+
+    SubClassOf: 
+        deb:Coating
+    
+    
+Class: deb:Diameter
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:DigestiveSurgery
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:Disk
+
+    SubClassOf: 
+        deb:Shape
+    
+    
+Class: deb:Distensibility
+
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:Doping
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:Ductility
+
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:EPTFE
+
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:Edema
+
+%%    Annotations: 
+  %%      skos:altLabel "Oedema"
+    
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+    
+Class: deb:Electrospinning
+
+%%    Annotations: 
+  %%      dc:description "A process used to created very fine (μm or nm scale) fibres from a liquid. A high voltage is applied to a droplet of the liquid sample which is drawn out into fibres and cooled in air.",
+    %%    deb:has_alternative_id "http://purl.obolibrary.org/obo/CHMO_0001620"
+    
+%%    SubClassOf: 
+  %%      deb:MaterialProcessing
+    %%     and (deb:electrospun value true)
+    
+    
+Class: deb:Electrospraying
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+    
+Class: deb:EndothelialDifferentiation
+
+    SubClassOf: 
+        deb:CellDifferentiation
+    
+    
+Class: deb:Endothelialization
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:Engraftment
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:EnzymaticTreatment
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:Epithelialization
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:EpoxyCoating
+
+    SubClassOf: 
+        deb:Coating
+    
+    
+Class: deb:Etching
+
+ %%   SubClassOf: 
+   %%     deb:MaterialProcessing
+     %%    and (deb:etched value true)
+    
+    
+Class: deb:ExVivo
+
+    SubClassOf: 
+        deb:StudyType
+    
+    
+Class: deb:ExperimentalScaffold
+
+%%    Annotations: 
+  %%      dc:description "A physical object, named by the author of an experimental study, designed and created for in vitro and in vivo evaluation in conjunction with cells or living tissues",
+    %%    rdfs:label "Experimental Scaffold",
+      %%  skos:altLabel "Scaffold",
+        %%skos:altLabel "scaffolds"
+    
+    SubClassOf: 
+        deb:ManufacturedObject
+    
+    
+Class: deb:Extrusion
+
+ %%   SubClassOf: 
+   %%     deb:MaterialProcessing
+     %%    and (deb:extruded value true)
+
+Class: deb:FemoroPoplitealBypass
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:Fiber
+
+%%    Annotations: 
+  %%      skos:altLabel "Fibers",
+    %%    skos:altLabel "Fibre",
+      %%  skos:altLabel "Fibres"
+    
+%%    SubClassOf: 
+  %%      deb:Structure
+    %%     and (deb:fibrous value true)
+    
+    
+Class: deb:FiberAlignment
+
+    SubClassOf: 
+        deb:Alignment
+    
+    
+Class: deb:FiberDiameter
+
+    SubClassOf: 
+        deb:Diameter
+    
+    
+Class: deb:FibroblastInfiltration
+
+    SubClassOf: 
+        deb:CellInfiltration
+    
+    
+Class: deb:Fibroin
+
+    SubClassOf: 
+        deb:Silk
+    
+    
+Class: deb:Fibronectin
+
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:FibroticReaction
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:Filament
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Film
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Flexibility
+
+%%    SubClassOf: 
+  %%      deb:MechanicalProperty
+    %%     and (deb:flexible value true)
+    
+    
+Class: deb:Foam
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Foaming
+
+%%    SubClassOf: 
+  %%      deb:MaterialProcessing
+    %%     and (deb:foamed value true)
+    
+    
+Class: deb:Foil
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:ForeignBodyReaction
+
+    SubClassOf: 
+        deb:EffectOnBiologicalSystem
+    
+    
+Class: deb:ForeignBodyResponse
+
+%%    Annotations: 
+  %%      skos:altLabel "Foreign body"
+    
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:FormationOfAdhesions
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:Fragmentation
+
+    SubClassOf: 
+        deb:DegradationFeatures
+    
+    
+Class: deb:FreezeDrying
+
+%%    Annotations: 
+  %%      skos:altLabel "freeze-dried",
+    %%    skos:altLabel "freeze-drying"
+    
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:Functionalization
+
+%%    SubClassOf: 
+  %%      deb:Coating
+    %%     and (deb:funcionalized value true)
+
+
+Class: deb:Gel
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Gelation
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:Gelling
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:Geometry
+
+    SubClassOf: 
+        deb:ManufacturedObjectFeatures
+    
+    
+Class: deb:Glass
+
+    SubClassOf: 
+        deb:BiomaterialType
+    
+    
+Class: deb:Glass-transitionTemperature
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:GlialCellMotility
+
+    SubClassOf: 
+        deb:CellMotility
+    
+    
+Class: deb:GlialGrowth
+
+    SubClassOf: 
+        deb:CellProliferation
+    
+    
+Class: deb:Glue
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Granule
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Groove
+
+%%    Annotations: 
+  %%      skos:altLabel "grooved"
+    
+ %%   SubClassOf: 
+   %%     deb:StructuralDetails
+     %%    and (deb:grooved value true)
+    
+    
+Class: deb:GrowthSubstrate
+
+%%    Annotations: 
+  %%      skos:altLabel "substrate"
+    
+    SubClassOf: 
+        deb:ExperimentalScaffold
+
+
+Class: deb:Headache
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:HelicalCoil
+
+    SubClassOf: 
+        deb:Shape
+    
+    
+Class: deb:HematopoieticCellDifferentiation
+
+    SubClassOf: 
+        deb:CellDifferentiation
+    
+    
+Class: deb:Hemocompatibility
+
+    SubClassOf: 
+        deb:EffectOnBiologicalSystem
+    
+    
+Class: deb:Heparin
+
+%%    Annotations: 
+  %%      deb:has_alternative_id "CHEBI:28304",
+    %%    deb:has_obo_namespace "chebi_ontology"
+    
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:HepatobiliarySurgery
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:Hierarchical
+
+    SubClassOf: 
+        deb:ArchitecturalOrganization
+    
+    
+Class: deb:HistologicalExamination
+
+    SubClassOf: 
+        deb:ResearchTechnique
+    
+    
+Class: deb:Histomorphometry
+
+%%    Annotations: 
+  %%      skos:altLabel "histomorphometric examination"
+    
+    SubClassOf: 
+        deb:ResearchTechnique
+    
+    
+Class: deb:HumanDerivedMatrix
+
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:Hydration
+
+%%    SubClassOf: 
+  %%      deb:MaterialProcessing
+    %%     and (deb:hydrated value true)
+    
+    
+Class: deb:Hydrogel
+
+%%    Annotations: 
+  %%      dc:description "A gel which is primarily composed of a network of polymer chains that are hydrophilic, sometimes found as a colloidal gel in which water is the dispersion medium.",
+    %%    deb:has_alternative_id "http://purl.bioontology.org/ontology/SNOMEDCT/303529009"
+    
+    SubClassOf: 
+        deb:Gel
+    
+    
+Class: deb:HydrogelExpander
+
+    SubClassOf: 
+        deb:SurgicalImplant
+    
+    
+Class: deb:Hydrophilicity
+
+%%    SubClassOf: 
+  %%      deb:PhysicalProperty
+    %%     and (deb:hydrophilic value true)
+    
+    
+Class: deb:Hydrophobicity
+
+%%    SubClassOf: 
+  %%      deb:PhysicalProperty
+    %%     and (deb:hydrophobic value true)
+    
+    
+Class: deb:Hydroxyapatite
+
+%%    Annotations: 
+  %%      skos:altLabel "HA"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:HypospadiasSurgery
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+
+Class: deb:Immobilization
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:Immunohistochemistry
+
+%%    Annotations: 
+  %%      skos:altLabel "Immunohistochemical examination"
+    
+    SubClassOf: 
+        deb:ResearchTechnique
+    
+    
+Class: deb:Immunomodulatory
+
+%%    Annotations: 
+  %%      skos:altLabel "Immunologic responses"
+    
+    SubClassOf: 
+        deb:EffectOnBiologicalSystem
+    
+    
+Class: deb:ImmunotoxicologicalEffect
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:Impermeability
+
+%%    SubClassOf: 
+  %%      deb:PhysicalProperty
+    %%     and (deb:impermeable value true)
+    
+    
+Class: deb:ImplantRejection
+
+%%    Annotations: 
+  %%      rdfs:label "ImplantRejection",
+    %%    skos:altLabel "Rejection of The Implant"
+    
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:ImplantableCardiovascularDevice
+
+    SubClassOf: 
+        deb:MedicalDevice
+    
+    
+Class: deb:Implantation
+
+    SubClassOf: 
+        deb:MedicalApplication
+    
+    
+Class: deb:Impregnating
+
+%%    Annotations: 
+  %%      rdfs:label "Impregnating",
+    %%    skos:altLabel "Impregnation"
+    
+%%    SubClassOf: 
+  %%      deb:MaterialProcessing
+    %%     and (deb:impregnated value true)
+    
+    
+Class: deb:InVitro
+
+ %%   Annotations: 
+   %%     skos:altLabel "in-vitro"
+    
+    SubClassOf: 
+        deb:StudyType
+    
+    
+Class: deb:InVivo
+
+%%    Annotations: 
+  %%      skos:altLabel "in-vivo"
+    
+    SubClassOf: 
+        deb:StudyType
+    
+    
+Class: deb:InterconnectedPoreNetwork
+
+    SubClassOf: 
+        deb:Pore
+    
+    
+Class: deb:Interconnectivity
+
+    SubClassOf: 
+        deb:ArchitecturalOrganization
+    
+    
+Class: deb:IntraperitonealOnlayMesh
+
+%%    Annotations: 
+  %%      skos:altLabel "IPOM"
+    
+    SubClassOf: 
+        deb:SurgicalProcedure
+
+
+
+Class: deb:PhysicalProperty
+
+%%    Annotations: 
+  %%      rdfs:label "Physical Property"
+    
+    SubClassOf: 
+        deb:ManufacturedObjectFeatures
+
+
+
+
+Class: deb:Surface
+
+    SubClassOf: 
+        deb:ManufacturedObjectComponent
+    
+    
+Class: deb:Knitting
+
+%%    SubClassOf: 
+  %%      deb:MaterialProcessing
+    %%     and (deb:knitted value true)
+    
+    
+Class: deb:LaparoscopicIntraperitonealImplantation
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:Lattice
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Layer
+
+    SubClassOf: 
+        deb:ManufacturedObjectComponent
+    
+    
+Class: deb:Layered
+
+    SubClassOf: 
+        deb:ArchitecturalOrganization
+    
+    
+Class: deb:LayeredClosure
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:LifeThreateningComplication
+
+    SubClassOf: 
+        deb:Complications
+    
+    
+Class: deb:LipoaspirateFat
+
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:LoadToFailure
+
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:LuminalObstruction
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:MacrophageFunctionalPolarization
+
+    SubClassOf: 
+        deb:CellPolarization
+    
+    
+Class: deb:Macropore
+
+%%    SubClassOf: 
+  %%      deb:Pore
+    %%     and (deb:macroporous value true)
+    
+    
+Class: deb:Macroporosity
+
+%%    Annotations: 
+  %%      dc:description "Has a pore size of at least 50nm"
+    
+%%    SubClassOf: 
+  %%      deb:Porosity
+    %%     and (deb:macroporous value true)
+    
+    
+Class: deb:Macrotexture
+
+    SubClassOf: 
+        deb:Texture
+    
+    
+Class: deb:Manufacture
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+Class: deb:Mat
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:MaterialCharacterization
+
+    SubClassOf: 
+        deb:ResearchTechnique
+    
+    
+
+    
+Class: deb:Matrice
+
+ %%   Annotations: 
+   %%     skos:altLabel "Matrices"
+    
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Matrigel
+
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:MatrixDeposition
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:MatrixSynthesis
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:MaximumLoad
+
+%%    Annotations: 
+  %%      deb:has_alternative_id "bcteo:0000173",
+    %%    rdfs:seeAlso "http://purl.obolibrary.org/obo/ID_0000173"
+    
+    EquivalentTo: 
+        deb:UltimateStrength
+    
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:MaximumStrain
+
+%%    Annotations: 
+  %%      deb:has_alternative_id "BCTEO:0000174",
+    %%    rdfs:seeAlso "http://purl.obolibrary.org/obo/ID_0000174"
+    
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:MedicalTextile
+
+    SubClassOf: 
+        deb:ManufacturedObject
+    
+    
+Class: deb:Membrane
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:MeniscalScaffold
+
+    SubClassOf: 
+        deb:ExperimentalScaffold
+    
+    
+Class: deb:Mesh
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Mesoporosity
+
+%%    Annotations: 
+  %%      dc:description "Has a pore size between 2-50 nm"
+    
+%%    SubClassOf: 
+  %%      deb:Porosity
+    %%     and (deb:mesoporous value true)
+    
+    
+Class: deb:Metal
+
+%%    SubClassOf: 
+  %%      deb:BiomaterialType
+    %%     and (deb:metallic value true)
+    
+    
+Class: deb:Microbead
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Microcarrier
+
+    SubClassOf: 
+        deb:MedicalApplication
+    
+    
+Class: deb:Microfiber
+
+%%    EquivalentTo: 
+  %%      deb:Microfibre
+    
+%%    SubClassOf: 
+  %%      deb:Fiber
+    %%     and (deb:microfibrous value true)
+    
+    
+Class: deb:Microfibre
+
+    EquivalentTo: 
+        deb:Microfiber
+    
+    SubClassOf: 
+        deb:Fiber
+    
+    
+Class: deb:Microgel
+
+    SubClassOf: 
+        deb:Gel
+    
+    
+Class: deb:Microgroove
+
+%%    SubClassOf: 
+  %%      deb:Groove
+    %%     and (deb:microgrooved value true)
+    
+    
+Class: deb:Microparticle
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Microporosity
+
+%%    Annotations: 
+  %%      dc:description "Has a pore size of up to 2 nm"
+    
+%%    SubClassOf: 
+  %%      deb:Porosity
+    %%     and (deb:microporous value true)
+    
+    
+Class: deb:Microsphere
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Microtexture
+
+%%    SubClassOf: 
+  %%      deb:Texture
+    %%     and (deb: value true)
+    
+    
+Class: deb:Milling
+
+    %%SubClassOf: 
+      %%  deb:MaterialProcessing
+        %% and (deb:milled value true)
+    
+    
+Class: deb:MolarMass
+
+ %%   Annotations: 
+   %%     deb:has_alternative_id "PATO:0001681",
+     %%   deb:has_obo_namespace "quality"
+    
+    SubClassOf: 
+        deb:ChemicalProperty
+    
+    
+Class: deb:MolecularStructure
+
+%%    Annotations: 
+  %%      dc:description "The location of the atoms, groups or ions relative to one another in a molecule, as well as the number, type and location of covalent bonds",
+    %%    deb:has_alternative_id "http://purl.bioontology.org/ontology/MESH/D015394"
+    
+    SubClassOf: 
+        deb:ChemicalProperty
+    
+    
+Class: deb:Monofilament
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Morphology
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:Multi-layered
+
+    SubClassOf: 
+        deb:ArchitecturalOrganization
+    
+    
+Class: deb:Multifilament
+
+    EquivalentTo: 
+        deb:Polyfilament
+    
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Multilayer
+
+    SubClassOf: 
+        deb:ArchitecturalOrganization
+    
+    
+Class: deb:Multilayered
+
+    SubClassOf: 
+        deb:ArchitecturalOrganization
+    
+    
+Class: deb:MultilineageDifferentiation
+
+    SubClassOf: 
+        deb:CellDifferentiation
+    
+    
+Class: deb:MyogenicDifferentiation
+
+    SubClassOf: 
+        deb:CellDifferentiation
+    
+    
+Class: deb:Nanobiocomposite
+
+ %%   Annotations: 
+   %%     dc:description "Biopolymers formulated and associated with nano-sized fillers, bringing a large range of improved properties (stiffness, permeability, crystallinity, thermal stability)."
+    
+    SubClassOf: 
+        deb:Composite
+    
+    
+Class: deb:Nanobioglass
+
+    SubClassOf: 
+        deb:BiomaterialType
+    
+    
+Class: deb:Nanocoating
+
+    SubClassOf: 
+        deb:Coating
+    
+    
+Class: deb:Nanocomposite
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Nanocrystal
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Nanoencapsulation
+
+    SubClassOf: 
+        deb:Encapsulation
+    
+    
+Class: deb:Nanofiber
+
+    EquivalentTo: 
+        deb:Nanofibre
+    
+    SubClassOf: 
+        deb:Fiber
+    
+    
+Class: deb:Nanofibre
+
+    EquivalentTo: 
+        deb:Nanofiber
+    
+    %%SubClassOf: 
+      %%  deb:Fiber
+        %% and (deb:nanofibrous value true)
+    
+    
+Class: deb:Nanohydroxyapetite
+
+%%    Annotations: 
+  %%      rdfs:label "Nano Hydroxyapetite"
+    
+    SubClassOf: 
+        deb:BiomaterialType
+    
+    
+Class: deb:Nanoparticle
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Nanorod
+
+    SubClassOf: 
+        deb:Rod
+    
+    
+Class: deb:Nanoroughness
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:Nanosphere
+
+    SubClassOf: 
+        deb:Sphere
+    
+    
+Class: deb:Nanotopography
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:Nanotube
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Nanotubular
+
+    SubClassOf: 
+        deb:Tubular
+    
+    
+Class: deb:Nanowire
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:NaturalMaterial
+
+    SubClassOf: 
+        deb:BiomaterialType
+    
+    
+Class: deb:Necrosis
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:Neocollagenesis
+
+%%    Annotations: 
+  %%      skos:altLabel "NeoCollagenesis"
+    
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:Neotissue
+
+    SubClassOf: 
+        deb:MedicalApplication
+    
+    
+Class: deb:Neovascularization
+
+    SubClassOf: 
+        deb:Vascularization
+    
+    
+Class: deb:Network
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:NeuronalRegeneration
+
+    SubClassOf: 
+        deb:Regeneration
+    
+    
+Class: deb:NoduleFormation
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:NonCrosslinked
+
+    SubClassOf: 
+        deb:OtherFeatures
+    
+    
+Class: deb:NonToxic
+
+    SubClassOf: 
+        deb:EffectOnBiologicalSystem
+    
+    
+Class: deb:NonWoven
+
+    SubClassOf: 
+        deb:OtherFeatures
+    
+    
+Class: deb:Nonabsorbable
+
+%%    Annotations: 
+  %%      skos:altLabel "Non-degradable",
+    %%    skos:altLabel "Nondegradable"
+    
+    %%SubClassOf: 
+      %%  deb:DegradationFeatures
+        %% and (deb:permanent value true)
+    
+    
+Class: deb:NosocomialInfection
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:Orientation
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:Oriented
+
+    SubClassOf: 
+        deb:ArchitecturalOrganization
+    
+    
+Class: deb:OsseousAlterations
+
+    SubClassOf: 
+        deb:EffectOnBiologicalSystem
+    
+    
+Class: deb:Osteoconductivity
+
+ %%   Annotations: 
+   %%     rdfs:label "Osteoconductivity",
+     %%   skos:altLabel "Osteoconduction"
+    
+    %%SubClassOf: 
+      %%  deb:AssociatedBiologicalProcess
+        %% and (deb:osteoconductive value true)
+    
+    
+Class: deb:Osteogenesis
+
+    %%SubClassOf: 
+      %%  deb:AssociatedBiologicalProcess
+        %% and (deb:osteogenic value true)
+    
+    
+Class: deb:OsteogenicDifferentiation
+
+ %%   Annotations: 
+   %%     skos:altLabel "Osteodifferentiation"
+    
+    SubClassOf: 
+        deb:CellDifferentiation
+    
+    
+Class: deb:OsteogenicInductionFactors
+
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:Osteoinduction
+
+%%    Annotations: 
+  %%      skos:altLabel "osteoinductivity"
+    
+    %%SubClassOf: 
+      %%  deb:AssociatedBiologicalProcess
+        %% and (deb:osteoinductive value true)
+    
+    
+Class: deb:Osteointegration
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+
+    
+Class: deb:PCL
+
+%%    Annotations: 
+  %%      deb:has_obo_namespace "chebi_ontology",
+    %%    rdfs:comment "CHEBI:53200"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:PDSII
+
+    SubClassOf: 
+        deb:Polydioxanone
+    
+    
+Class: deb:PLGA
+
+ %%   Annotations: 
+   %%     skos:altLabel "Poly D,L lactic co glycolic acid"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:PLLA
+
+ %%   Annotations: 
+   %%     skos:altLabel "Poly-L-lactic-acid",
+     %%   skos:altLabel "Poly-L-lactide"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:PMMA
+
+%%    Annotations: 
+  %%      deb:has_alternative_id "http://purl.bioontology.org/ontology/SNOMEDCT/6043006"
+    
+    SubClassOf: 
+        deb:BoneCement
+    
+    
+Class: deb:Particle
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Patch
+
+    SubClassOf: 
+        deb:SurgicalImplant
+    
+    
+Class: deb:PepsinTreatment
+
+    SubClassOf: 
+        deb:EnzymaticTreatment
+    
+    
+Class: deb:Perforation
+
+    %%SubClassOf: 
+      %%  deb:MaterialProcessing
+        %% and (deb:perforated value true)
+    
+    
+Class: deb:PeriodontalSurgery
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:Photocrosslinking
+
+    %%SubClassOf: 
+      %%  deb:Crosslinking
+        %% and (deb:photocrosslinked value true)
+    
+    
+
+    
+    
+Class: deb:Pin
+
+    SubClassOf: 
+        deb:SurgicalImplant
+    
+    
+Class: deb:PlasmaTreatment
+
+    %%SubClassOf: 
+      %%  deb:MaterialProcessing
+        %% and (deb:plasma_treated value true)
+    
+    
+Class: deb:PlateletRichPlasma
+
+    %%Annotations: 
+      %%  skos:altLabel "PRP"
+    
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:Polishing
+
+    %%SubClassOf: 
+      %%  deb:MaterialProcessing
+        %% and (deb:polished value true)
+    
+    
+Class: deb:Poly-p-dioxanone
+
+   %% Annotations: 
+     %%   deb:has_alternative_id "CHEBI:61607",
+       %% skos:altLabel "PPDO"
+    
+    SubClassOf: 
+        deb:Polydioxanone
+    
+    
+Class: deb:Polydioxanone
+
+ %%   Annotations: 
+   %%     skos:altLabel "PDO",
+     %%   skos:altLabel "PDS",
+       %% skos:altLabel "PDX",
+  %%      skos:altLabel "Polidioxanone",
+    %%    skos:altLabel "Polydioxanon",
+      %%  skos:altLabel "p-dioxanone",
+        %%skos:altLabel "poly(dioxanone)",
+        %%skos:altLabel "poly-dioxanone"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:PolyethyleneTerephthalate
+
+ %%   Annotations: 
+   %%     skos:altLabel "Dacron"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:Polyethyleneglycol
+
+%%    Annotations: 
+  %%      skos:altLabel "PEG"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:Polyfilament
+
+    EquivalentTo: 
+        deb:Multifilament
+    
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Polyglactin910
+
+%%    Annotations: 
+  %%      skos:altLabel "PG910"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:PolyglycolicAcid
+
+%%    Annotations: 
+  %%      skos:altLabel "Dexon",
+    %%    skos:altLabel "PGA"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:Polylacticacid
+
+%%    Annotations: 
+  %%      skos:altLabel "PLA",
+    %%    skos:altLabel "Poly lactic acid",
+      %%  skos:altLabel "poly(d,l-lactic acid)"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:Polylevolactide
+
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:Polylysine
+
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:Polymer
+
+%%    Annotations: 
+  %%      skos:altLabel "Polymers",
+    %%    skos:altLabel "polymeric"
+    
+    %%SubClassOf: 
+      %%  deb:BiomaterialType
+        %% and (deb:polymeric value true)
+    
+    
+Class: deb:Polymerization
+
+   %% SubClassOf: 
+     %%   deb:MaterialProcessing
+       %%  and (deb:polymerized value true)
+    
+    
+Class: deb:Polytetrafluoroethylene
+
+%%    Annotations: 
+  %%      skos:altLabel "PTFE",
+    %%    skos:altLabel "Teflon"
+    
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:Pore
+
+    SubClassOf: 
+        deb:StructuralDetails
+    
+    
+Class: deb:PoreSize
+
+    SubClassOf: 
+        deb:Porosity
+    
+    
+Class: deb:Porosity
+
+ %%   Annotations: 
+   %%     rdfs:label "Porosity"
+    
+    %%SubClassOf: 
+      %%  deb:PhysicalProperty
+        %% and (deb:porous value true)
+    
+    
+Class: deb:PostoperativeAdhesion
+
+    SubClassOf: 
+        deb:AdhesionFormation
+    
+    
+Class: deb:Powder
+
+   %% SubClassOf: 
+     %%   deb:Structure
+       %%  and (deb:powdered value true)
+    
+    
+Class: deb:PreClinicalStudy
+
+    SubClassOf: 
+        deb:StudyType
+    
+    
+Class: deb:Precoating
+
+   %% SubClassOf: 
+     %%   deb:Coating
+       %%  and (deb:precoated value true)
+    
+    
+Class: deb:Preconditioning
+
+   %% SubClassOf: 
+     %%   deb:MaterialProcessing
+       %%  and (deb:preconditioned value true)
+    
+    
+Class: deb:Printing
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:Proliferation
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:Prospective
+
+    SubClassOf: 
+        deb:ClinicalStudy
+    
+    
+Class: deb:ProspectiveMultiCenterTrial
+
+    SubClassOf: 
+        deb:Prospective
+    
+    
+Class: deb:ProstheticPatch
+
+    SubClassOf: 
+        deb:Patch
+    
+    
+Class: deb:PullOutStrength
+
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:Purification
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:RGD
+
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:RadialCompressiveStrength
+
+ %%   Annotations: 
+   %%     skos:altLabel "Radial compression strength"
+    
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:Re-endothelization
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:Recoarctation
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:RecombinantHumanBoneMorphogeneticProtein
+
+%%    Annotations: 
+  %%      skos:altLabel "rhBMP"
+    
+    SubClassOf: 
+        deb:BMP
+    
+    
+Class: deb:Regeneration
+
+    SubClassOf: 
+        deb:MedicalApplication
+    
+    
+Class: deb:Reinforcement
+
+    %%SubClassOf: 
+      %%  deb:MaterialProcessing
+        %% and (deb:reinforced value true)
+    
+    
+Class: deb:Reinnervation
+
+%%    Annotations: 
+  %%      skos:altLabel "re-innervation"
+    
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:RepairOfSkull
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:ResearchTechnique
+
+%%    Annotations: 
+  %%      dc:description "A laboratory or clinical technique used to evaluate a biomaterial (or implant/device) and their effect."
+    
+    
+Class: deb:Resorption
+
+   %% SubClassOf: 
+     %%   deb:DegradationFeatures
+       %%  and (deb:resorbable value true)
+    
+    
+Class: deb:Resurfacing
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:RetinalDetachment
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:Retrospective
+
+    SubClassOf: 
+        deb:ClinicalStudy
+    
+    
+Class: deb:RetrospectiveAnalysis
+
+    EquivalentTo: 
+        deb:RetrospectiveStudy
+    
+    SubClassOf: 
+        deb:Retrospective
+    
+    
+Class: deb:RetrospectiveStudy
+
+    EquivalentTo: 
+        deb:RetrospectiveAnalysis
+    
+    SubClassOf: 
+        deb:Retrospective
+    
+    
+Class: deb:Revascularization
+
+    SubClassOf: 
+        deb:Vascularization
+    
+    
+Class: deb:Ring
+
+    SubClassOf: 
+        deb:Shape
+    
+    
+Class: deb:Rod
+
+    SubClassOf: 
+        deb:Shape
+    
+    
+Class: deb:Roughening
+
+   %% SubClassOf: 
+     %%   deb:MaterialProcessing
+       %%  and (deb:roughened value true)
+    
+    
+Class: deb:Sandblasting
+
+   %% SubClassOf: 
+     %%   deb:MaterialProcessing
+       %%  and (deb:sandblasted value true)
+    
+    
+Class: deb:ScaffoldMineralization
+
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:ScanningElectronMicroscopy
+
+%%    Annotations: 
+  %%      skos:altLabel "SEM"
+    
+    SubClassOf: 
+        deb:ResearchTechnique
+    
+    
+Class: deb:Screw
+
+    SubClassOf: 
+        deb:SurgicalImplant
+    
+    
+Class: deb:SecondaryInfection
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:SelfAssembling
+
+%%    Annotations: 
+  %%      skos:altLabel "self-assembling"
+    
+    SubClassOf: 
+        deb:OtherFeatures
+    
+    
+Class: deb:Semipermeablity
+
+%%    Annotations: 
+  %%      skos:altLabel "semi-permeable"
+    
+  %%  SubClassOf: 
+    %%    deb:PhysicalProperty
+      %%   and (deb:semipermeable value true)
+    
+    
+Class: deb:Septoplasty
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:Sheet
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Shell
+
+    SubClassOf: 
+        deb:ManufacturedObjectComponent
+    
+    
+Class: deb:Shell-core
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:SiRNA
+
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:Siderophore
+
+%%    Annotations: 
+  %%      deb:has_alternative_id "CHEBI:26672",
+    %%    deb:has_alternative_id "http://purl.obolibrary.org/obo/CHEBI_26672"
+    
+    SubClassOf: 
+        deb:BiologicallyActiveSubstance
+    
+    
+Class: deb:Silk
+
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:Sintering
+
+   %%SubClassOf: 
+     %%   deb:MaterialProcessing
+       %%  and (deb:sintered value true)
+    
+    
+Class: deb:Size
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:SkinClosure
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:SkinIrritation
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:SmallCaliber
+
+%%    Annotations: 
+  %%      skos:altLabel "small-caliber"
+    
+    SubClassOf: 
+        deb:Size
+    
+    
+Class: deb:Sol-gel
+
+%%    Annotations: 
+  %%      dc:description "The process of the settling of (nm sized) particles from a colloidal suspension onto a pre-existing surface, resulting in ceramic materials. The desired solid particles (e.g. metal alkoxides) are suspended in a liquid, forming the 'sol', which is deposited on a substrate by spinning, dipping or coating, or transferred to a mould. The particles in the sol are polymerised by partial evaporation of the solvent, or addition of an initiator, forming the 'gel', which is then heated at high temperature to give the final solid product.",
+    %%    deb:has_alternative_id "http://purl.obolibrary.org/obo/CHMO_0001313",
+      %%  skos:altLabel "sol–gel method"
+    
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:SolventCasting
+
+    SubClassOf: 
+        deb:Casting
+    
+    
+Class: deb:Sphere
+
+    SubClassOf: 
+        deb:Shape
+    
+    
+Class: deb:Spheroid
+
+    SubClassOf: 
+        deb:Shape
+    
+    
+Class: deb:Spidroin
+
+    SubClassOf: 
+        deb:Silk
+    
+    
+Class: deb:Spiral
+
+    SubClassOf: 
+        deb:Shape
+    
+    
+Class: deb:Sponge
+
+    %%SubClassOf: 
+      %%  deb:Structure
+        %% and (deb:spongy some owl:rational)
+    
+    
+Class: deb:Spring
+
+    SubClassOf: 
+        deb:Shape
+    
+    
+Class: deb:Sputtering
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:StentInsertion
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:Stiffness
+
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:SurfaceFunctionalization
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:SurfaceHydrophilicity
+
+ %%   SubClassOf: 
+   %%     deb:PhysicalProperty
+     %%    and (deb:hydrophilic value true)
+    
+    
+Class: deb:SurfaceRoughness
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:SurfaceTopography
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:SurgicalImplant
+
+%%    Annotations: 
+  %%      skos:altLabel "Implant"
+    
+    SubClassOf: 
+        deb:ManufacturedObject
+    
+    
+Class: deb:SurgicalRepair
+
+    SubClassOf: 
+        deb:SurgicalProcedure
+    
+    
+Class: deb:Suture
+
+    SubClassOf: 
+        deb:SurgicalImplant
+    
+    
+Class: deb:SynethticPolymer
+
+    SubClassOf: 
+        deb:Polymer
+    
+    
+Class: deb:SyntheticMaterial
+
+    SubClassOf: 
+        deb:BiomaterialType
+    
+    
+Class: deb:TendonHealing
+
+    SubClassOf: 
+        deb:Regeneration
+    
+    
+Class: deb:TenogenicDifferentiation
+
+    SubClassOf: 
+        deb:CellDifferentiation
+    
+    
+Class: deb:TensileStrength
+
+    EquivalentTo: 
+        deb:UltimateStrength
+    
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:Textile
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Texture
+
+  %%  SubClassOf: 
+    %%    deb:PhysicalProperty
+      %%   and (deb:textured value true)
+    
+    
+Class: deb:ThermalBehaviour
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:ThermalDecompositionTemperature
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:ThermallyInducedPhaseSeparation
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:Thermocycling
+
+    SubClassOf: 
+        deb:MaterialProcessing
+    
+    
+Class: deb:Thermogel
+
+    SubClassOf: 
+        deb:Gel
+    
+    
+Class: deb:Thickness
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:ThinFilm
+
+    SubClassOf: 
+        deb:Film
+    
+    
+Class: deb:Thread
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Ti-6Al-4V
+
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:TissueIntegration
+
+    SubClassOf: 
+        deb:EffectOnBiologicalSystem
+    
+    
+Class: deb:TissueRegeneration
+
+    SubClassOf: 
+        deb:MedicalApplication
+    
+    
+Class: deb:Titanium
+
+    SubClassOf: 
+        deb:Biomaterial
+    
+    
+Class: deb:Topology
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:Toughness
+
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:Toxicity
+
+ %%   SubClassOf: 
+   %%     deb:AdverseEffects
+     %%    and (deb:toxic value true)
+    
+    
+Class: deb:Tripolymer
+
+    SubClassOf: 
+        deb:BiomaterialType
+    
+    
+Class: deb:Tube
+
+ %%   Annotations: 
+   %%     skos:altLabel "tubes"
+    
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:Tubular
+
+    SubClassOf: 
+        deb:Shape
+    
+    
+Class: deb:Two-layeredClosure
+
+    SubClassOf: 
+        deb:MedicalApplication
+    
+    
+Class: deb:TypeICollagen
+
+%%    Annotations: 
+  %%      skos:altLabel "collagen (Type I)"
+    
+    SubClassOf: 
+        deb:Collagen
+    
+    
+Class: deb:UltimateStrength
+
+    EquivalentTo: 
+        deb:MaximumLoad,
+        deb:TensileStrength,
+        deb:UltimateTensileStrength
+    
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:UltimateTensileStrength
+
+    EquivalentTo: 
+        deb:UltimateStrength
+    
+    SubClassOf: 
+        deb:MechanicalProperty
+    
+    
+Class: deb:Unidirectional
+
+    SubClassOf: 
+        deb:ArchitecturalOrganization
+    
+    
+Class: deb:Vascularization
+
+ %%   Annotations: 
+   %%     rdfs:label "Vascularization",
+     %%   skos:altLabel "Vascularisation"
+    
+    SubClassOf: 
+        deb:AssociatedBiologicalProcess
+    
+    
+Class: deb:VocalFoldAugmentation
+
+    SubClassOf: 
+        deb:TissueReconstruction
+    
+    
+Class: deb:Weaving
+
+  %%  SubClassOf: 
+    %%    deb:MaterialProcessing
+      %%   and (deb:woven value true)
+    
+    
+Class: deb:Wettability
+
+    SubClassOf: 
+        deb:PhysicalProperty
+    
+    
+Class: deb:Wire
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:WoundAbscesses
+
+    SubClassOf: 
+        deb:AdverseEffects
+    
+    
+Class: deb:WoundDressing
+
+    SubClassOf: 
+        deb:MedicalApplication
+    
+    
+Class: deb:WoundHealing
+
+    SubClassOf: 
+        deb:Regeneration
+    
+    
+Class: deb:Wrapped
+
+    SubClassOf: 
+        deb:ArchitecturalOrganization
+    
+    
+Class: deb:Yarn
+
+    SubClassOf: 
+        deb:Structure
+    
+    
+Class: deb:bioprinting
+
+  %%  SubClassOf: 
+    %%    deb:Printing
+      %%   and (deb:bioprinted value true)
+    
+    
+Class: deb:nanostructure
+
+ %%   SubClassOf: 
+   %%     deb:Structure
+     %%    and (deb:nanostructured value true)
+    
+    
+Class: deb:osteogenicity
+
+    SubClassOf: 
+        deb:EffectOnBiologicalSystem
+
+
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+%%this prove works
+%%Tested, and must be import for execution. 
+%%from Basic/Numbers get Int
+%% two person with a height in different units must be disproved, 
+%%dummy spec, created because of parsing error
+
+logic CASL
+	
+spec morethan = 
+	sort Thing, Int
+        ops 0,1,2,3,4,5,6,7,8,9 : Int
+	preds   __ >= __,__ > __:   Int * Int;
+
+	forall n,m,o,p,q,r,s,t,u,v: Int
+	. n > m => not (m > n)   %(more_exp_asym)%
+	. n > m /\ m > o => n > o %(more_exp_trans)%
+	. not (n > n ) 
+	. 2=n /\ 1=m => n > m %(2_more_1)%
+	. 3=m /\ 2=o => m > o %(3_more_2)%
+	. 4=o /\ 3=p => o > p %(4_more_3)%
+	. 5=p /\ 4=q => p > q %(5_more_4)%
+	. 6=q /\ 5=r => q > r %(6_more_5)%
+	. 7=r /\ 6=s => r > s %(7_more_6)%
+	. 8=s /\ 7=t => s > t %(8_more_7)%
+	. 9=t /\ 8=u => t > u %(9_more_8)%
+	
+	%%testing less than n-ary relation
+	%%then 
+        %%forall n,m: Int
+	%%. 1=n /\ 2=m => n > m %implied   %(one_less_two)%
+	%%. 1=n /\ 2=m => m > n %implied   %(2_more_1)%
+end
+	
+	
+
+	
+	
+
+
+
+
+
+
+

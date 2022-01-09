@@ -1,0 +1,242 @@
+\begin{thebibliography}{10}
+
+\bibitem{abdul-ghafour_common_2007}
+Samer Abdul-Ghafour, Parisa Ghodous, Behzad Shariat, and Eliane Perna.
+\newblock A {Common} {Design}-{Features} {Ontology} for {Product} {Data}
+  {Semantics} {Interoperability}.
+\newblock In {\em Proceedings of the {IEEE}/{WIC}/{ACM} {International}
+  {Conference} on {Web} {Intelligence}}, pages 443--446. IEEE Computer Society,
+  2007.
+\newblock Available at
+  \url{http://portal.acm.org/citation.cfm?id=1331888&dl=GUIDE&coll=GUIDE&CFID=86829175&CFTOKEN=89177860}.
+
+\bibitem{andersen_building_2007}
+Odd Andersen and George Vasilakis.
+\newblock Building an ontology of cad model information.
+\newblock In Geir Hasle, Knut-Andreas Lie, and Ewald Quak, editors, {\em
+  Geometric Modelling, Numerical Simulation, and Optimization}, pages 11--40.
+  Springer Berlin Heidelberg, 2007.
+\newblock Available at
+  \url{http://www.springerlink.com/content/qx4r21362gu59632/abstract/}.
+
+\bibitem{autodesk_dxf_2009}
+Autodesk.
+\newblock Dxf reference.
+\newblock Available
+  at:\url{http://images.autodesk.com/adsk/files/\\acad\_dxf1.pdf}, 2009.
+
+\bibitem{bateman_oasis_2009}
+Jhon Bateman, Alexander Castro, Immanuel Normann, Omar Pera, Leyla Garcia, and
+  Jose-Maria Villaveces.
+\newblock {OASIS} common hyper-ontological framework ({COF}), January 2009.
+\newblock Available
+  at:\url{http://www.oasis-project.eu/docs/OFFICIAL\_DELIVERABLES/SP1/D1.2.1/OASIS-D121.pdf}.
+
+\bibitem{borgo_role_2004}
+Stefano Borgo and Paulo Leitão.
+\newblock The role of foundational ontologies in manufacturing domain
+  applications.
+\newblock {\em LNCS}, 3290/2004:670--688, 2004.
+\newblock Available at
+  \url{http://www.springerlink.com/content/rg5le0daa3vpd5w0/}.
+
+\bibitem{cayiroglu_new_2009}
+Ibrahim Cayiroglu.
+\newblock A new method for machining feature extracting of objects using 2d
+  technical drawings.
+\newblock {\em Comput. Aided Des.}, 41(12):1008--1019, 2009.
+\newblock Available at
+  \url{http://portal.acm.org/citation.cfm?id=1663670.1664169}.
+
+\bibitem{choi_exchange_2003}
+Guk-Heon Choi, Duhwan Mun, and Soonhung~Han Han.
+\newblock Exchange of cad part models based on the macro-parametric approach.
+\newblock {\em International Journal of CAD/CAM}, 2(1), December 2002.
+\newblock Available
+  at:{\url{http://www.ijcc.org/ojs/index.php/ijcc/article/view/8}}.
+
+\bibitem{daquin_modular_2009}
+Mathieu D'Aquin, Anne Schlicht, Heiner Stuckenschmidt, and Marta Sabou.
+\newblock Criteria and evaluation for ontology modularization techniques.
+\newblock In Heiner Stuckenschmidt, Christine Parent, and Stefano Spaccapietra,
+  editors, {\em Modular Ontologies}, pages 67--89. Springer-Verlag, Berlin,
+  Heidelberg, 2009.
+\newblock Available at http://dx.doi.org/10.1007/978-3-642-01907-4\_4.
+
+\bibitem{ghilardi_did_2006}
+Silvio Ghilardi, Carsten Lutz, and Frank Wolter.
+\newblock Did {I} {Damage} my {Ontology}? {A} {Case} for {Conservative}
+  {Extensions} in {Description} {Logics}.
+\newblock In {\em {In} {Proceedings}. {OF} {KR}2006}, pages 187--197. AAAI
+  Press, 2006.
+
+\bibitem{gomez_perez1}
+Asunci\'{o}n G\'{o}mez-P\'{e}rez, Mariano Fern\'{a}ndez-L\'{o}pez, and Oscar
+  Corcho.
+\newblock {\em Ontological Engineering: With Examples from the Areas of
+  Knowledge Management, e-Commerce and the Semantic Web. (Advanced Information
+  and Knowledge Processing)}.
+\newblock Springer-Verlag, Berlin, Heidelberg, 2007.
+
+\bibitem{grau_owl_2008}
+Bernardo~Cuenca Grau, Ian Horrocks, Boris Motik, Bijan Parsia, Peter
+  Patel-Schneider, and Ulrike Sattler.
+\newblock {OWL} 2: {The} next step for {OWL}.
+\newblock {\em Web Semantics: Science, Services and Agents on the World Wide
+  Web}, 6(4):309--322, November 2008.
+\newblock Available at
+  \url{http://www.sciencedirect.com/science/article/B758F-4TP1FC8-1/2/9d2f647c7ac874b8f8baa9cf92cf73a3},
+  doi = {10.1016/j.websem.2008.05.001}.
+
+\bibitem{hepp_references_2013}
+Martin Hepp.
+\newblock References goodrelations wiki.
+\newblock http://wiki.goodrelations-vocabulary.org/References, 2013.
+
+\bibitem{kumar_trends_2005}
+S.~Kumar and R.~Singh.
+\newblock Trends and {Developments} in {Intelligent} {Computer} {Aided}
+  {Design} of {Progressive} {Dies}.
+\newblock {\em Advanced Materials Research}, 6-8:241--248, 2005.
+\newblock Available at \url{http://www.scientific.net/AMR.6-8.241}.
+
+\bibitem{kutz_carnap_2010}
+Oliver Kutz, Till Mossakowski, and Dominik Lücke.
+\newblock {\em Carnap, {Goguen}, and the {Hyperontologies} {Logical}
+  {Pluralism} and {Heterogeneous} {Structuring} in {Ontology} {Design}}.
+\newblock 2010.
+
+\bibitem{oliver_kutz_chinese_2010}
+Oliver Kutz, Immanuel Normann, Till Mossakowski, and Dirk Walther.
+\newblock Chinese whispers and connected alignments.
+\newblock In Pavel Shvaiko and Isabel Cruz, editors, {\em Proceedings of the
+  5th International Workshop on Ontology Matching}. ceur-ws.org, 2010.
+
+\bibitem{lastra_ontologies_2009}
+Jose L.~Martinez Lastra and Ivan~M. Delamer.
+\newblock Ontologies for {Production} {Automation}.
+\newblock In {\em Advances in {Web} {Semantics} {I}: {Ontologies}, {Web}
+  {Services} and {Applied} {Semantic} {Web}}, pages 276--289. Springer-Verlag,
+  2009.
+\newblock Available at \url{http://portal.acm.org/citation.cfm?id=1505694}.
+
+\bibitem{lemaignan_mason:_2006}
+S.~Lemaignan, A.~Siadat, J.-Y. Dantan, and A.~Semenenko.
+\newblock {MASON}: {A} {Proposal} {For} {An} {Ontology} {Of} {Manufacturing}
+  {Domain}.
+\newblock In {\em Distributed {Intelligent} {Systems}: {Collective}
+  {Intelligence} and {Its} {Applications}, 2006. {DIS} 2006. {IEEE} {Workshop}
+  on}, pages 195--200, 2006.
+\newblock Available at \url{10.1109/DIS.2006.48}.
+
+\bibitem{manouselis_exploring_2010}
+N.~Manouselis, M.A. Sicilia, and D.~Rodríguez.
+\newblock Exploring ontology metrics in the biomedical domain.
+\newblock {\em Procedia Computer Science}, 1(1):2319--2328, May 2010.
+\newblock Available at
+  \url{http://www.sciencedirect.com/science/article/pii/S1877050910002619}.
+
+\bibitem{martin_design_2003}
+Patrick Martin and Alain D'Acunto.
+\newblock Design of a production system: an application of integration
+  product-process.
+\newblock {\em International Journal of Computer Integrated Manufacturing},
+  16(7):509, 2003.
+\newblock Available at
+  \url{http://www.informaworld.com/10.1080/0951192031000115831}.
+
+\bibitem{noy_prompt_2003}
+Natalya~F. Noy and Mark~A. Musen.
+\newblock The prompt suite: interactive tools for ontology merging and mapping.
+\newblock {\em International Journal of Human-Computer Studies},
+  59(6):983--1024, 2003.
+\newblock Available at
+  \url{http://www.sciencedirect.com/science/article/B6WGR-49S75R9-4/2/3fce33d1e0c00d144a96fcbeb54266ce}.
+
+\bibitem{radhakrishnan_design_1996}
+Raj Radhakrishnan, Araya Amsalu, Mehran Kamran, and B.~O. Nnaji.
+\newblock Design rule checker for sheet metal components using medial axis
+  transformation and geometric reasoning.
+\newblock {\em Journal of Manufacturing Systems}, 15(3), 1996.
+\newblock Available at
+  \url{http://www.sciencedirect.com/science/article/B6VJD-3WCSYR5-4/2/d9445ad0e020aaf6eddebabf222d77dd}.
+
+\bibitem{ramos_ontological_2010}
+L~Ramos.
+\newblock Ontological cad data interoperability framework.
+\newblock Florence, Italy, 2010.
+\newblock Available at
+  \url{http://www.iaria.org/conferences2010/ProgramSEMAPRO10.html}.
+
+\bibitem{ramos_hetereogeneous_2012}
+Luis Ramos.
+\newblock Hetereogeneous {Logics} for {Semantic} {Manufacturing}.
+\newblock In {\em OSEMA 2012 Ontology and Semantic Web for Manufacturing},
+  volume 886, page~73, Graz, Austria, July 2012. CEUR.
+\newblock Available at \url{http://ceur-ws.org/Vol-886/}.
+
+\bibitem{ramos_ontology-based_2011}
+Luis Ramos, Alexander García, and John Bateman.
+\newblock Ontology-{Based} {Features} {Recognition} and {Design} {Rules}
+  {Checker} {System}.
+\newblock Bonn, Germany, 2011.
+\newblock Available at
+  \url{http://iswc2011.semanticweb.org/fileadmin/iswc/Papers/Workshops/OCAS/99990048.pdf}.
+
+\bibitem{randelli_introducing_2010}
+Gabriele Randelli and Daniele Nardi.
+\newblock Introducing {Ontology} {Best} {Practices} and {Design} {Patterns}
+  into {Robotics}: {USAREnv}.
+\newblock In {\em Proceedings of the 2010 {Conference} on {Modular}
+  {Ontologies}: {Proceedings} of the {Fourth} {International} {Workshop}
+  ({WoMO} 2010)}, pages 67--80, Amsterdam, The Netherlands, The Netherlands,
+  2010. IOS Press.
+\newblock Available at \url{http://dl.acm.org/citation.cfm?id=1804760.1804768}.
+
+\bibitem{shah_functional_1988}
+J.J. Shah and M.T. Rogers.
+\newblock Functional requirements and conceptual design of the feature-based
+  modelling system.
+\newblock {\em Computer-Aided Engineering Journal}, 5(1), 1988.
+
+\bibitem{spiliopoulos_discovery_2010}
+Vassilis Spiliopoulos, George~A. Vouros, and Vangelis Karkaletsis.
+\newblock On the discovery of subsumption relations for the alignment of
+  ontologies.
+\newblock {\em Web Semantics: Science, Services and Agents on the World Wide
+  Web}, 8:69--88, March 2010.
+\newblock Available at
+  \url{http://www.sciencedirect.com/science/article/B758F-4Y52R2D-2/2/2ac5cd1dde9112fa9da924f714d939e4}.
+
+\bibitem{vegetti_pronto:_2011}
+Marcela Vegetti, Horacio Leone, and Gabriela Henning.
+\newblock Pronto: An ontology for comprehensive and consistent representation
+  of product information.
+\newblock {\em Engineering Applications of Artificial Intelligence},
+  24(8):1305--1327, 2011.
+\newblock Available at
+  \url{http://www.sciencedirect.com/science/article/pii/S0952197611000388}.
+
+\bibitem{w3c_product_2005}
+W3C.
+\newblock Product {Modelling} using {Semantic} {Web} {Technologies}, 2009.
+\newblock Available
+  at:\url{http://www.w3.org/2005/Incubator/w3pm/XGR-w3pm-20091008/}.
+
+\bibitem{weidenbach_chapter_2001}
+Christoph Weidenbach.
+\newblock Chapter 27 - {Combining} {Superposition}, {Sorts} and {Splitting}.
+\newblock In {\em Handbook of {Automated} {Reasoning}}, pages 1965--2013.
+  North-Holland, Amsterdam, 2001.
+\newblock Available at
+  \url{http://www.sciencedirect.com/science/article/pii/B9780444508133500291}.
+
+\bibitem{xiang_ontofox:_2010}
+Zuoshuang Xiang, Mélanie Courtot, Ryan Brinkman, Alan Ruttenberg, and Yongqun
+  He.
+\newblock {OntoFox}: web-based support for ontology reuse.
+\newblock {\em BMC Research Notes}, 3(1):175, June 2010.
+\newblock Available at
+  \url{http://www.biomedcentral.com/1756-0500/3/175/abstract}.
+
+\end{thebibliography}

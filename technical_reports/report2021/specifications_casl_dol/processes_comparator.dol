@@ -1,0 +1,148 @@
+%%mapping among a set of industrial ontology, a general mapping for illustration
+%%alignment done for illustrative purposes among DEB and OUM
+%% separating main spec Compare_Processes from Proof_Process - not yet
+
+
+
+library Exclusive_Processes_Ramos
+
+logic OWL
+
+from oum_onto_dol get oum
+
+%%fourth aligment
+from deb_dol get deb
+
+
+
+%%alignment among oum and deb
+
+alignment deb_oum_alignment : deb to oum =
+  Class Density = Class Density,
+  Class Diameter = Class Diameter
+end
+
+
+logic CASL
+
+
+%%combining DEB and OUM within deb_oum_alignment
+spec DEM_OUM_combine =
+	combine deb, oum, deb_oum_alignment
+	%%defining pronto products
+	
+end
+
+
+
+%%if piece is in a range 1, then goes in one direction, else goes to the other
+%% 1<2 or 3>2
+%%getting 
+from lessthanspec get lessthan
+from morethanspec  get morethan
+
+
+
+spec Compare_Processes =  %%Correspond to distance in our design
+	lessthan and morethan and DEM_OUM_combine
+	then
+	sort Thing, Boolean
+	ops piece_1, piece_2, sub_piece1, sub_piece2 : Thing;
+        
+	    False : Boolean;
+	    True : Boolean;
+	pred designed_Radius : Thing * Int
+	     measured_Radius : Thing * Int
+             ref_radio: Int
+             Piece: Thing
+             SubPiece : Thing
+	     proper_piece: Thing * Int * Int
+             sawable_piece : Thing * Int * Int %% if radiuos more than a value, then it must be sawed
+             shearable_piece : Thing * Int * Int %% if radiuos less than a value, then it must be sheared
+             forgin_two_steps : Thing 
+	     forgin_one_step : Thing * Boolean
+             complex_piece : Thing * Boolean
+             simple_piece : Thing * Boolean
+	     exists_now : Thing * Boolean
+             machinable_1_step : Thing * Thing * Int * Int  %% first step
+	     machinable_step_2 : Thing * Thing * Int * Int  %% second step
+             machinable_step_3 : Thing * Thing * Int * Int * Boolean  %% third step
+	     shear_forge_one : Thing * Thing * Int * Int * Boolean  %% third step
+	     shear_forge_two : Thing * Thing * Int * Int * Boolean  %% third step
+             saw_forge_one : Thing * Thing * Int * Int * Boolean  %% third step
+	     saw_forge_two : Thing * Thing * Int * Int * Boolean  %% third step
+	     
+	     radius:Int
+	%% Writing respective axioms
+
+	forall a,a1: Thing ; b,c,d,e : Int; f,g,h,h1 : Boolean
+	
+	%%if shearable, and simple then one step
+        %%adding relation to attribute
+        . Piece(a) /\ b in Int => designed_Radius(a,b) %(designed_radius)%
+	. Piece(a) /\ c in Int => measured_Radius(a,c) %(measured_radius)%
+	. Piece(a) /\ h in Boolean /\ h=True => exists_now(a,h) %(exists_now_p1)%
+        . Piece(a) /\ h in Boolean /\ h=False => not exists_now(a,h) %(not_exists_now_p1)%
+        . SubPiece(a1) /\ h1 in Boolean /\ h1=True => exists_now(a1,h1) %(exists_now_p1)%
+	. SubPiece(a1) /\ h1 in Boolean /\ h1=False => not exists_now(a1,h1) %(non_exists_now_p1)%
+	%%axiomatization for complex or simple
+	. SubPiece(a1) /\ h1 in Boolean /\ h1=True => complex_piece(a1,h1) %(complex_piece)%
+	. SubPiece(a1) /\ h1 in Boolean /\ h1=True => simple_piece(a1,h1) %(simple_piece)%
+
+        %% shearable if measured radius is below desig radius
+	. designed_Radius(a,b) /\ measured_Radius(a,c) /\ c < b /\ exists_now(a,True)  => shearable_piece(a,b,c) %(shearable_piece)%
+	%% sawable if measured radius is over design radius
+	. designed_Radius(a,b) /\ measured_Radius(a,c) /\ b < c /\ exists_now(a,True) => sawable_piece(a,b,c)  %(sawable_piece)%
+       %% shearable if not exists sub piece
+	. shearable_piece(a,b,c) /\ SubPiece(a1) /\ not exists_now(a1,False) => machinable_1_step(a,a1,b,c)  %(shearable_1)% %%
+	%% sawable if not exists sub piece
+	. sawable_piece(a,e,d)   /\ SubPiece(a1) /\ not exists_now(a1,False) => machinable_1_step(a,a1,b,c)  %(sawable_1)% %%
+	%%second production step
+	. machinable_1_step(a,a1,b,c) /\ not exists_now(a,False) /\ exists_now(a1,True) => machinable_step_2(a,a1,b,c) %(machinable_2)% 
+
+	%%sheared simple piece
+	. machinable_step_2(a,a1,b,c) /\ simple_piece(a1,h1) /\ shearable_piece(a,b,c) => shear_forge_one(a,a1,b,c,h1)  %(shear_forge_one)%
+	%%shered complex piece
+	. machinable_step_2(a,a1,b,c) /\ complex_piece(a1,h1) /\ shearable_piece(a,b,c) => shear_forge_two(a,a1,b,c,h1)  %(machinable_2)%
+
+	%%sawed simple piece
+	. machinable_step_2(a,a1,b,c) /\ simple_piece(a1,h1) /\ sawable_piece(a,b,c) => saw_forge_one(a,a1,b,c,h1)  %(machinable_2)%
+	%%sawed complex piece
+	. machinable_step_2(a,a1,b,c) /\ complex_piece(a1,h1) /\ sawable_piece(a,b,c) => saw_forge_two(a,a1,b,c,h1)  %(machinable_2)%
+
+
+ 	then
+		forall a, a1, a2, a21: Thing ; b,c,d,e : Int; simple,complex,h : Boolean
+		%%whole cycle
+		.  piece_1=a /\ Piece(a) /\ sub_piece1=a1 /\ SubPiece(a1) /\ 2=b /\ 1=c /\ simple=True => shear_forge_one(a,a1,b,c,simple) %implied %(shearable_simple_proved)%
+	then
+		forall a, a1, a2, a21: Thing ; b,c,d,e : Int; simple,complex,h : Boolean
+		%%whole cycle  
+		.  piece_2=a2 /\ Piece(a2) /\ sub_piece2=a21 /\ SubPiece(a21) /\ 2=b /\ 1=c /\ complex=False => shear_forge_two(a2,a21,b,c,complex) %implied %(shearable_complex_proved)%
+	then
+		forall a, a1, a2, a21: Thing ; b,c,d,e : Int; simple,complex,h : Boolean
+		%%whole cycle
+		.  piece_1=a /\ Piece(a) /\ sub_piece1=a1 /\ SubPiece(a1) /\ 2=b /\ 1=c /\ simple=True => saw_forge_one(a,a1,b,c,simple) %implied %(sawable_simple_proved)%
+
+	then
+		forall a, a1, a2, a21: Thing ; b,c,d,e : Int; simple,complex,h : Boolean
+		.  piece_2=a2 /\ Piece(a2) /\ sub_piece2=a21 /\ SubPiece(a21) /\ 2=b /\ 1=c /\ complex=False => saw_forge_two(a2,a21,b,c,complex) %implied %(sawable_complex_proved)%
+
+%% independent test specification
+%%spec Proof_Processes =  %%Correspond to distance in our design
+  %%   Compare_Processes
+    
+
+end
+
+%%checked on 16.11, and working with lessthanspec
+%%creating and removing individuals from the knowledge base 24.11
+%%proved in four conditioned processes on 25.11. 
+%%included mapping DEB OUM for products parameters validation 05.12.2021
+
+
+
+
+
+
+
